@@ -1,13 +1,7 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
-import React from "react"
+import React, { Fragment } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
 
 import Header from "./header"
 import "./layout.css"
@@ -24,8 +18,10 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <Fragment>
       <Header siteTitle={data.site.siteMetadata.title} />
+
+      <Box>Hello</Box>
       <div
         style={{
           margin: `0 auto`,
@@ -41,7 +37,7 @@ const Layout = ({ children }) => {
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
-    </>
+    </Fragment>
   )
 }
 
@@ -50,3 +46,8 @@ Layout.propTypes = {
 }
 
 export default Layout
+
+const Box = styled.div`
+  background: green;
+  padding: 50px;
+`
