@@ -1,10 +1,15 @@
 <html>
   <head>
     <title>Nobel Cafe</title>
-    <link
+    <!-- <link
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
+    /> -->
+    <link
+      href="styles/output.css"
+      rel="stylesheet"
     />
+    <link rel="stylesheet" href="js/glide-3.4.1/dist/css/glide.core.min.css">
   </head>
   <body class="[ border-t-8 border-purple-600 ]">
     <header
@@ -71,10 +76,12 @@
       </aside>
 
       <section class="[ w-2/3 ]">
-        <div
-          class="[ h-full ][ bg-cover ][ rounded-lg ][ h-screen ][ shadow-xl ]"
-          style="background-image: url('assets/nobel-shopfront.jpg');"
-        ></div>
+
+        <img 
+          src="assets/nobel-shopfront.jpg" 
+          alt="Nobel Cafe Shopfront on Church St Ballymena"
+          class="rounded shadow-xl"
+        />
       </section>
     </main>
 
@@ -102,113 +109,112 @@
           >
         </header>
 
-        <section class="flex flex-wrap -mx-4">
-          <div class="w-1/2 px-4 mb-10">
-            <div class="flex">
-              <img src="assets/tick.svg" alt="Sample Icon" title="Sandwiches, Toasties & Wraps" class="h-8 w-auto mb-2" />
-              <div
-                 class="[ ml-3 ]">
-                 <h3 class="[ font-medium uppercase leading-tight tracking-wide ][ mb-2 ]">Sandwiches, Toasties & Wraps</h3>
-                  <p class="max-w-sm mb-4 font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at lacus lacus. Mauris hendrerit metus ac volutpat lacinia.</p>
-                  <a
-                  href="#"
-                  class="
-                    [ inline-flex items-center justify-center ]
-                    [ text-purple-600 hover:text-purple-400 ]
-                    [ border-b-2 border-purple-400 ]
-                    [ uppercase tracking-wide leading-tight text-sm ]
-                    [ mb-2 pb-1 ]"
-                  >See Menu</a>
-                </div>
-            </div>  
+        <section class="grid grid-cols-4 gap-10">
+          <div class="col-span-2">
+            <img src="assets/tick.svg" alt="Sample Icon" title="Sandwiches, Toasties & Wraps" class="h-8 w-auto mb-3" />  
+            <h3 class="[ font-medium uppercase leading-tight tracking-wide ][ mb-2 ]">Menu Title</h3>
+            <p class="max-w-sm mb-4 font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at lacus lacus. Mauris hendrerit metus ac volutpat lacinia.</p>
+            <a
+              href="#"
+              class="
+                [ inline-flex items-center justify-center ]
+                [ text-purple-600 hover:text-purple-400 ]
+                [ border-b-2 border-purple-400 ]
+                [ uppercase tracking-wide leading-tight text-sm ]
+                [ mb-2 pb-1 ]"
+            >See Menu</a>
           </div>
 
-          <div class="w-1/2 px-4 mb-10">
-            <div class="flex">
-              <img src="assets/tick.svg" alt="Sample Icon" title="Sandwiches, Toasties & Wraps" class="h-8 w-auto mb-2" />
-              <div
-                 class="[ ml-3 ]">
-                 <h3 class="[ font-medium uppercase leading-tight tracking-wide ][ mb-2 ]">Lunch</h3>
-                
-                <p class="max-w-sm mb-4 font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at lacus lacus. Mauris hendrerit metus ac volutpat lacinia.</p>
-                <a
-                href="#"
-                class="
-                    [ inline-flex items-center justify-center ]
-                    [ text-purple-600 hover:text-purple-400 ]
-                    [ border-b-2 border-purple-400 ]
-                    [ uppercase tracking-wide leading-tight text-sm ]
-                    [ mb-2 pb-1 ]"
-                >See Menu</a>
-              </div>
-            </div>  
+          <div class="col-span-2">
+            <img src="assets/tick.svg" alt="Sample Icon" title="Sandwiches, Toasties & Wraps" class="h-8 w-auto mb-3" />  
+            <h3 class="[ font-medium uppercase leading-tight tracking-wide ][ mb-2 ]">Menu Title</h3>
+            <p class="max-w-sm mb-4 font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at lacus lacus. Mauris hendrerit metus ac volutpat lacinia.</p>
+            <a
+              href="#"
+              class="
+                [ inline-flex items-center justify-center ]
+                [ text-purple-600 hover:text-purple-400 ]
+                [ border-b-2 border-purple-400 ]
+                [ uppercase tracking-wide leading-tight text-sm ]
+                [ mb-2 pb-1 ]"
+            >See Menu</a>
           </div>
 
-          <div class="w-1/2 px-4 mb-10">
-            <div class="flex">
-              <img src="assets/tick.svg" alt="Sample Icon" title="Sandwiches, Toasties & Wraps" class="h-8 w-auto mb-2" />
-              <div
-                 class="[ ml-3 ]">
-                 <h3 class="[ font-medium uppercase leading-tight tracking-wide ][ mb-2 ]">Gluten Free</h3>
-                 <p class="max-w-sm mb-4 font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at lacus lacus. Mauris hendrerit metus ac volutpat lacinia.</p>
-                 <a
-                 href="#"
-                 class="
-                    [ inline-flex items-center justify-center ]
-                    [ text-purple-600 hover:text-purple-400 ]
-                    [ border-b-2 border-purple-400 ]
-                    [ uppercase tracking-wide leading-tight text-sm ]
-                    [ mb-2 pb-1 ]"
-                 >See Menu</a>
-                </div>
-            </div>  
+          <div class="col-span-2">
+            <img src="assets/tick.svg" alt="Sample Icon" title="Sandwiches, Toasties & Wraps" class="h-8 w-auto mb-3" />  
+            <h3 class="[ font-medium uppercase leading-tight tracking-wide ][ mb-2 ]">Menu Title</h3>
+            <p class="max-w-sm mb-4 font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at lacus lacus. Mauris hendrerit metus ac volutpat lacinia.</p>
+            <a
+              href="#"
+              class="
+                [ inline-flex items-center justify-center ]
+                [ text-purple-600 hover:text-purple-400 ]
+                [ border-b-2 border-purple-400 ]
+                [ uppercase tracking-wide leading-tight text-sm ]
+                [ mb-2 pb-1 ]"
+            >See Menu</a>
           </div>
 
-          <div class="w-1/2 px-4 mb-10">
-            <div class="flex">
-              <img src="assets/tick.svg" alt="Sample Icon" title="Sandwiches, Toasties & Wraps" class="h-8 w-auto mb-2" />
-              <div
-                 class="[ ml-3 ]">
-                 <h3 class="[ font-medium uppercase leading-tight tracking-wide ][ mb-2 ]">Kids</h3>
-                
-                <p class="max-w-sm mb-4 font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at lacus lacus. Mauris hendrerit metus ac volutpat lacinia.</p>
-                <a
-                href="#"
-                class="
-                    [ inline-flex items-center justify-center ]
-                    [ text-purple-600 hover:text-purple-400 ]
-                    [ border-b-2 border-purple-400 ]
-                    [ uppercase tracking-wide leading-tight text-sm ]
-                    [ mb-2 pb-1 ]"
-                >See Menu</a>
-              </div>
-            </div>  
+          <div class="col-span-2">
+            <img src="assets/tick.svg" alt="Sample Icon" title="Sandwiches, Toasties & Wraps" class="h-8 w-auto mb-3" />  
+            <h3 class="[ font-medium uppercase leading-tight tracking-wide ][ mb-2 ]">Menu Title</h3>
+            <p class="max-w-sm mb-4 font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at lacus lacus. Mauris hendrerit metus ac volutpat lacinia.</p>
+            <a
+              href="#"
+              class="
+                [ inline-flex items-center justify-center ]
+                [ text-purple-600 hover:text-purple-400 ]
+                [ border-b-2 border-purple-400 ]
+                [ uppercase tracking-wide leading-tight text-sm ]
+                [ mb-2 pb-1 ]"
+            >See Menu</a>
           </div>
         </section>
     </section>
 
-    <section
-      class="[ flex flex-col items-center justify-center ][ bg-cover h-screen ][ py-16 p-4 ]"
-      style="background-image: url('assets/nobel-shopfront.jpg');"
-    >
-      <div class="[ flex flex-col items-center justify-center ][ bg-white shadow-lg ][ p-16 rounded-lg ]">
-        <h2
-        class="[ font-bold text-xl uppercase leading-tight tracking-wide ][ mb-2 ]"
-      >
-        The Nobel Cafe Story
-      </h2>
-      <span
-        class="[ max-w-lg ][ text-center tracking-wide font-light ][ block ][ text-sm ][ mb-4 ]"
-        >Nobel Café first opened in 1994, a long time ago. Since 1994 we have
-        been serving first class breakfast and lunch to the people of Ballymena.
-        Nobel is Ballymena, Ballymena is Nobel!</span
-      >
-      <a
-        href="#"
-        class="[ inline-flex items-center justify-center ][ h-12 px-6 ][ text-white bg-purple-600 hover:bg-purple-700 ][ uppercase tracking-wide leading-tight text-sm ][ rounded ][ shadow ]"
-        >Read our Story</a
-      >
+    
+
+    <section data-our-story class="relative">
+      <div class="[ absolute ]">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide"><img src="assets/nobel-shopfront.jpg" alt="Alt Tag" class="[ w-screen h-screen object-cover ]" /></li>
+              <li class="glide__slide"><img src="assets/nobel-shopfront.jpg" alt="Alt Tag" class="[ w-screen h-screen object-cover ]" /></li>
+              <li class="glide__slide"><img src="assets/nobel-shopfront.jpg" alt="Alt Tag" class="[ w-screen h-screen object-cover ]" /></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="[ container mx-auto px-4 ][ relative z-10 ][ transform translate-y-full ]">
+        <div class="
+          [ flex flex-col items-center justify-center ]
+          [ bg-white shadow-lg ][ p-16 mb-8 rounded-lg ]
+          [ max-w-2xl mx-auto ]
+        ">
+          <h2
+          class="[ font-bold text-xl uppercase leading-tight tracking-wide ][ mb-2 ]"
+        >
+          The Nobel Cafe Story
+        </h2>
+        <span
+          class="[ max-w-lg ][ text-center tracking-wide font-light ][ block ][ text-sm ][ mb-4 ]"
+          >Nobel Café first opened in 1994, a long time ago. Since 1994 we have
+          been serving first class breakfast and lunch to the people of Ballymena.
+          Nobel is Ballymena, Ballymena is Nobel!</span
+        >
+        <a
+          href="#"
+          class="[ inline-flex items-center justify-center ][ h-12 px-6 ][ text-white bg-purple-600 hover:bg-purple-700 ][ uppercase tracking-wide leading-tight text-sm ][ rounded ][ shadow ]"
+          >Read our Story</a
+        >
+        </div>
       </div>
     </section>
   </body>
+
+  <script src="js/glide-3.4.1/dist/glide.min.js"></script>
+  <script>
+    new Glide('.glide').mount()
+  </script>
 </html>
