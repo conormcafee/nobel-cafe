@@ -13486,6 +13486,16 @@ video {
   background-color: rgba(0, 0, 0, 0.45);
 }
 
+.blog p {
+  margin-bottom: 1rem;
+}
+
+.blog p:first-child {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
 /* [data-our-story]:before {
   content: "";
   background: rgba(0, 0, 0, 0.4);
