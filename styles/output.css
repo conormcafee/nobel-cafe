@@ -13474,6 +13474,18 @@ video {
           transition-duration: 1000ms;
 }
 
+.font-base {
+  font-family: "Alegreya", serif;
+}
+
+.font-heading {
+  font-family: "Lato", sans-serif;
+}
+
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
 /* [data-our-story]:before {
   content: "";
   background: rgba(0, 0, 0, 0.4);
