@@ -1,0 +1,39 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.font-base {
+  font-family: "Alegreya", serif;
+}
+
+.font-heading {
+  font-family: "Lato", sans-serif;
+}
+
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.blog p {
+  margin-bottom: 1rem;
+}
+
+.blog p:first-child {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+/* [data-our-story]:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+} */
