@@ -23,7 +23,7 @@ OurStory.defaultProps = {
 const Section = styled.section`
   background-image: url(${props => props.background});
   ${tw`
-    bg-cover bg-fixed h-screen relative z-50
+    bg-fixed bg-cover h-screen relative z-50
   `}
 `
 
