@@ -10,6 +10,8 @@ import OS02 from "../images/nobel-ability.jpg"
 import OS03 from "../images/nobel-food.jpg"
 import OS04 from "../images/nobel-fast.jpg"
 
+// Move to own component
+
 const ourStory = [
   {
     background: OS01,
