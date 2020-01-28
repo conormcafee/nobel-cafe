@@ -34,7 +34,7 @@ export default function HTML(props) {
 
 const Body = styled.body`
   ${tw`
-    font-base antialiased text-gray-700 bg-gray-200
+    font-base antialiased text-gray-700 bg-white
   `}
 `
 
