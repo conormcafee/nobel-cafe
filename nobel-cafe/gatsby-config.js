@@ -39,6 +39,21 @@ module.exports = {
         // Accepts all options defined by `gatsby-plugin-postcss` plugin.
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Alegreya`,
+            variants: [`400`],
+          },
+          {
+            family: `Lato`,
+            variants: [`700`, `900`],
+          },
+        ],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
