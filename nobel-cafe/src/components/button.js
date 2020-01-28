@@ -10,9 +10,16 @@ export default Button
 const StyledButton = styled(Link)`
   ${tw`
       inline-flex items-center justify-center 
-      h-12 px-6 
-      text-white bg-purple-600 hover:bg-purple-700 
+      h-12 px-4 
+      text-white bg-purple-600 hover:bg-purple-700
+      text-sm sm:text-base
       font-heading font-bold uppercase tracking-wide leading-tight 
       rounded shadow
     `}
+
+  img {
+    ${tw`
+        w-8 sm:mr-2
+      `}
+  }
 `
