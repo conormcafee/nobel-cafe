@@ -1,58 +1,58 @@
 import React from "react"
-import { Link } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 import Button from "../button"
 
-const MenuTypes = [
-  {
-    title: "Breakfast Menu",
-    intro:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at lacus lacus. Mauris hendrerit metus ac volutpat lacinia.",
-    link: "/",
-  },
-  {
-    title: "Lunch Menu",
-    intro:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at lacus lacus. Mauris hendrerit metus ac volutpat lacinia.",
-    link: "/",
-  },
-  {
-    title: "Gluten Free Menu",
-    intro:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at lacus lacus. Mauris hendrerit metus ac volutpat lacinia.",
-    link: "/",
-  },
-]
+const MenuIntro = () => {
+  const data = useStaticQuery(graphql`
+    query Menus {
+      allMarkdownRemark(
+        filter: { frontmatter: { path: { glob: "/menu/*" } } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              path
+              title
+            }
+          }
+        }
+      }
+    }
+  `)
+  return (
+    <ColouredBackground>
+      <Container>
+        <Header>
+          <aside>
+            <Heading>What are you eating?</Heading>
+            <Intro>
+              Whats on your plate when you come into Nobel Cafe next? Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. In at lacus
+              lacus. Mauris hendrerit metus ac volutpat lacinia.
+            </Intro>
+          </aside>
 
-const MenuIntro = () => (
-  <ColouredBackground>
-    <Container>
-      <Header>
-        <aside>
-          <Heading>What are you eating?</Heading>
-          <Intro>
-            Whats on your plate when you come into Nobel Cafe next? Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit. In at lacus lacus.
-            Mauris hendrerit metus ac volutpat lacinia.
-          </Intro>
-        </aside>
+          <Button>Check out our full menu</Button>
+        </Header>
 
-        <Button>Check out our full menu</Button>
-      </Header>
-
-      <Section>
-        {MenuTypes.map((menu, index) => (
-          <MenuType key={index} shift={index === 1}>
-            <MenuTitle>{menu.title}</MenuTitle>
-            <MenuText>{menu.intro}</MenuText>
-            <MenuLink to={menu.link}>See Menu</MenuLink>
-          </MenuType>
-        ))}
-      </Section>
-    </Container>
-  </ColouredBackground>
-)
+        <Section>
+          {data.allMarkdownRemark.edges.map((item, index) => (
+            <MenuType key={index} shift={index === 1}>
+              <MenuTitle>{item.node.frontmatter.title}</MenuTitle>
+              <MenuText>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at
+                lacus lacus. Mauris hendrerit metus ac volutpat lacinia.
+              </MenuText>
+              <MenuLink to={item.node.frontmatter.path}>See Menu</MenuLink>
+            </MenuType>
+          ))}
+        </Section>
+      </Container>
+    </ColouredBackground>
+  )
+}
 
 export default MenuIntro
 
