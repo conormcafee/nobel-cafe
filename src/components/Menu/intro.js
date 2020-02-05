@@ -62,7 +62,7 @@ const ColouredBackground = styled.section`
   ${tw`
     flex
     bg-purple-100
-    py-32
+    py-16 md:py-32
   `}
 `
 
@@ -75,8 +75,8 @@ const Container = styled.div`
 
 const Header = styled.header`
   ${tw`
-    flex flex-col justify-center items-center
-    text-center
+    md:flex flex-col justify-center items-center
+    md:text-center
   `}
 `
 
@@ -96,17 +96,20 @@ const Intro = styled.p`
 
 const Section = styled.section`
   ${tw`
-    flex items-center justify-between -mx-10
+    md:flex md:flex-row md:items-center md:justify-between mt-10 md:-mx-5
   `}
 `
 
 const MenuType = styled.div`
   ${tw`
-    bg-white border-b border-gray-200 
+    bg-white 
+    border-b border-gray-200 
     shadow-xl
-    p-8 mx-10 mb-10
+    p-8 
+    mb-10
+    md:mx-5
   `}
-  ${props => props.shift && tw`mt-20`}
+  ${props => props.shift && tw`md:mt-20`}
 `
 
 const MenuTitle = styled.h3`

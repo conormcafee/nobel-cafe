@@ -63,12 +63,14 @@ const Wrapper = styled.header`
     pt-4 pb-4 
     mb-8 
     bg-white 
-    fixed 
+    fixed
+    top-0 
+    right-0
+    left-0
     z-20 
     border-b 
     border-gray-300 
     shadow
-    w-full
   `}
 `
 
