@@ -29,8 +29,6 @@ const OurStory = () => {
       }
     }
   `)
-
-  console.log(data)
   return (
     <Fragment>
       {data.allFile.nodes[0].childMarkdownRemark.frontmatter.slides.map(

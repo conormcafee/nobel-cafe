@@ -17,21 +17,44 @@ const Hero = () => (
     </Aside>
 
     <Section>
-      <HeroImage
-        src="https://placehold.it/300x500"
-        alt="Nobel Cafe Shopfront on Church St Ballymena"
-      />
+      <HeroImageWrapper>
+        <picture>
+          <source
+            srcSet="https://placehold.it/300x500/"
+            media="(min-width: 768px)"
+          />
+          <HeroImage
+            src="https://placehold.it/768x576"
+            alt="Nobel Cafe Shopfront on Church St Ballymena"
+          />
+        </picture>
+      </HeroImageWrapper>
 
-      <HeroImage
-        hasMarginTop
-        src="https://placehold.it/300x500"
-        alt="Nobel Cafe Shopfront on Church St Ballymena"
-      />
+      <HeroImageWrapper hasMarginTop={true}>
+        <picture>
+          <source
+            srcSet="https://placehold.it/300x500"
+            media="(min-width: 768px)"
+          />
+          <HeroImage
+            src="https://placehold.it/768x576"
+            alt="Nobel Cafe Shopfront on Church St Ballymena"
+          />
+        </picture>
+      </HeroImageWrapper>
 
-      <HeroImage
-        src="https://placehold.it/300x500"
-        alt="Nobel Cafe Shopfront on Church St Ballymena"
-      />
+      <HeroImageWrapper>
+        <picture>
+          <source
+            srcSet="https://placehold.it/300x500"
+            media="(min-width: 768px)"
+          />
+          <HeroImage
+            src="https://placehold.it/768x576"
+            alt="Nobel Cafe Shopfront on Church St Ballymena"
+          />
+        </picture>
+      </HeroImageWrapper>
     </Section>
   </Main>
 )
@@ -47,19 +70,19 @@ const Main = styled.main`
 
 const Aside = styled.aside`
   ${tw`
-    max-w-xl text-center pr-16 mx-auto
+    max-w-xl sm:text-center pr-16 mx-auto mb-8
   `}
 `
 
 const Section = styled.section`
   ${tw`
-    flex flex-wrap items-center justify-center
+    flex flex-col md:flex-row md:items-center md:justify-center
   `}
 `
 
 const Heading = styled.h1`
   ${tw`
-    font-heading font-black text-5xl uppercase leading-tight tracking-wide 
+    font-heading font-black text-2xl md:text-3xl lg:text-5xl uppercase leading-tight tracking-wide 
     mb-2
   `}
 `
@@ -70,9 +93,15 @@ const Intro = styled.p`
   `}
 `
 
+const HeroImageWrapper = styled.div`
+  ${tw`
+    md:px-5
+  `}
+  ${props => props.hasMarginTop && tw`md:mt-20`}
+`
+
 const HeroImage = styled.img`
   ${tw`
-    rounded shadow-xl mx-10
+    rounded shadow-xl mb-10 md:mb-0
   `}
-  ${props => props.hasMarginTop && tw`mt-20`}
 `
