@@ -1,6 +1,7 @@
 ---
 title: Breakfast Menu
 path: "/menu/breakfast-menu"
+desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at lacus lacus. Mauris hendrerit metus ac volutpat lacinia.
 menu:
   - item: Breakfast Menu Item
     desc: desc

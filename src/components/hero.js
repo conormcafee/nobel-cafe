@@ -13,7 +13,7 @@ const Hero = () => (
         Nobel is Ballymena, Ballymena is Nobel!
       </Intro>
 
-      <Button>Check out our menu</Button>
+      <Button url="/menu">Check out our menu</Button>
     </Aside>
 
     <Section>

@@ -4,7 +4,7 @@ import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 import Button from "../button"
 
-const MenuIntro = () => {
+const MenuIntro = ({ hasButton }) => {
   const data = useStaticQuery(graphql`
     query Menus {
       allMarkdownRemark(
@@ -15,6 +15,7 @@ const MenuIntro = () => {
             frontmatter {
               path
               title
+              desc
             }
           }
         }
@@ -34,17 +35,14 @@ const MenuIntro = () => {
             </Intro>
           </aside>
 
-          <Button>Check out our full menu</Button>
+          {hasButton && <Button url="/menu">Check out our full menu</Button>}
         </Header>
 
         <Section>
           {data.allMarkdownRemark.edges.map((item, index) => (
             <MenuType key={index} shift={index === 1}>
               <MenuTitle>{item.node.frontmatter.title}</MenuTitle>
-              <MenuText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at
-                lacus lacus. Mauris hendrerit metus ac volutpat lacinia.
-              </MenuText>
+              <MenuText>{item.node.frontmatter.desc}</MenuText>
               <MenuLink to={item.node.frontmatter.path}>See Menu</MenuLink>
             </MenuType>
           ))}
@@ -55,6 +53,10 @@ const MenuIntro = () => {
 }
 
 export default MenuIntro
+
+MenuIntro.defaultProps = {
+  hasButton: false,
+}
 
 const ColouredBackground = styled.section`
   ${tw`

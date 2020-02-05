@@ -49,7 +49,7 @@ const HomePage = () => (
   <Layout>
     <SEO title="Home" />
     <Hero />
-    <MenuIntro />
+    <MenuIntro hasButton={true} />
     {ourStory.map((story, index) => (
       <OurStory
         key={index}

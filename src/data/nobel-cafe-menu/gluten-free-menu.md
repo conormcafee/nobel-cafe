@@ -1,6 +1,7 @@
 ---
 title: Gluten Free Lunch Menu
 path: "/menu/gluten-free-menu"
+desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at lacus lacus. Mauris hendrerit metus ac volutpat lacinia.
 menu:
   - item: Gluten Free Lunch Menu Item
     desc: desc
