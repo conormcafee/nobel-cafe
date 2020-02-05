@@ -20,6 +20,13 @@ module.exports = {
         path: `${__dirname}/src/data/nobel-cafe-menu`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `our-story`,
+        path: `${__dirname}/src/data/our-story`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
