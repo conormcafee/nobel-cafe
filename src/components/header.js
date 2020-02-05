@@ -1,5 +1,5 @@
 import PropTypes from "prop-types"
-import React from "react"
+import React, { Fragment } from "react"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
@@ -8,38 +8,44 @@ import CallIcon from "../svg/call.svg"
 import Button from "./button"
 
 const menu = [
-  { title: "Menu", to: "/" },
+  { title: "Menu", to: "/menu" },
   { title: "Videos", to: "/videos" },
-  { title: "Jobs", to: "/" },
-  { title: "Find Us", to: "/" },
+  { title: "Jobs", to: "/jobs" },
+  { title: "Find Us", to: "/find-us" },
 ]
 
 const Header = ({ siteTitle }) => (
-  <Wrapper>
-    <InnerWrapper>
-      <HeaderLogo src={NCLogo} alt={`${siteTitle} Logo`} />
+  <Fragment>
+    <Wrapper>
+      <InnerWrapper>
+        <Link to="/" title="Go to Homepage">
+          <HeaderLogo src={NCLogo} alt={`${siteTitle} Logo`} />
+        </Link>
 
-      <Nav>
-        <ul>
-          {menu.map((a, index) => (
-            <HiddenMobile
-              as="li"
-              key={index}
-              isHiddenMobile={a.title === "Videos"}
-            >
-              <NavLink to={a.to} title="Go to">
-                {a.title}
-              </NavLink>
-            </HiddenMobile>
-          ))}
-        </ul>
-        <Button>
-          <img src={CallIcon} alt="Call Nobel Cafe" />
-          <HiddenMobile isHiddenMobile={true}>Order Now</HiddenMobile>
-        </Button>
-      </Nav>
-    </InnerWrapper>
-  </Wrapper>
+        <Nav>
+          <ul>
+            {menu.map((a, index) => (
+              <HiddenMobile
+                as="li"
+                key={index}
+                isHiddenMobile={a.title === "Videos"}
+              >
+                <NavLink to={a.to} title="Go to">
+                  {a.title}
+                </NavLink>
+              </HiddenMobile>
+            ))}
+          </ul>
+        </Nav>
+      </InnerWrapper>
+    </Wrapper>
+    <HeaderButton>
+      <Button>
+        <img src={CallIcon} alt="Call Nobel Cafe" />
+        Order Now
+      </Button>
+    </HeaderButton>
+  </Fragment>
 )
 
 Header.propTypes = {
@@ -57,15 +63,18 @@ const Wrapper = styled.header`
     pt-4 pb-4 
     mb-8 
     bg-white 
-    fixed w-full z-40 
-    border-b border-gray-300 
+    fixed 
+    z-20 
+    border-b 
+    border-gray-300 
     shadow
+    w-full
   `}
 `
 
 const InnerWrapper = styled.div`
   ${tw`
-      flex flex-col md:flex-row flex-wrap items-start md:items-center md:justify-between 
+      flex items-center justify-between 
       mx-auto
       px-4
   `}
@@ -74,7 +83,7 @@ const InnerWrapper = styled.div`
 
 const HeaderLogo = styled.img`
   ${tw`
-    w-40 md:w-48
+    w-20 sm:w-40 md:w-48
   `}
 `
 
@@ -85,10 +94,8 @@ const HiddenMobile = styled.span`
 
 const Nav = styled.nav`
   ${tw`
-    w-full sm:w-auto
     flex items-center justify-between
     font-heading font-bold
-    mt-2 md:mt-0
   `}
 `
 
@@ -97,5 +104,10 @@ const NavLink = styled(Link)`
     text-sm sm:text-base 
     text-gray-700 hover:text-purple-600 
     mr-4 md:mr-8
+  `}
+`
+const HeaderButton = styled.div`
+  ${tw`
+    p-10 z-50 fixed bottom-0 right-0
   `}
 `

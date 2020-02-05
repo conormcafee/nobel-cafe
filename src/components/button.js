@@ -16,12 +16,12 @@ const StyledButton = styled(Link)`
       text-white bg-purple-600 hover:bg-purple-700
       text-sm sm:text-base
       font-heading font-bold uppercase tracking-wide leading-tight 
-      rounded shadow
+      rounded shadow-lg
     `}
 
   img {
     ${tw`
-        w-8 sm:mr-2
+        w-8 mr-2
       `}
   }
 `
