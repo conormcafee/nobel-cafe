@@ -23,6 +23,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const result = await graphql(`
     {
       allMarkdownRemark(
+        filter: { frontmatter: { path: { glob: "/menu/*" } } }
         sort: { order: DESC, fields: [frontmatter___title] }
         limit: 1000
       ) {
