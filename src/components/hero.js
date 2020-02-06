@@ -2,11 +2,14 @@ import React from "react"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 import Button from "./button"
+import { Heading } from "./Typography"
 
 const Hero = () => (
   <Main>
     <Aside>
-      <Heading>Serving first class breakfast</Heading>
+      <Heading as="h1" upperCase={true}>
+        Serving first class breakfast
+      </Heading>
       <Intro>
         Nobel Café first opened in 1994, a long time ago. Since 1994 we have
         been serving first class breakfast and lunch to the people of Ballymena.
@@ -77,13 +80,6 @@ const Aside = styled.aside`
 const Section = styled.section`
   ${tw`
     flex flex-col md:flex-row md:items-center md:justify-center
-  `}
-`
-
-const Heading = styled.h1`
-  ${tw`
-    font-heading font-black text-2xl md:text-3xl lg:text-5xl uppercase leading-tight tracking-wide 
-    mb-2
   `}
 `
 

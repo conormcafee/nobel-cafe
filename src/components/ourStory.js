@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 import DefaultImage from "../images/nobel-shopfront.jpg"
+import { Heading } from "./Typography"
 
 const OurStory = () => {
   const data = useStaticQuery(graphql`
@@ -38,7 +39,9 @@ const OurStory = () => {
             background={item.image.childImageSharp.fluid.src}
           >
             <Article className="bg-overlay">
-              <Heading>{item.heading}</Heading>
+              <Heading as="h2" upperCase={true}>
+                {item.heading}
+              </Heading>
               <Intro>{item.text}</Intro>
             </Article>
           </Section>
@@ -68,12 +71,6 @@ const Article = styled.article`
     flex flex-col items-center justify-center
     text-center text-white
     h-full
-  `}
-`
-
-const Heading = styled.h3`
-  ${tw`
-    font-heading font-black text-3xl shadow
   `}
 `
 

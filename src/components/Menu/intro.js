@@ -3,6 +3,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 import Button from "../button"
+import { Heading } from "../Typography"
 
 const MenuIntro = ({ hasButton }) => {
   const data = useStaticQuery(graphql`
@@ -27,7 +28,9 @@ const MenuIntro = ({ hasButton }) => {
       <Container>
         <Header>
           <aside>
-            <Heading>What are you eating?</Heading>
+            <Heading as="h2" upperCase={true}>
+              What are you eating?
+            </Heading>
             <Intro>
               Whats on your plate when you come into Nobel Cafe next? Lorem
               ipsum dolor sit amet, consectetur adipiscing elit. In at lacus
@@ -77,14 +80,6 @@ const Header = styled.header`
   ${tw`
     md:flex flex-col justify-center items-center
     md:text-center
-  `}
-`
-
-const Heading = styled.h2`
-  ${tw`
-    font-heading font-black 
-    text-3xl uppercase leading-tight tracking-wide
-    mb-2
   `}
 `
 
