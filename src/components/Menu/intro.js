@@ -65,7 +65,7 @@ const ColouredBackground = styled.section`
   ${tw`
     flex
     bg-purple-100
-    py-16 md:py-32
+    py-16
   `}
 `
 

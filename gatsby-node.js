@@ -18,7 +18,7 @@ const path = require(`path`)
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
-  const menuTemplate = path.resolve(`src/templates/menuTemplate.js`)
+  const menuTemplate = path.resolve(`src/templates/menu/template.js`)
 
   const result = await graphql(`
     {
