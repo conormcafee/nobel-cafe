@@ -2,8 +2,8 @@ import React, { Fragment } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
-import DefaultImage from "../images/nobel-shopfront.jpg"
-import { Heading } from "./Typography"
+import DefaultImage from "../../images/nobel-shopfront.jpg"
+import { Heading } from "../Typography"
 
 const OurStory = () => {
   const data = useStaticQuery(graphql`
