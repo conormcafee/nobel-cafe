@@ -15,14 +15,14 @@ const colorSwitcher = color => {
 }
 
 const Heading = ({ as, upperCase, textColor, children }) => (
-  <Text as={as} upperCase={upperCase} css={colorSwitcher(textColor)}>
+  <Element as={as} upperCase={upperCase} css={colorSwitcher(textColor)}>
     {children}
-  </Text>
+  </Element>
 )
 
 export default Heading
 
-const Text = styled.span`
+const Element = styled.span`
   ${tw`font-heading font-black leading-tight mb-2`}
   ${props => props.as === "h1" && tw`text-2xl md:text-3xl lg:text-5xl`}
   ${props => props.as === "h2" && tw`text-xl md:text-2xl lg:text-4xl`}
