@@ -39,7 +39,7 @@ const OurStory = () => {
             background={item.image.childImageSharp.fluid.src}
           >
             <Article className="bg-overlay">
-              <Heading as="h2" upperCase={true}>
+              <Heading as="h2" upperCase={true} textColor="white">
                 {item.heading}
               </Heading>
               <Intro>{item.text}</Intro>

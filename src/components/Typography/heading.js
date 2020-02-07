@@ -1,9 +1,21 @@
 import React from "react"
 import styled from "@emotion/styled"
+import { css } from "@emotion/core"
 import tw from "tailwind.macro"
 
+const colorSwitcher = color => {
+  switch (color) {
+    case "purple":
+      return css(tw`text-purple-800`)
+    case "white":
+      return css(tw`text-white`)
+    default:
+      return css(tw`text-gray-700`)
+  }
+}
+
 const Heading = ({ as, upperCase, textColor, children }) => (
-  <Text as={as} upperCase={upperCase} textColor={textColor}>
+  <Text as={as} upperCase={upperCase} css={colorSwitcher(textColor)}>
     {children}
   </Text>
 )
@@ -17,9 +29,8 @@ const Text = styled.span`
   ${props => props.as === "h3" && tw`text-lg md:text-xl lg:text-3xl`}
   ${props => props.as === "h4" && tw`md:text-lg`}
   ${props => props.upperCase && tw`uppercase tracking-wide`}
-  ${props =>
-    props.textColor ? tw`text-${props.textColor}` : tw`text-gray-700`}
 `
+
 Heading.defaultProps = {
   as: "h1",
   upperCase: false,

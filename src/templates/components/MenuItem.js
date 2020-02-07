@@ -6,7 +6,8 @@ const MenuItem = ({ children }) => <Item>{children}</Item>
 
 const Item = styled.li`
   ${tw`
-    w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4
+    w-full sm:w-1/2 md:w-1/3 lg:w-1/4 
+    px-4 mb-8
   `}
 `
 

@@ -1,6 +1,9 @@
 import React from "react"
 import { Heading } from "../../components/Typography"
-import { MenuItems, MenuItem, MenuTitle } from "../components"
+import { MenuItems, MenuItem, MenuFooter } from "../components"
+
+const allergens = array =>
+  array.map((a, i) => `${a}${array.length - 1 === i ? `` : `, `}`)
 
 const Sandwiches = ({ data }) => (
   <div>
@@ -10,11 +13,19 @@ const Sandwiches = ({ data }) => (
       <MenuItems>
         {data.map((sandwich, index) => (
           <MenuItem key={index}>
-            <MenuTitle>{sandwich.item}</MenuTitle>
-            <span>{sandwich.allergens}</span>
+            <Heading as="h4">{sandwich.item}</Heading>
+            <Heading as="p" textColor="purple">
+              {allergens(sandwich.allergens)}
+            </Heading>
             <span>{sandwich.desc}</span>
-            <span>with Chips & Dip £{sandwich.priceWithChips}</span>
-            <span>with Soup £{sandwich.priceWithSoup}</span>
+            <MenuFooter>
+              <Heading as="h5" textColor="purple">
+                with Chips & Dip £{sandwich.priceWithChips}
+              </Heading>
+              <Heading as="h5" textColor="purple">
+                with Soup £{sandwich.priceWithSoup}
+              </Heading>
+            </MenuFooter>
           </MenuItem>
         ))}
       </MenuItems>
