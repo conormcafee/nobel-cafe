@@ -5,7 +5,7 @@ import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 import NCLogo from "../../images/logo.png"
 import CallIcon from "../../svg/call.svg"
-import Button from "../Button"
+import { Button } from "../Button"
 
 const menu = [
   { title: "Menu", to: "/menu" },

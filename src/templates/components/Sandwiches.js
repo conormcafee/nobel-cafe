@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Fragment } from "react"
 import { Heading } from "../../components/Typography"
 import { MenuItems, MenuItem, MenuFooter } from "../components"
 
@@ -6,7 +6,7 @@ const allergens = array =>
   array.map((a, i) => `${a}${array.length - 1 === i ? `` : `, `}`)
 
 const Sandwiches = ({ data }) => (
-  <div>
+  <Fragment>
     <Heading as="h3">Sandwiches</Heading>
 
     {data.length > 0 && (
@@ -30,7 +30,7 @@ const Sandwiches = ({ data }) => (
         ))}
       </MenuItems>
     )}
-  </div>
+  </Fragment>
 )
 
 export default Sandwiches

@@ -1,7 +1,7 @@
 import React, { Fragment } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Header from "../Header"
+import { Header } from "../Header"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 
@@ -19,14 +19,7 @@ const Layout = ({ children }) => {
   return (
     <Fragment>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div>
-        <Main>{children}</Main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+      <Main>{children}</Main>
     </Fragment>
   )
 }

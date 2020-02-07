@@ -1,9 +1,8 @@
 import React from "react"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
-import Button from "../Button"
+import { Button } from "../Button"
 import { Heading } from "../Typography"
-import { Image } from "../Image"
 
 const Hero = () => (
   <Main>

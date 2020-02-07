@@ -2,8 +2,9 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
-import Button from "../button"
+import { Button } from "../Button"
 import { Heading } from "../Typography"
+import { Container } from "../Layout"
 
 const MenuIntro = ({ hasButton }) => {
   const data = useStaticQuery(graphql`
@@ -67,13 +68,6 @@ const ColouredBackground = styled.section`
     bg-purple-100
     py-16
   `}
-`
-
-const Container = styled.div`
-  ${tw`
-    px-4 mx-auto
-  `}
-  max-width: 1200px;
 `
 
 const Header = styled.header`

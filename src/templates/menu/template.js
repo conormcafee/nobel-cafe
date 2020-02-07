@@ -1,6 +1,6 @@
 import React, { Fragment } from "react"
 import { graphql } from "gatsby"
-import Layout from "../../components/layout"
+import { Layout, Container } from "../../components/Layout"
 import { Sandwiches, Lunch, SidesAndSauces } from "../components"
 
 export default function Template({ path, data }) {
@@ -8,7 +8,8 @@ export default function Template({ path, data }) {
   const { frontmatter } = markdownRemark
   return (
     <Layout>
-      <div className="container pt-8 px-8 mx-auto">
+      <Container>
+        <br />
         {path.includes("lunch") && (
           <Fragment>
             <Sandwiches data={frontmatter.sandwiches} />
@@ -25,7 +26,7 @@ export default function Template({ path, data }) {
             />
           </Fragment>
         )}
-      </div>
+      </Container>
     </Layout>
   )
 }
