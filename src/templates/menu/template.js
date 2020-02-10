@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Layout, Container } from "../../components/Layout"
-import { Sandwiches, Lunch, SidesAndSauces } from "../components"
+import { Sandwiches, Lunch, Kids, SidesAndSauces } from "../components"
 import { Heading } from "../../components/Typography"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
@@ -17,6 +17,7 @@ export default function Template({ path, data }) {
             <Food>
               <Sandwiches data={frontmatter.sandwiches} />
               <Lunch data={frontmatter.lunch} />
+              <Kids data={frontmatter.kids} />
             </Food>
 
             <Side>
@@ -40,7 +41,7 @@ export default function Template({ path, data }) {
 }
 
 const Wrapper = styled.main`
-  ${tw`flex`}
+  ${tw`md:flex`}
 `
 
 const Food = styled.section`
@@ -102,6 +103,13 @@ export const pageQuery = graphql`
           price
         }
         lunch {
+          item
+          allergens
+          gf
+          desc
+          price
+        }
+        kids {
           item
           allergens
           gf

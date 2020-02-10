@@ -96,6 +96,37 @@ lunch:
     gf: false
     desc: Gem lettuce, beef tomato, mayo, red onion, toasted brioche bun - includes side
     price: 8.45
+kids:
+  - item: Pasta
+    allergens: [3, 5]
+    gf: true
+    desc: Penne Pasta, Carbonara
+    price: 3.95
+  - item: Bangers & Mash
+    allergens: [2, 5]
+    gf: false
+    desc: Bangers, Mash & Onion
+    price: 3.95
+  - item: Nobel Fried Chicken
+    allergens: [5, 3]
+    gf: true
+    desc: Nobel Fried Chicken & Chips in a Basket, Includes BBQ Dip
+    price: 3.95
+  - item: Kids Soup
+    allergens: [1, 2, 5]
+    gf: false
+    desc: Along with a Potato or Roll
+    price: 3.25
+  - item: Cheese Burger
+    allergens: [2, 5]
+    gf: false
+    desc: Fries, BBQ Dip - Bun can be Gluten Free, Please Ask Server
+    price: 3.95
+  - item: Cod Goujons
+    allergens: [4, 3, 5]
+    gf: true
+    desc: Served with Chips
+    price: 3.95
 sides:
   - price: 2.75
     options:
