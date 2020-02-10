@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import SEO from "../../components/seo"
 import { Layout, Container } from "../../components/Layout"
 import {
   Sandwiches,
@@ -17,6 +18,7 @@ export default function Template({ path, data }) {
   const { frontmatter } = markdownRemark
   return (
     <Layout>
+      <SEO title={path.includes("lunch") ? "Lunch Menu" : "Breakfast Menu"} />
       <Container>
         {path.includes("lunch") && (
           <Wrapper>
