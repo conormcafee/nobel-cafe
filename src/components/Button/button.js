@@ -3,7 +3,9 @@ import { Link } from "gatsby"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 
-const Button = ({ children }) => <StyledButton to="/">{children}</StyledButton>
+const Button = ({ children, url }) => (
+  <StyledButton to={url}>{children}</StyledButton>
+)
 
 export default Button
 
@@ -14,12 +16,16 @@ const StyledButton = styled(Link)`
       text-white bg-purple-600 hover:bg-purple-700
       text-sm sm:text-base
       font-heading font-bold uppercase tracking-wide leading-tight 
-      rounded shadow
+      rounded shadow-lg
     `}
 
   img {
     ${tw`
-        w-8 sm:mr-2
+        w-8 mr-2
       `}
   }
 `
+
+Button.defaultProps = {
+  url: "/",
+}
