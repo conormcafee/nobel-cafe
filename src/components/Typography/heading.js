@@ -28,6 +28,7 @@ const Element = styled.span`
   ${props => props.as === "h2" && tw`text-xl md:text-2xl lg:text-4xl`}
   ${props => props.as === "h3" && tw`text-lg md:text-xl lg:text-3xl`}
   ${props => props.as === "h4" && tw`md:text-lg`}
+  ${props => props.as === "h5" && tw`text-sm`}
   ${props => props.upperCase && tw`uppercase tracking-wide`}
 `
 
