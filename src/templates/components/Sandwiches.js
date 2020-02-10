@@ -20,10 +20,10 @@ const Sandwiches = ({ data }) => (
             <span>{sandwich.desc}</span>
             <MenuFooter>
               <Heading as="h5" textColor="purple">
-                with Chips & Dip £{sandwich.priceWithChips}
+                £{sandwich.priceWithChips} w/ Chips & Dip
               </Heading>
               <Heading as="h5" textColor="purple">
-                with Soup £{sandwich.priceWithSoup}
+                £{sandwich.priceWithSoup} w/ Soup
               </Heading>
             </MenuFooter>
           </MenuItem>

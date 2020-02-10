@@ -10,4 +10,8 @@ const Footer = styled.footer`
   ${tw`
     mt-2  
   `}
+
+  h5 {
+    ${tw`mt-1`}
+  }
 `
