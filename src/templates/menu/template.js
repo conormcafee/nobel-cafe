@@ -1,7 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Layout, Container } from "../../components/Layout"
-import { Sandwiches, Lunch, Kids, SidesAndSauces } from "../components"
+import {
+  Sandwiches,
+  Lunch,
+  Kids,
+  SidesAndSauces,
+  Allergens,
+} from "../components"
 import { Heading } from "../../components/Typography"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
@@ -32,6 +38,7 @@ export default function Template({ path, data }) {
                 price={frontmatter.sauces[0].price}
                 data={frontmatter.sauces[0].options}
               />
+              <Allergens />
             </Side>
           </Wrapper>
         )}
