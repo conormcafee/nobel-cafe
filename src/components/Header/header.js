@@ -104,7 +104,7 @@ const Nav = styled.nav`
 const NavLink = styled(Link)`
   ${tw`
     text-sm sm:text-base 
-    text-gray-700 hover:text-purple-600 
+    text-gray-700 hover:text-green-600 
     mr-4 md:mr-8
   `}
 `

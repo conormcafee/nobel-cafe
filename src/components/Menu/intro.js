@@ -65,7 +65,7 @@ MenuIntro.defaultProps = {
 const ColouredBackground = styled.section`
   ${tw`
     flex
-    bg-purple-100
+    bg-green-100
     py-16
   `}
 `
@@ -116,8 +116,8 @@ const MenuText = styled.p`
 const MenuLink = styled(Link)`
   ${tw`
     inline-flex items-center justify-center
-    text-purple-600 hover:text-purple-400
-    border-b-2 border-purple-400
+    text-green-600 hover:text-green-400
+    border-b-2 border-green-400
     font-heading font-bold uppercase tracking-wide leading-tight
     pb-1
   `}

@@ -52,14 +52,14 @@ const Side = styled.aside`
     pt-10
     pl-10 
     shadow 
-    bg-purple-100 border-l border-gray-200
+    bg-gray-100 border-l border-gray-200
     relative
   `}
 
   &:after {
     content: "";
     ${tw`
-      absolute top-0 bottom-0 bg-purple-100
+      absolute top-0 bottom-0 bg-gray-100
     `}
     left: 100%;
     width: 5000px;

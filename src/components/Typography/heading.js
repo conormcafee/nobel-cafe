@@ -6,7 +6,7 @@ import tw from "tailwind.macro"
 const colorSwitcher = color => {
   switch (color) {
     case "purple":
-      return css(tw`text-purple-800`)
+      return css(tw`text-green-800`)
     case "white":
       return css(tw`text-white`)
     default:
