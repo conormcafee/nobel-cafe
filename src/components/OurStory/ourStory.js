@@ -62,7 +62,7 @@ OurStory.defaultProps = {
 const Section = styled.section`
   background-image: url(${props => props.background});
   ${tw`
-    bg-fixed bg-cover h-screen relative z-30
+    md:bg-fixed bg-cover md:h-screen relative md:z-30
   `}
 `
 
@@ -71,6 +71,8 @@ const Article = styled.article`
     flex flex-col items-center justify-center
     text-center text-white
     h-full
+    py-32
+    px-32
   `}
 `
 

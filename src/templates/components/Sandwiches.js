@@ -1,13 +1,15 @@
-import React, { Fragment } from "react"
+import React from "react"
 import { Heading } from "../../components/Typography"
 import { MenuItems, MenuItem, MenuFooter } from "../components"
-
-const allergens = array =>
-  array.map((a, i) => `${a}${array.length - 1 === i ? `` : `, `}`)
+import { allergens } from "../../utils"
+import styled from "@emotion/styled"
+import tw from "tailwind.macro"
 
 const Sandwiches = ({ data }) => (
-  <Fragment>
-    <Heading as="h3">Sandwiches</Heading>
+  <Wrapper>
+    <Heading as="h3" textColor="purple" upperCase={true}>
+      Sandwiches
+    </Heading>
 
     {data.length > 0 && (
       <MenuItems>
@@ -20,17 +22,17 @@ const Sandwiches = ({ data }) => (
             <span>{sandwich.desc}</span>
             <MenuFooter>
               <Heading as="h5" textColor="purple">
-                with Chips & Dip £{sandwich.priceWithChips}
+                £{sandwich.priceWithChips} w/ Chips & Dip
               </Heading>
               <Heading as="h5" textColor="purple">
-                with Soup £{sandwich.priceWithSoup}
+                £{sandwich.priceWithSoup} w/ Soup
               </Heading>
             </MenuFooter>
           </MenuItem>
         ))}
       </MenuItems>
     )}
-  </Fragment>
+  </Wrapper>
 )
 
 export default Sandwiches
@@ -38,3 +40,11 @@ export default Sandwiches
 Sandwiches.defaultProps = {
   data: [],
 }
+
+const Wrapper = styled.section`
+  ${tw`mt-10 max-w-4xl mx-auto`}
+
+  h3 {
+    ${tw`mb-10 text-center`}
+  }
+`

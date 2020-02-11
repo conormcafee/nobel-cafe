@@ -5,6 +5,7 @@ import tw from "tailwind.macro"
 import { Button } from "../Button"
 import { Heading } from "../Typography"
 import { Container } from "../Layout"
+import FoodIcon from "../../svg/food.svg"
 
 const MenuIntro = ({ hasButton }) => {
   const data = useStaticQuery(graphql`
@@ -45,6 +46,7 @@ const MenuIntro = ({ hasButton }) => {
         <Section>
           {data.allMarkdownRemark.edges.map((item, index) => (
             <MenuType key={index} shift={index === 1}>
+              <MenuIcon src={FoodIcon} alt={item.node.frontmatter.title} />
               <MenuTitle>{item.node.frontmatter.title}</MenuTitle>
               <MenuText>{item.node.frontmatter.desc}</MenuText>
               <MenuLink to={item.node.frontmatter.path}>See Menu</MenuLink>
@@ -92,13 +94,28 @@ const Section = styled.section`
 const MenuType = styled.div`
   ${tw`
     bg-white 
-    border-b border-gray-200 
+    border-2 border-transparent
     shadow-xl
     p-8 
     mb-10
     md:mx-5
+    text-center
+    rounded-lg
   `}
   ${props => props.shift && tw`md:mt-20`}
+
+  &:hover {
+    ${tw`
+      border-2 border-purple-400
+    `}
+    transition: border-color 250ms ease-in-out;
+  }
+`
+
+const MenuIcon = styled.img`
+  ${tw`
+    w-16 mx-auto mb-3
+  `}
 `
 
 const MenuTitle = styled.h3`

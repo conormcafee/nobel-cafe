@@ -5,23 +5,23 @@ import { allergens } from "../../utils"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 
-const Lunch = ({ data }) => (
+const Kids = ({ data }) => (
   <Wrapper>
     <Heading as="h3" textColor="purple" upperCase={true}>
-      Lunch
+      Kids
     </Heading>
 
     {data.length > 0 && (
       <MenuItems>
-        {data.map((lunch, index) => (
+        {data.map((kid, index) => (
           <MenuItem key={index}>
-            <Heading as="h4">{lunch.item}</Heading>
+            <Heading as="h4">{kid.item}</Heading>
             <Heading as="p" textColor="purple">
-              {allergens(lunch.allergens)}
+              {allergens(kid.allergens)}
             </Heading>
-            <span>{lunch.desc}</span>
+            <span>{kid.desc}</span>
             <Heading as="h5" textColor="purple">
-              £{lunch.price}
+              £{kid.price}
             </Heading>
           </MenuItem>
         ))}
@@ -30,9 +30,9 @@ const Lunch = ({ data }) => (
   </Wrapper>
 )
 
-export default Lunch
+export default Kids
 
-Lunch.defaultProps = {
+Kids.defaultProps = {
   data: [],
 }
 
@@ -40,6 +40,6 @@ const Wrapper = styled.section`
   ${tw`mt-10 max-w-4xl mx-auto`}
 
   h3 {
-    ${tw`mb-10 text-center`}
+    ${tw`mb-10  text-center`}
   }
 `
