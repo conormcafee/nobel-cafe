@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Header } from "../Header"
@@ -17,17 +17,24 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <Fragment>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <Main>{children}</Main>
-    </Fragment>
+    <Wrapper>
+      <Main>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        {children}
+      </Main>
+    </Wrapper>
   )
 }
 
+const Wrapper = styled.div`
+  ${tw`bg-purple-900 p-4 lg:p-6 relative`}
+`
+
 const Main = styled.main`
   ${tw`
-    pt-12 sm:pt-16
+    bg-white shadow rounded-lg mx-auto
   `}
+  max-width: 1600px;
 `
 
 Layout.propTypes = {

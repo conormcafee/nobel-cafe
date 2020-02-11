@@ -69,7 +69,7 @@ const Main = styled.main`
 
 const Aside = styled.aside`
   ${tw`
-    max-w-xl sm:text-center pr-16 mx-auto mb-8
+    max-w-sm md:max-w-xl text-center mx-auto mb-8
   `}
 `
 
@@ -81,7 +81,7 @@ const Section = styled.section`
 
 const Intro = styled.p`
   ${tw`
-    tracking-wide font-light block my-4
+    tracking-wide font-light block my-4 mx-auto
   `}
 `
 

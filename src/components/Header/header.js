@@ -60,17 +60,11 @@ export default Header
 
 const Wrapper = styled.header`
   ${tw`
-    pt-4 pb-4 
+    pt-4 md:pt-8
     mb-8 
-    bg-white 
-    fixed
-    top-0 
-    right-0
-    left-0
     z-20 
-    border-b 
-    border-gray-300 
-    shadow
+    rounded-tr-lg
+    rounded-tl-lg
   `}
 `
 
@@ -85,7 +79,7 @@ const InnerWrapper = styled.div`
 
 const HeaderLogo = styled.img`
   ${tw`
-    w-20 sm:w-40 md:w-48
+    w-32 sm:w-40 md:w-48
   `}
 `
 
@@ -110,6 +104,6 @@ const NavLink = styled(Link)`
 `
 const HeaderButton = styled.div`
   ${tw`
-    p-10 z-50 fixed bottom-0 right-0
+    p-5 md:p-10 z-50 fixed bottom-0 right-0 left-0 text-center lg:text-left lg:left-auto
   `}
 `
