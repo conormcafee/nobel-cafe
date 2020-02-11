@@ -5,24 +5,40 @@ import tw from "tailwind.macro"
 
 const SidesAndSauces = ({ title, price, data }) => (
   <Wrapper>
-    <Heading as="h4">{title}</Heading>
-    <Heading as="h5" textColor="purple">
-      £{price}
-    </Heading>
-    {data.length > 0 && (
-      <List>
-        {data.map((side, index) => (
-          <ListItem key={index}>{side}</ListItem>
-        ))}
-      </List>
-    )}
+    <Main>
+      <Heading as="h4">{title}</Heading>
+      <Heading as="h5" textColor="purple">
+        £{price}
+      </Heading>
+      {data.length > 0 && (
+        <List>
+          {data.map((side, index) => (
+            <ListItem key={index}>{side}</ListItem>
+          ))}
+        </List>
+      )}
+    </Main>
   </Wrapper>
 )
 
 export default SidesAndSauces
 
 const Wrapper = styled.section`
-  ${tw`mb-10`}
+  ${tw`p-5 w-full md:w-auto md:flex-1`}
+`
+
+const Main = styled.aside`
+  ${tw`
+    bg-white rounded shadow p-5
+  `}
+
+  h4, h5 {
+    ${tw`text-center`}
+  }
+
+  h5 {
+    ${tw`mb-3`}
+  }
 `
 
 const List = styled.ul`

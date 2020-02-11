@@ -6,21 +6,45 @@ import tw from "tailwind.macro"
 
 const Allergens = ({ title }) => (
   <Wrapper>
-    <Heading as="h4">{title}</Heading>
-    <ol>
-      {allergenList.map(allergen => (
-        <li key={allergen.no}>
-          {allergen.no}: {allergen.title}
-        </li>
-      ))}
-    </ol>
+    <Aside>
+      <Heading as="h4">{title}</Heading>
+      <List>
+        {allergenList.map(allergen => (
+          <ListItem key={allergen.no}>
+            {allergen.no}: {allergen.title}
+          </ListItem>
+        ))}
+      </List>
+    </Aside>
   </Wrapper>
 )
 
 export default Allergens
 
 const Wrapper = styled.section`
-  ${tw`mb-10`};
+  ${tw`p-5 flex-1`}
+`
+
+const Aside = styled.aside`
+  ${tw`
+    bg-white rounded shadow p-5
+  `}
+
+  h4 {
+    ${tw`text-center`}
+  }
+`
+
+const List = styled.ol`
+  ${tw`
+    flex flex-wrap
+  `}
+`
+
+const ListItem = styled.li`
+  ${tw`
+    w-1/2
+  `}
 `
 
 Allergens.defaultProps = {

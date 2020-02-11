@@ -6,7 +6,7 @@ const MenuItems = ({ children }) => <Items>{children}</Items>
 
 const Items = styled.ul`
   ${tw`
-    flex flex-wrap -mx-4
+    flex flex-wrap -mx-8
   `}
 `
 

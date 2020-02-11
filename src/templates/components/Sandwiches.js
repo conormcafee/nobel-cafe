@@ -7,7 +7,9 @@ import tw from "tailwind.macro"
 
 const Sandwiches = ({ data }) => (
   <Wrapper>
-    <Heading as="h3">Sandwiches</Heading>
+    <Heading as="h3" textColor="purple" upperCase={true}>
+      Sandwiches
+    </Heading>
 
     {data.length > 0 && (
       <MenuItems>
@@ -40,9 +42,9 @@ Sandwiches.defaultProps = {
 }
 
 const Wrapper = styled.section`
-  ${tw`my-10`}
+  ${tw`mt-10 max-w-4xl mx-auto`}
 
   h3 {
-    ${tw`mb-6`}
+    ${tw`mb-10 text-center`}
   }
 `
