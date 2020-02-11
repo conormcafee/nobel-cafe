@@ -4,12 +4,14 @@ module.exports = {
       heading: [`"Lato", sans-serif`],
       base: [`"Alegreya", serif`],
     },
-  },
-  extend: {
-    colors: {
-      green: "#849e51",
+    extend: {
+      colors: {
+        green: "#849e51",
+      },
     },
   },
   variants: {},
   plugins: [],
 }
+
+// See https://tailwindcss.com/docs/customizing-colors/

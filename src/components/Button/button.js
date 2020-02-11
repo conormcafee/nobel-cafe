@@ -13,7 +13,7 @@ const StyledButton = styled(Link)`
   ${tw`
       inline-flex items-center justify-center 
       h-12 px-4 
-      text-white bg-green-700 hover:bg-green-700
+      text-white bg-purple-700 hover:bg-purple-700
       text-sm sm:text-base
       font-heading font-bold uppercase tracking-wide leading-tight 
       rounded shadow-lg
