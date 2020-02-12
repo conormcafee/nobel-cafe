@@ -7,7 +7,6 @@ import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 
 export default function Video({ data }) {
-  console.log(data)
   const { allFile } = data
   const { nodes } = allFile
 
