@@ -40,6 +40,6 @@ const Wrapper = styled.section`
   ${tw`mt-10 max-w-4xl mx-auto`}
 
   h3 {
-    ${tw`mb-10 text-center`}
+    ${tw`mb-5 sm:mb-10 sm:text-center`}
   }
 `

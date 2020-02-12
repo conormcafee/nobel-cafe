@@ -27,12 +27,12 @@ const Layout = ({ children }) => {
 }
 
 const Wrapper = styled.div`
-  ${tw`bg-purple-900 p-4 lg:p-6 relative`}
+  ${tw`bg-purple-900 sm:p-4 lg:p-6 relative`}
 `
 
 const Main = styled.main`
   ${tw`
-    bg-white shadow rounded-lg mx-auto
+    bg-white shadow sm:rounded-lg mx-auto
   `}
   max-width: 1600px;
 `

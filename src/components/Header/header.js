@@ -60,8 +60,7 @@ export default Header
 
 const Wrapper = styled.header`
   ${tw`
-    pt-4 md:pt-8
-    mb-8 
+    py-4 md:py-8
     z-20 
     rounded-tr-lg
     rounded-tl-lg

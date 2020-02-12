@@ -21,10 +21,10 @@ export default function Template({ path, data }) {
     <Layout>
       <SEO title={path.includes("lunch") ? "Lunch Menu" : "Breakfast Menu"} />
 
-      {path.includes("lunch") && (
+      {path.includes("lunch") ? (
         <Fragment>
-          <Container>
-            <Wrapper>
+          <Introduction>
+            <Container>
               <Heading as="h1" upperCase={true}>
                 Lunch Menu
               </Heading>
@@ -34,7 +34,16 @@ export default function Template({ path, data }) {
                 have been serving first class breakfast and lunch to the people
                 of Ballymena. Nobel is Ballymena, Ballymena is Nobel!
               </Intro>
+            </Container>
+          </Introduction>
 
+          <div
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: markdownRemark.html }}
+          />
+
+          <Container>
+            <Wrapper>
               <Sandwiches data={frontmatter.sandwiches} />
 
               <FoodMenuEnd>
@@ -74,6 +83,36 @@ export default function Template({ path, data }) {
             </FoodMenuEnd>
           </Container>
         </Fragment>
+      ) : (
+        <Fragment>
+          <Introduction>
+            <Container>
+              <Heading as="h1" upperCase={true}>
+                Breakfast Menu
+              </Heading>
+
+              <Intro>
+                Nobel Café first opened in 1994, a long time ago. Since 1994 we
+                have been serving first class breakfast and lunch to the people
+                of Ballymena. Nobel is Ballymena, Ballymena is Nobel!
+              </Intro>
+            </Container>
+          </Introduction>
+
+          <Container>
+            <Wrapper>
+              <FoodMenuEnd>
+                <img src={FoodIcon} alt="Sandwich Menu Ends Here" />
+              </FoodMenuEnd>
+
+              <FoodMenuEnd>
+                <img src={FoodIcon} alt="Sandwich Menu Ends Here" />
+              </FoodMenuEnd>
+            </Wrapper>
+
+            <Allergens />
+          </Container>
+        </Fragment>
       )}
     </Layout>
   )
@@ -89,6 +128,10 @@ const Wrapper = styled.section`
       text-center
     `}
   }
+`
+
+const Introduction = styled.section`
+  ${tw`bg-purple-100 text-center py-10`}
 `
 
 const Intro = styled.p`

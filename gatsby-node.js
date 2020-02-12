@@ -19,11 +19,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
   const menuTemplate = path.resolve(`src/templates/menu/template.js`)
+  const jobTemplate = path.resolve(`src/templates/jobs/template.js`)
 
   const result = await graphql(`
     {
       allMarkdownRemark(
-        filter: { frontmatter: { path: { glob: "/menu/*" } } }
         sort: { order: DESC, fields: [frontmatter___title] }
         limit: 1000
       ) {
@@ -44,10 +44,31 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  const menuPages = result.data.allMarkdownRemark.edges.filter(
+    a => a.node.frontmatter.path && a.node.frontmatter.path.includes("/menu/")
+  )
+  const jobPages = result.data.allMarkdownRemark.edges.filter(
+    a => a.node.frontmatter.path && a.node.frontmatter.path.includes("/jobs/")
+  )
+
+  console.log("Dynamic Pages")
+  console.log("----")
+  menuPages.map(node => console.log(node.node.frontmatter.path))
+  jobPages.map(node => console.log(node.node.frontmatter.path))
+  console.log("----")
+
+  menuPages.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.path,
       component: menuTemplate,
+      context: {}, // additional data can be passed via context
+    })
+  })
+
+  jobPages.forEach(({ node }) => {
+    createPage({
+      path: node.frontmatter.path,
+      component: jobTemplate,
       context: {}, // additional data can be passed via context
     })
   })
