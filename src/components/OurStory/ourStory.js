@@ -72,7 +72,7 @@ const Article = styled.article`
     text-center text-white
     h-full
     py-32
-    px-32
+    px-4
   `}
 `
 

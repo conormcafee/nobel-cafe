@@ -23,8 +23,8 @@ export default function Template({ path, data }) {
 
       {path.includes("lunch") && (
         <Fragment>
-          <Container>
-            <Wrapper>
+          <Introduction>
+            <Container>
               <Heading as="h1" upperCase={true}>
                 Lunch Menu
               </Heading>
@@ -34,7 +34,11 @@ export default function Template({ path, data }) {
                 have been serving first class breakfast and lunch to the people
                 of Ballymena. Nobel is Ballymena, Ballymena is Nobel!
               </Intro>
+            </Container>
+          </Introduction>
 
+          <Container>
+            <Wrapper>
               <Sandwiches data={frontmatter.sandwiches} />
 
               <FoodMenuEnd>
@@ -89,6 +93,10 @@ const Wrapper = styled.section`
       text-center
     `}
   }
+`
+
+const Introduction = styled.section`
+  ${tw`bg-purple-200 text-center py-10`}
 `
 
 const Intro = styled.p`
