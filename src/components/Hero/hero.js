@@ -62,7 +62,7 @@ export default Hero
 
 const Main = styled.main`
   ${tw`
-    mx-auto px-4 pt-8 lg:pt-16 pb-16 
+    mx-auto px-4 pt-8 pb-16 
   `}
   max-width: 1200px;
 `
