@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React from "react"
 import { graphql } from "gatsby"
 import SEO from "../components/seo"
 import { Layout, Container } from "../components/Layout"
@@ -6,6 +6,7 @@ import { Heading } from "../components/Typography"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 import { Button } from "../components/Button"
+import JobIcon from "../svg/job.svg"
 
 export default function Video({ data }) {
   const { allFile } = data
@@ -29,18 +30,59 @@ export default function Video({ data }) {
       </Introduction>
 
       <Container>
-        {nodes.map((job, index) => (
-          <Fragment key={index}>
-            <Heading>{job.childMarkdownRemark.frontmatter.title}</Heading>
-            <Button url={job.childMarkdownRemark.frontmatter.path}>
-              Go to Job
-            </Button>
-          </Fragment>
-        ))}
+        <Wrapper>
+          {nodes.map((job, index) => (
+            <Job key={index}>
+              <Header>
+                <img
+                  src={JobIcon}
+                  alt={job.childMarkdownRemark.frontmatter.jobTitle}
+                />
+                <div>
+                  <Heading as="h4">
+                    {job.childMarkdownRemark.frontmatter.jobTitle}
+                  </Heading>
+                  <Heading as="h5" textColor="purple" upperCase={true}>
+                    {job.childMarkdownRemark.frontmatter.fullTime
+                      ? "Full Time"
+                      : "Part Time"}
+                  </Heading>
+                </div>
+              </Header>
+
+              <p>{job.childMarkdownRemark.frontmatter.intro}</p>
+
+              <Button
+                ghostButton={true}
+                url={job.childMarkdownRemark.frontmatter.path}
+              >
+                Go to Job
+              </Button>
+            </Job>
+          ))}
+        </Wrapper>
       </Container>
     </Layout>
   )
 }
+
+const Wrapper = styled.section`
+  ${tw`
+    py-10 -mx-10 flex flex-wrap
+  `}
+`
+
+const Header = styled.header`
+  ${tw`
+    flex mb-6
+  `}
+
+  img {
+    ${tw`
+      w-16 mr-5
+    `}
+  }
+`
 
 const Introduction = styled.section`
   ${tw`bg-purple-100 text-center py-10`}
@@ -52,6 +94,18 @@ const Intro = styled.p`
   `}
 `
 
+const Job = styled.aside`
+  ${tw`
+    w-full md:w-1/3 p-10
+  `}
+
+  p {
+    ${tw`
+      my-4
+    `}
+  }
+`
+
 export const pageQuery = graphql`
   query Jobs {
     allFile(filter: { sourceInstanceName: { eq: "jobs" } }) {
@@ -61,6 +115,9 @@ export const pageQuery = graphql`
           frontmatter {
             title
             path
+            jobTitle
+            fullTime
+            intro
           }
         }
       }

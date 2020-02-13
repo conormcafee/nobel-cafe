@@ -1,9 +1,9 @@
 ---
-title: Job Title
+title: Waitress
 intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae libero et est pretium consectetur ut ut ligula. Maecenas eu massa et enim faucibus porttitor.
-path: "/jobs/job-title"
-jobTitle: Chef
-fullTime: true
+path: "/jobs/waitress"
+jobTitle: Waitress
+fullTime: false
 ---
 
 Aliquam ultrices diam quis est varius, at luctus purus tempor. Nullam ut faucibus justo. Nulla venenatis et ipsum vitae ullamcorper. Curabitur ultrices fermentum sapien sed ultricies. In nec convallis ligula. Proin et massa sodales dui cursus faucibus ut a nisi. Integer in finibus mauris. Fusce convallis metus ac nunc sodales auctor. Maecenas iaculis auctor egestas.
