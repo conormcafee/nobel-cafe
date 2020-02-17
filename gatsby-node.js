@@ -4,45 +4,6 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-exports.onCreateWebpackConfig = ({ actions, getConfig }) => {
-  // Hack due to Tailwind ^1.1.0 using `reduce-css-calc` which assumes node
-  // https://github.com/bradlc/babel-plugin-tailwind-components/issues/39#issuecomment-526892633
-  const config = getConfig()
-  config.node = {
-    fs: "empty",
-  }
-}
-
-exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
-  const config = getConfig()
-
-  let newConfig = {
-    ...config,
-    module: {
-      ...config.module,
-      noParse: /(mapbox-gl)\.js$/,
-    },
-  }
-
-  if (stage === "build-html") {
-    newConfig = {
-      ...newConfig,
-      module: {
-        ...newConfig.module,
-        rules: [
-          ...newConfig.module.rules,
-          {
-            test: /(mapbox-gl)\.js$/,
-            loader: "null-loader",
-          },
-        ],
-      },
-    }
-  }
-
-  actions.replaceWebpackConfig(newConfig)
-}
-
 const path = require(`path`)
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
@@ -102,4 +63,43 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       context: {}, // additional data can be passed via context
     })
   })
+}
+
+exports.onCreateWebpackConfig = ({ actions, getConfig }) => {
+  // Hack due to Tailwind ^1.1.0 using `reduce-css-calc` which assumes node
+  // https://github.com/bradlc/babel-plugin-tailwind-components/issues/39#issuecomment-526892633
+  const config = getConfig()
+  config.node = {
+    fs: "empty",
+  }
+}
+
+exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
+  const config = getConfig()
+
+  let newConfig = {
+    ...config,
+    module: {
+      ...config.module,
+      noParse: /(mapbox-gl)\.js$/,
+    },
+  }
+
+  if (stage === "build-html") {
+    newConfig = {
+      ...newConfig,
+      module: {
+        ...newConfig.module,
+        rules: [
+          ...newConfig.module.rules,
+          {
+            test: /(mapbox-gl)\.js$/,
+            loader: "null-loader",
+          },
+        ],
+      },
+    }
+  }
+
+  actions.replaceWebpackConfig(newConfig)
 }
