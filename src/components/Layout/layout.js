@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { Header } from "../Header"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
+import { Footer } from "../Layout"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -22,6 +23,7 @@ const Layout = ({ children }) => {
         <Header siteTitle={data.site.siteMetadata.title} />
         {children}
       </Main>
+      <Footer />
     </Wrapper>
   )
 }
@@ -32,7 +34,7 @@ const Wrapper = styled.div`
 
 const Main = styled.main`
   ${tw`
-    bg-white shadow sm:rounded-lg mx-auto
+    bg-white shadow sm:rounded-t-lg mx-auto
   `}
   max-width: 1600px;
 `

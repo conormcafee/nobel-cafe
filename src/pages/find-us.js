@@ -12,14 +12,14 @@ const Map = ReactMapboxGl({
     "pk.eyJ1IjoiY29ub3JtY2FmZWUiLCJhIjoiY2s2cXNzeDU3MDAyczNtbWNtYnBoZjJvdiJ9.Ic700Jbopy-ez0blTTm7wg",
 })
 
-const NotFound = () => (
+const FindUs = () => (
   <Layout>
-    <SEO title="Page Not Found" />
+    <SEO title="Find Us" />
 
     <Introduction>
       <Container>
         <Heading as="h1" upperCase={true}>
-          Page Not Found
+          Find Us
         </Heading>
 
         <Intro>
@@ -53,7 +53,7 @@ const NotFound = () => (
   </Layout>
 )
 
-export default NotFound
+export default FindUs
 
 const MapBox = styled.section`
   height: 80vh;

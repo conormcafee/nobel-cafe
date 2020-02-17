@@ -7,7 +7,7 @@ import { Heading } from "../Typography"
 import { Container } from "../Layout"
 import FoodIcon from "../../svg/food.svg"
 
-const MenuIntro = ({ hasButton }) => {
+const MenuIntro = ({ hasButton, description }) => {
   const data = useStaticQuery(graphql`
     query Menus {
       allMarkdownRemark(
@@ -33,11 +33,7 @@ const MenuIntro = ({ hasButton }) => {
             <Heading as="h2" upperCase={true}>
               What are you eating?
             </Heading>
-            <Intro>
-              Whats on your plate when you come into Nobel Cafe next? Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. In at lacus
-              lacus. Mauris hendrerit metus ac volutpat lacinia.
-            </Intro>
+            <Intro>{description}</Intro>
           </aside>
 
           {hasButton && <Button url="/menu">Check out our full menu</Button>}
@@ -75,7 +71,7 @@ const ColouredBackground = styled.section`
 const Header = styled.header`
   ${tw`
     md:flex flex-col justify-center items-center
-    md:text-center
+    text-center
   `}
 `
 
