@@ -93,12 +93,33 @@ const JobContent = styled.div`
       mb-6
     `}
   }
+
+  h2,
+  h3,
+  h4,
+  h5 {
+    ${tw`
+      font-heading font-black uppercase tracking-wide text-purple-700
+    `}
+  }
+
+  ul {
+    ${tw`
+      ml-4 pl-4 list-disc my-4
+    `}
+  }
+
+  li {
+    ${tw`
+      mb-2
+    `}
+  }
 `
 
 const JobActions = styled.footer`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  ${tw`
+    flex items-center justify-between my-8
+  `}
 `
 
 export const pageQuery = graphql`
