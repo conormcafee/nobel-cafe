@@ -1,31 +1,22 @@
 import React from "react"
 import { Heading } from "../../components/Typography"
 import { MenuItems, MenuItem } from "../components"
-import { allergens } from "../../utils"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 
-const Lunch = ({ title, data }) => (
+const Breakfast = ({ title, data }) => (
   <Wrapper>
     <Heading as="h3" textColor="purple" upperCase={true}>
       {title}
     </Heading>
 
     {data.length > 0 && (
-      <MenuItems>
-        {data.map((lunch, index) => (
-          <MenuItem key={index}>
-            <Heading as="h4">{lunch.item}</Heading>
-            {lunch.allergens && (
-              <Heading as="p" textColor="purple">
-                {allergens(lunch.allergens)}
-              </Heading>
-            )}
-
-            <p>{lunch.desc}</p>
-
-            <Heading as="h5" textColor="purple">
-              £{lunch.price}
+      <MenuItems small={true}>
+        {data.map((breakkie, index) => (
+          <MenuItem cols={2} key={index}>
+            <Heading as="h5">
+              {breakkie.item}
+              {breakkie.extra && ` (£${breakkie.extra})`}
             </Heading>
           </MenuItem>
         ))}
@@ -34,11 +25,11 @@ const Lunch = ({ title, data }) => (
   </Wrapper>
 )
 
-export default Lunch
+export default Breakfast
 
-Lunch.defaultProps = {
+Breakfast.defaultProps = {
   data: [],
-  title: "Lunch",
+  title: "Choose from",
 }
 
 const Wrapper = styled.section`

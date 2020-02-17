@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import SEO from "../../components/seo"
 import { Layout, Container } from "../../components/Layout"
 import {
+  Breakfast,
   Sandwiches,
   Lunch,
   Kids,
@@ -88,29 +89,45 @@ export default function Template({ path, data }) {
           <Introduction>
             <Container>
               <Heading as="h1" upperCase={true}>
-                Breakfast Menu
+                Breakfast Fry
+              </Heading>
+              <Heading as="h4" upperCase={true} textColor="purple">
+                from £3.95
               </Heading>
 
               <Intro>
-                Nobel Café first opened in 1994, a long time ago. Since 1994 we
-                have been serving first class breakfast and lunch to the people
-                of Ballymena. Nobel is Ballymena, Ballymena is Nobel!
+                Complimentary regular tea or coffee with 5 or more items.{" "}
+                <Heading as="h5" textColor="purple">
+                  Each item 79p
+                </Heading>
+              </Intro>
+
+              <Intro>
+                Upgrade to cappuccino, latte or herbal tea.{" "}
+                <Heading as="h5" textColor="purple">
+                  £1.00 extra
+                </Heading>
               </Intro>
             </Container>
           </Introduction>
 
           <Container>
             <Wrapper>
+              <Breakfast data={frontmatter.fry} />
+
               <FoodMenuEnd>
                 <img src={FoodIcon} alt="Sandwich Menu Ends Here" />
               </FoodMenuEnd>
+
+              <Lunch
+                title="More Breakfast Options"
+                data={frontmatter.breakfastmenu}
+              />
 
               <FoodMenuEnd>
                 <img src={FoodIcon} alt="Sandwich Menu Ends Here" />
               </FoodMenuEnd>
             </Wrapper>
-
-            <Allergens />
           </Container>
         </Fragment>
       )}
@@ -207,12 +224,6 @@ export const pageQuery = graphql`
           price
           options
         }
-        menu {
-          item
-          desc
-          allergens
-          price
-        }
         lunch {
           item
           allergens
@@ -226,6 +237,16 @@ export const pageQuery = graphql`
           gf
           desc
           price
+        }
+        fry {
+          item
+          extra
+        }
+        breakfastmenu {
+          item
+          desc
+          price
+          additional
         }
       }
     }
