@@ -1,15 +1,39 @@
 import React from "react"
-import { graphql } from "gatsby"
 import SEO from "../components/seo"
 import { Layout, Container } from "../components/Layout"
 import { Heading } from "../components/Typography"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 
-export default function Video({ data }) {
-  const { allFile } = data
-  const { nodes } = allFile
+const videos = [
+  {
+    title: "The Nobel Fry",
+    iframe:
+      "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FNobelBallymena%2Fvideos%2F445928015576157%2F&show_text=0&width=560",
+  },
+  {
+    title: "Christmas Love",
+    iframe:
+      "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FNobelBallymena%2Fvideos%2F881046588730962%2F&show_text=0&width=560",
+  },
+  {
+    title: "Nobel Elves",
+    iframe:
+      "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FNobelBallymena%2Fvideos%2F689900841178872%2F&show_text=0&width=560",
+  },
+  {
+    title: "Nobel Baby!",
+    iframe:
+      "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FNobelBallymena%2Fvideos%2F642298362605787%2F&show_text=0&width=560",
+  },
+  {
+    title: "Nobel Christmas",
+    iframe:
+      "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FNobelBallymena%2Fvideos%2F526979757470982%2F&show_text=0&width=560",
+  },
+]
 
+export default function Video() {
   return (
     <Layout>
       <SEO title="Videos" />
@@ -30,19 +54,21 @@ export default function Video({ data }) {
 
       <Container>
         <Videos>
-          {nodes.map((video, index) => (
+          {videos.map((video, index) => (
             <VideoElement key={index}>
-              <Heading as="h4">
-                {video.childMarkdownRemark.frontmatter.title}
-              </Heading>
-
-              <VideoContent
-                key={index}
-                dangerouslySetInnerHTML={{
-                  __html: video.childMarkdownRemark.html,
-                }}
-              />
-              <p>{video.childMarkdownRemark.frontmatter.desc}</p>
+              <Heading as="h4">{video.title}</Heading>
+              <VideoIframe>
+                <iframe
+                  src={video.iframe}
+                  width="560"
+                  height="315"
+                  style={{ border: "none", overflow: "hidden" }}
+                  scrolling="no"
+                  frameborder="0"
+                  allowTransparency="true"
+                  allowFullScreen="true"
+                ></iframe>
+              </VideoIframe>
             </VideoElement>
           ))}
         </Videos>
@@ -73,40 +99,16 @@ const VideoElement = styled.aside`
   `}
 `
 
-const VideoContent = styled.section`
+const VideoIframe = styled.div`
   ${tw`
-    my-5 bg-purple-100 shadow-lg p-5 rounded-lg
-  `}
-
-  .embedVideo-container {
-    ${tw`
       relative overflow-hidden max-w-full
     `}
-    padding-bottom: 56.25%;
-    height: 0;
-  }
+  padding-bottom: 56.25%;
+  height: 0;
 
-  .embedVideo-container iframe,
-  .embedVideo-container object,
-  .embedVideo-container embed {
+  & iframe {
     ${tw`
       absolute top-0 left-0 w-full h-full
     `}
-  }
-`
-
-export const pageQuery = graphql`
-  query Videos {
-    allFile(filter: { sourceInstanceName: { eq: "videos" } }) {
-      nodes {
-        childMarkdownRemark {
-          html
-          frontmatter {
-            title
-            desc
-          }
-        }
-      }
-    }
   }
 `
