@@ -41,13 +41,15 @@ export default function Template({ path, data }) {
 
           <Container>
             <Wrapper>
-              <Sandwiches data={frontmatter.sandwiches} />
+              <Sandwiches
+                data={frontmatter.sandwiches ? frontmatter.sandwiches : []}
+              />
 
               <FoodMenuEnd>
                 <img src={FoodIcon} alt="Sandwich Menu Ends Here" />
               </FoodMenuEnd>
 
-              <Lunch data={frontmatter.lunch} />
+              <Lunch data={frontmatter.lunch ? frontmatter.lunch : []} />
 
               <FoodMenuEnd>
                 <img src={FoodIcon} alt="Sandwich Menu Ends Here" />
@@ -74,7 +76,7 @@ export default function Template({ path, data }) {
           </Side>
 
           <Container>
-            <Kids data={frontmatter.kids} />
+            <Kids data={frontmatter.kids ? frontmatter.kids : []} />
             <FoodMenuEnd>
               <img src={FoodIcon} alt="Sandwich Menu Ends Here" />
             </FoodMenuEnd>
@@ -109,7 +111,7 @@ export default function Template({ path, data }) {
 
           <Container>
             <Wrapper>
-              <Breakfast data={frontmatter.fry} />
+              <Breakfast data={frontmatter.fry ? frontmatter.fry : []} />
 
               <FoodMenuEnd>
                 <img src={FoodIcon} alt="Sandwich Menu Ends Here" />
@@ -117,7 +119,9 @@ export default function Template({ path, data }) {
 
               <Lunch
                 title="More Breakfast Options"
-                data={frontmatter.breakfastmenu}
+                data={
+                  frontmatter.breakfastmenu ? frontmatter.breakfastmenu : []
+                }
               />
 
               <FoodMenuEnd>
