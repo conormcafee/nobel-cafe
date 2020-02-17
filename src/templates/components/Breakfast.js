@@ -10,18 +10,16 @@ const Breakfast = ({ title, data }) => (
       {title}
     </Heading>
 
-    {data.length > 0 && (
-      <MenuItems small={true}>
-        {data.map((breakkie, index) => (
-          <MenuItem cols={2} key={index}>
-            <Heading as="h5">
-              {breakkie.item}
-              {breakkie.extra && ` (£${breakkie.extra})`}
-            </Heading>
-          </MenuItem>
-        ))}
-      </MenuItems>
-    )}
+    <MenuItems small={true}>
+      {data.map((breakkie, index) => (
+        <MenuItem cols={2} key={index}>
+          <Heading as="h5">
+            {breakkie.item}
+            {breakkie.extra && ` (£${breakkie.extra})`}
+          </Heading>
+        </MenuItem>
+      ))}
+    </MenuItems>
   </Wrapper>
 )
 
