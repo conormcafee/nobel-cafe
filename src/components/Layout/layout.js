@@ -34,7 +34,7 @@ const Wrapper = styled.div`
 
 const Main = styled.main`
   ${tw`
-    bg-white shadow sm:rounded-lg mx-auto
+    bg-white shadow sm:rounded-t-lg mx-auto
   `}
   max-width: 1600px;
 `

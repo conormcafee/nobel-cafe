@@ -30,37 +30,50 @@ export default function Video({ data }) {
       </Introduction>
 
       <Container>
-        <Wrapper>
-          {nodes.map((job, index) => (
-            <Job key={index}>
-              <Header>
-                <img
-                  src={JobIcon}
-                  alt={job.childMarkdownRemark.frontmatter.jobTitle}
-                />
-                <div>
-                  <Heading as="h4">
-                    {job.childMarkdownRemark.frontmatter.jobTitle}
-                  </Heading>
-                  <Heading as="h5" textColor="purple" upperCase={true}>
-                    {job.childMarkdownRemark.frontmatter.fullTime
-                      ? "Full Time"
-                      : "Part Time"}
-                  </Heading>
-                </div>
-              </Header>
+        {nodes.length > 0 ? (
+          <Wrapper>
+            {nodes.map((job, index) => (
+              <Job key={index}>
+                <Header>
+                  <img
+                    src={JobIcon}
+                    alt={job.childMarkdownRemark.frontmatter.jobTitle}
+                  />
+                  <div>
+                    <Heading as="h4">
+                      {job.childMarkdownRemark.frontmatter.jobTitle}
+                    </Heading>
+                    <Heading as="h5" textColor="purple" upperCase={true}>
+                      {job.childMarkdownRemark.frontmatter.fullTime
+                        ? "Full Time"
+                        : "Part Time"}
+                    </Heading>
+                  </div>
+                </Header>
 
-              <p>{job.childMarkdownRemark.frontmatter.intro}</p>
+                <p>{job.childMarkdownRemark.frontmatter.intro}</p>
 
-              <Button
-                ghostButton={true}
-                url={job.childMarkdownRemark.frontmatter.path}
-              >
-                Go to Job
-              </Button>
-            </Job>
-          ))}
-        </Wrapper>
+                <Button
+                  ghostButton={true}
+                  url={job.childMarkdownRemark.frontmatter.path}
+                >
+                  Go to Job
+                </Button>
+              </Job>
+            ))}
+          </Wrapper>
+        ) : (
+          <NoJobs>
+            <img src={JobIcon} alt="No jobs currently available" />
+            <Heading as="h3" upperCase={true}>
+              Nothing at the minute
+            </Heading>
+            <p>
+              Currently we do not have any jobs going at the minute. Keep an eye
+              out on here or on our social media channels in the future
+            </p>
+          </NoJobs>
+        )}
       </Container>
     </Layout>
   )
@@ -70,6 +83,18 @@ const Wrapper = styled.section`
   ${tw`
     py-10 -mx-10 flex flex-wrap
   `}
+`
+
+const NoJobs = styled.section`
+  ${tw`
+    py-16 flex flex-col text-center max-w-sm mx-auto
+  `}
+
+  img {
+    ${tw`
+      w-16 mb-4 opacity-50 mx-auto
+    `}
+  }
 `
 
 const Header = styled.header`
