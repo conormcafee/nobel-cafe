@@ -97,7 +97,7 @@ const NoJobs = styled.section`
 
 const Header = styled.header`
   ${tw`
-    flex mb-6
+    flex items-center mb-6
   `}
 
   img {
