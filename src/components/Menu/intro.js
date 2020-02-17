@@ -75,7 +75,7 @@ const ColouredBackground = styled.section`
 const Header = styled.header`
   ${tw`
     md:flex flex-col justify-center items-center
-    md:text-center
+    text-center
   `}
 `
 
