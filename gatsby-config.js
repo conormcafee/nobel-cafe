@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Nobel Cafe Ballymena`,
+    description: `Nobel Café first opened in 1994, a long time ago. Since 1994 we have been serving first class breakfast and lunch to the people of Ballymena. Nobel is Ballymena, Ballymena is Nobel!`,
+    author: `@conormcafee`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,13 +18,6 @@ module.exports = {
       options: {
         name: `nobel-cafe-menu`,
         path: `${__dirname}/src/data/nobel-cafe-menu`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `videos`,
-        path: `${__dirname}/src/data/videos`,
       },
     },
     {
@@ -48,12 +41,12 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
-        short_name: `starter`,
+        short_name: `Nobel Cafe Ballymena`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#ffffff`,
+        theme_color: `#ffffff`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     {
@@ -79,29 +72,6 @@ module.exports = {
           {
             family: `Lato`,
             variants: [`700`, `900`],
-          },
-        ],
-      },
-    },
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        plugins: [
-          {
-            resolve: "gatsby-remark-embed-video",
-            options: {
-              width: 800,
-              ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
-              related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
-              noIframeBorder: true,
-              urlOverrides: [
-                {
-                  id: "youtube",
-                  embedURL: videoId =>
-                    `https://www.youtube-nocookie.com/embed/${videoId}`,
-                },
-              ], //Optional: Override URL of a service provider, e.g to enable youtube-nocookie support
-            },
           },
         ],
       },

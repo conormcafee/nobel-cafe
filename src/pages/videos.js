@@ -59,6 +59,7 @@ export default function Video() {
               <Heading as="h4">{video.title}</Heading>
               <VideoIframe>
                 <iframe
+                  title={video.title}
                   src={video.iframe}
                   width="560"
                   height="315"
