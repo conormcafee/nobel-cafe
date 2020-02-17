@@ -13,17 +13,17 @@ const socialChannels = [
   {
     title: "Like us on Facebook",
     icon: FB,
-    link: "/",
+    link: "https://www.facebook.com/NobelBallymena/",
   },
   {
     title: "Follow us on Instagram",
     icon: Insta,
-    link: "/",
+    link: "https://www.instagram.com/nobelcafe_ballymena",
   },
   {
     title: "Add us Snapchat",
     icon: Snap,
-    link: "/",
+    link: "https://www.snapchat.com/add/nobel-cafe",
   },
 ]
 
@@ -40,7 +40,7 @@ const Footer = () => (
       <Socials>
         <Boxes>
           {socialChannels.map((a, index) => (
-            <Box to={a.link} key={index}>
+            <Box href={a.link} target="_blank" key={index}>
               <div>
                 <img src={a.icon} alt={a.title} />
                 <Heading as="h5" upperCase={true}>
@@ -90,7 +90,7 @@ const Boxes = styled.div`
   `}
 `
 
-const Box = styled(Link)`
+const Box = styled.a`
   ${tw`
     w-full md:w-1/3 p-5
   `}

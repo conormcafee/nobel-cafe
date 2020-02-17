@@ -30,11 +30,7 @@ export default function Template({ path, data }) {
                 Lunch Menu
               </Heading>
 
-              <Intro>
-                Nobel Café first opened in 1994, a long time ago. Since 1994 we
-                have been serving first class breakfast and lunch to the people
-                of Ballymena. Nobel is Ballymena, Ballymena is Nobel!
-              </Intro>
+              <Intro>{frontmatter.desc}</Intro>
             </Container>
           </Introduction>
 
@@ -204,6 +200,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        desc
         sandwiches {
           item
           desc

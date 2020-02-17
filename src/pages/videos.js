@@ -5,6 +5,8 @@ import { Heading } from "../components/Typography"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 
+const description = `We love making videos at Nobel Café, have a look below at some of our favourites to date!  Have an idea of a great video we could make in the future, please let us know`
+
 const videos = [
   {
     title: "The Nobel Fry",
@@ -36,7 +38,7 @@ const videos = [
 export default function Video() {
   return (
     <Layout>
-      <SEO title="Videos" />
+      <SEO title="Videos" description={description} />
 
       <Introduction>
         <Container>
@@ -44,11 +46,7 @@ export default function Video() {
             Videos
           </Heading>
 
-          <Intro>
-            Nobel Café first opened in 1994, a long time ago. Since 1994 we have
-            been serving first class breakfast and lunch to the people of
-            Ballymena. Nobel is Ballymena, Ballymena is Nobel!
-          </Intro>
+          <Intro>{description}</Intro>
         </Container>
       </Introduction>
 

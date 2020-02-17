@@ -1,7 +1,7 @@
 ---
 title: Lunch Menu
 path: "/menu/lunch-menu"
-desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at lacus lacus. Mauris hendrerit metus ac volutpat lacinia.
+desc: Lunch is available in Nobel Cafe from 11:30am.  We have a great selection of sandwiches, hot plates, & some nice treats for all ages.
 sandwiches:
   - item: Chinese Chicken
     desc: Oriental chilli sauce, spring onion, lettuce, tomato & cucumber

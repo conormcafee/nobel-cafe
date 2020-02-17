@@ -1,7 +1,7 @@
 ---
 title: Breakfast Menu
 path: "/menu/breakfast-menu"
-desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at lacus lacus. Mauris hendrerit metus ac volutpat lacinia.
+desc: Breakfast is served up until 11:30am - get in quick to get breakfast at the cheaper price.  If you do not fancy having a fry, we have some great alternatives too.
 fry:
   - item: Sausage
     extra: null

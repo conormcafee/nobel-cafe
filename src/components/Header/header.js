@@ -5,7 +5,6 @@ import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 import NCLogo from "../../images/logo.png"
 import CallIcon from "../../svg/call.svg"
-import { Button } from "../Button"
 
 const menu = [
   { title: "Menu", to: "/menu" },
@@ -40,10 +39,10 @@ const Header = ({ siteTitle }) => (
       </InnerWrapper>
     </Wrapper>
     <HeaderButton>
-      <Button>
+      <a href="tel:+442825654302" alt="Call Nobel Cafe">
         <img src={CallIcon} alt="Call Nobel Cafe" />
         Order Now
-      </Button>
+      </a>
     </HeaderButton>
   </Fragment>
 )
@@ -105,4 +104,22 @@ const HeaderButton = styled.div`
   ${tw`
     p-5 md:p-10 z-50 fixed bottom-0 right-0 left-0 text-center lg:text-left lg:left-auto
   `}
+
+  a {
+    ${tw`
+      inline-flex items-center justify-center 
+      h-12 px-4 
+      text-white bg-purple-700 hover:bg-purple-900
+      text-sm sm:text-base
+      font-heading font-bold uppercase tracking-wide leading-tight 
+      rounded shadow-lg
+    `}
+    transition: background-color 150ms ease-in-out;
+
+    img {
+      ${tw`
+        w-8 mr-2
+      `}
+    }
+  }
 `

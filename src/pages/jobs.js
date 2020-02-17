@@ -8,12 +8,14 @@ import tw from "tailwind.macro"
 import { Button } from "../components/Button"
 import JobIcon from "../svg/job.svg"
 
+const description = `We are always on the look out for great talent to add to the Nobel Cafe team.  If you see a job below which you're interested in, please click on the Apply now button`
+
 export default function Video({ data }) {
   const { allFile } = data
   const { nodes } = allFile
   return (
     <Layout>
-      <SEO title="Jobs" />
+      <SEO title="Jobs" description={description} />
 
       <Introduction>
         <Container>
@@ -21,11 +23,7 @@ export default function Video({ data }) {
             Jobs
           </Heading>
 
-          <Intro>
-            Nobel Café first opened in 1994, a long time ago. Since 1994 we have
-            been serving first class breakfast and lunch to the people of
-            Ballymena. Nobel is Ballymena, Ballymena is Nobel!
-          </Intro>
+          <Intro>{description}</Intro>
         </Container>
       </Introduction>
 
