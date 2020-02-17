@@ -73,7 +73,7 @@ const Wrapper = styled.section`
 
 const JobIntro = styled.div`
   ${tw`
-    flex mb-6
+    flex items-center mb-6
   `}
 
   img {
