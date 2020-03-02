@@ -16,13 +16,6 @@ const OurStory = () => {
               slides {
                 heading
                 text
-                image {
-                  childImageSharp {
-                    fluid(maxWidth: 1600) {
-                      src
-                    }
-                  }
-                }
               }
             }
           }
@@ -34,14 +27,9 @@ const OurStory = () => {
     <Fragment>
       {data.allFile.nodes[0].childMarkdownRemark.frontmatter.slides.map(
         (item, index) => (
-          <Section
-            key={index}
-            background={item.image.childImageSharp.fluid.src}
-          >
-            <Article className="bg-overlay">
-              <Heading as="h2" upperCase={true} textColor="white">
-                {item.heading}
-              </Heading>
+          <Section key={index}>
+            <Article>
+              <Heading as="h2">{item.heading}</Heading>
               <Intro>{item.text}</Intro>
             </Article>
           </Section>
@@ -59,19 +47,13 @@ OurStory.defaultProps = {
   text: "",
 }
 
-const Section = styled.section`
-  background-image: url(${props => props.background});
-  ${tw`
-    md:bg-fixed bg-cover md:h-screen relative md:z-30
-  `}
-`
+const Section = styled.section``
 
 const Article = styled.article`
   ${tw`
     flex flex-col items-center justify-center
-    text-center text-white
-    h-full
-    py-32
+    text-center
+    py-16
     px-4
   `}
 `

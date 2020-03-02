@@ -18,7 +18,7 @@ const Footer = () => (
       <ul>
         {menu.map((a, index) => (
           <li key={index}>
-            <Heading as="h5" upperCase={true}>
+            <Heading as="h5">
               <Link to={a.to}>{a.title}</Link>
             </Heading>
           </li>
@@ -51,6 +51,6 @@ const Main = styled.main`
 
 const Logo = styled.img`
   ${tw`
-      w-32 mx-auto
+      w-32 mx-auto mb-20
     `}
 `
