@@ -10,7 +10,7 @@ const Hero = () => (
     <Aside>
       <Heading as="h1">
         The best place to kick off your day or just take a break and enjoy a
-        yummy breakfast
+        <span> yummy breakfast</span>
       </Heading>
     </Aside>
 
@@ -26,7 +26,7 @@ const Hero = () => (
     <Section>
       <Box withText={true}>
         <Heading as="h2">
-          Our Special for Today - Breakfast! All Day. Every Day.
+          Our Special for Today - <span>Breakfast!</span> All Day. Every Day.
         </Heading>
       </Box>
       <Box>
@@ -56,12 +56,12 @@ const Main = styled.main`
 
 const Aside = styled.aside`
   ${tw`
-    max-w-sm md:max-w-xl text-center mx-auto mb-8
+    max-w-sm md:max-w-5xl text-center mx-auto mb-8
   `}
 `
 
 const Section = styled.section`
-  ${tw`flex max-w-4xl mx-auto`}
+  ${tw`flex max-w-3xl mx-auto`}
 `
 
 const Box = styled.div`

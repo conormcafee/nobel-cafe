@@ -23,13 +23,17 @@ const Heading = ({ as, upperCase, textColor, children }) => (
 export default Heading
 
 const Element = styled.span`
-  ${tw`font-normal leading-tight mb-2`}
-  ${props => props.as === "h1" && tw`text-2xl`}
-  ${props => props.as === "h2" && tw`text-xl`}
+  ${tw`font-normal mb-2`}
+  ${props => props.as === "h1" && tw`text-2xl md:text-3xl lg:text-5xl`}
+  ${props => props.as === "h2" && tw`text-xl md:text-2xl lg:text-4xl`}
   ${props => props.as === "h3" && tw`text-lg`}
   ${props => props.as === "h4" && tw`text-base`}
   ${props => props.as === "h5" && tw`text-sm`}
   ${props => props.upperCase && tw`uppercase tracking-wide`}
+
+  span {
+    ${tw`font-black text-purple-600`}
+  }
 `
 
 Heading.defaultProps = {
