@@ -116,7 +116,7 @@ const MenuIcon = styled.img`
 
 const MenuTitle = styled.h3`
   ${tw`
-    font-heading text-xl font-bold leading-tight tracking-wide mb-2
+    text-xl  leading-tight tracking-wide mb-2
   `}
 `
 
@@ -131,7 +131,7 @@ const MenuLink = styled(Link)`
     inline-flex items-center justify-center
     text-purple-600 hover:text-purple-400
     border-b-2 border-purple-400
-    font-heading font-bold uppercase tracking-wide leading-tight
+     uppercase tracking-wide leading-tight
     pb-1
   `}
 `

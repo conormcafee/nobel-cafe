@@ -68,7 +68,7 @@ const Wrapper = styled.header`
 
 const InnerWrapper = styled.div`
   ${tw`
-      flex items-center justify-between 
+      flex flex-col items-center justify-between 
       mx-auto
       px-4
   `}
@@ -89,15 +89,19 @@ const HiddenMobile = styled.span`
 const Nav = styled.nav`
   ${tw`
     flex items-center justify-between
-    font-heading font-bold
+    font-normal
+    mt-6
   `}
+
+  li:not(:last-of-type) {
+    ${tw`mr-4 md:mr-8`}
+  }
 `
 
 const NavLink = styled(Link)`
   ${tw`
     text-sm sm:text-base 
     text-gray-700 hover:text-purple-600 
-    mr-4 md:mr-8
   `}
 `
 const HeaderButton = styled.div`
@@ -111,7 +115,7 @@ const HeaderButton = styled.div`
       h-12 px-4 
       text-white bg-purple-700 hover:bg-purple-900
       text-sm sm:text-base
-      font-heading font-bold uppercase tracking-wide leading-tight 
+      font-normal uppercase tracking-wide leading-tight 
       rounded shadow-lg
     `}
     transition: background-color 150ms ease-in-out;

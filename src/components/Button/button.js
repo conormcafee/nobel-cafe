@@ -23,7 +23,7 @@ const StyledButton = styled(Link)`
       h-12 px-4 
       text-white bg-purple-700 hover:bg-purple-900
       text-sm sm:text-base
-      font-heading font-bold uppercase tracking-wide leading-tight 
+       uppercase tracking-wide leading-tight 
       rounded shadow-lg
     `}
   transition: background-color 150ms ease-in-out;
@@ -40,7 +40,7 @@ const GhostButton = styled(Link)`
       inline-flex items-center justify-center 
       text-white text-purple-700 hover:text-purple-900
       text-sm sm:text-base
-      font-heading font-bold uppercase tracking-wide leading-tight
+       uppercase tracking-wide leading-tight
     `}
   transition: color 150ms ease-in-out;
 `

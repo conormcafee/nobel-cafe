@@ -5,11 +5,7 @@
 @tailwind utilities;
 
 .font-base {
-  font-family: "Alegreya", serif;
-}
-
-.font-heading {
-  font-family: "Lato", sans-serif;
+  font-family: "Simonetta", serif;
 }
 
 .bg-overlay {

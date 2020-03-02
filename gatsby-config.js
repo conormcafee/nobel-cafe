@@ -66,12 +66,8 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Alegreya`,
-            variants: [`400`],
-          },
-          {
-            family: `Lato`,
-            variants: [`700`, `900`],
+            family: `Simonetta`,
+            variants: [`400`, `900`],
           },
         ],
       },

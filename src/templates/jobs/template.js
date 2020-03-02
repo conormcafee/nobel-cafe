@@ -99,7 +99,7 @@ const JobContent = styled.div`
   h4,
   h5 {
     ${tw`
-      font-heading font-black uppercase tracking-wide text-purple-700
+      font-black uppercase tracking-wide text-purple-700
     `}
   }
 

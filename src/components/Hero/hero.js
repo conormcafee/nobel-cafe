@@ -1,59 +1,46 @@
 import React from "react"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
-import { Button } from "../Button"
 import { Heading } from "../Typography"
 
-import Shopfront01 from "../../images/hero/nobel-shopfront-mobile-01.jpg"
-import Shopfront02 from "../../images/hero/nobel-shopfront-mobile-02.jpg"
-import Shopfront03 from "../../images/hero/nobel-shopfront-mobile-03.jpg"
 import Shopfront from "../../images/hero/nobel-shopfront-desktop.jpg"
 
 const Hero = () => (
   <Main>
     <Aside>
-      <Heading as="h1" upperCase={true}>
-        Serving first class breakfast
+      <Heading as="h1">
+        The best place to kick off your day or just take a break and enjoy a
+        yummy breakfast
       </Heading>
-      <Intro>
-        Nobel Café first opened in 1994, a long time ago. Since 1994 we have
-        been serving first class breakfast and lunch to the people of Ballymena.
-        Nobel is Ballymena, Ballymena is Nobel!
-      </Intro>
-
-      <Button url="/menu">Check out our menu</Button>
     </Aside>
 
     <Section>
-      <HeroImageWrapper>
-        <picture>
-          <source srcSet={Shopfront01} media="(min-width: 768px)" />
-          <HeroImage
-            src={Shopfront}
-            alt="Nobel Cafe Shopfront on Church St Ballymena"
-          />
-        </picture>
-      </HeroImageWrapper>
-
-      <HeroImageWrapper hasMarginTop={true} hideMobile={true}>
-        <picture>
-          <source srcSet={Shopfront02} media="(min-width: 768px)" />
-          <HeroImage
-            src={Shopfront}
-            alt="Nobel Cafe Shopfront on Church St Ballymena"
-          />
-        </picture>
-      </HeroImageWrapper>
-
-      <HeroImageWrapper hideMobile={true}>
-        <picture>
-          <source srcSet={Shopfront03} media="(min-width: 768px)" />
-          <HeroImage
-            src={Shopfront}
-            alt="Nobel Cafe Shopfront on Church St Ballymena"
-          />
-        </picture>
-      </HeroImageWrapper>
+      <Box>
+        <HeroImage isLandscape bg={Shopfront} />
+      </Box>
+      <Box>
+        <HeroImage bg={Shopfront} />
+      </Box>
+    </Section>
+    {/* Section 02 */}
+    <Section>
+      <Box withText={true}>
+        <Heading as="h2">
+          Our Special for Today - Breakfast! All Day. Every Day.
+        </Heading>
+      </Box>
+      <Box>
+        <HeroImage bg={Shopfront} />
+      </Box>
+    </Section>
+    {/* Section 03 */}
+    <Section>
+      <Box>
+        <HeroImage isLandscape bg={Shopfront} />
+      </Box>
+      <Box>
+        <HeroImage bg={Shopfront} />
+      </Box>
     </Section>
   </Main>
 )
@@ -74,27 +61,21 @@ const Aside = styled.aside`
 `
 
 const Section = styled.section`
-  ${tw`
-    flex flex-col md:flex-row md:items-center md:justify-center
-  `}
+  ${tw`flex max-w-4xl mx-auto`}
 `
 
-const Intro = styled.p`
+const Box = styled.div`
   ${tw`
-    tracking-wide font-light block my-4 mx-auto
+    flex w-1/2 p-10
   `}
+
+  ${props => props.withText && tw`items-center justify-center`}
 `
 
-const HeroImageWrapper = styled.div`
-  ${tw`
-    md:px-5
-  `}
-  ${props => props.hasMarginTop && tw`md:mt-20`}
-  ${props => props.hideMobile && tw`hidden md:block`}
-`
-
-const HeroImage = styled.img`
-  ${tw`
-    rounded-lg shadow-xl mb-10 md:mb-0 border-2 border-gray-200
-  `}
+const HeroImage = styled.div`
+  background-image: url(${props => props.bg});
+  border-top: ${props => (props.isLandscape ? `75px solid white` : `none`)};
+  border-bottom: ${props => (props.isLandscape ? `75px solid white` : `none`)};
+  padding-top: 100%;
+  ${tw`bg-cover w-full`}
 `
