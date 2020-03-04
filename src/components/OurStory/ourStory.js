@@ -59,7 +59,7 @@ const Section = styled.section`
     content: "";
     left: 50%;
     ${tw`
-      h-16 w-2 block bg-gray-300 absolute
+      h-8 sm:h-16 w-2 block bg-gray-300 absolute
     `}
   }
 
@@ -76,7 +76,7 @@ const Article = styled.article`
   ${tw`
     flex flex-col items-center justify-center
     text-center
-    p-4
+    py-2 px-4 sm:py-4
   `}
 `
 

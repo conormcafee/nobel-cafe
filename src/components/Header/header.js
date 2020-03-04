@@ -24,11 +24,7 @@ const Header = ({ siteTitle }) => (
         <Nav>
           <ul>
             {menu.map((a, index) => (
-              <HiddenMobile
-                as="li"
-                key={index}
-                isHiddenMobile={a.title === "Videos"}
-              >
+              <HiddenMobile as="li" key={index} isHiddenMobile={false}>
                 <NavLink to={a.to} title="Go to">
                   {a.title}
                 </NavLink>

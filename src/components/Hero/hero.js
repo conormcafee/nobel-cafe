@@ -61,12 +61,12 @@ const Aside = styled.aside`
 `
 
 const Section = styled.section`
-  ${tw`flex max-w-3xl mx-auto`}
+  ${tw`flex flex-wrap max-w-3xl mx-auto`}
 `
 
 const Box = styled.div`
   ${tw`
-    flex w-1/2 p-10
+    flex w-full mb-10 md:mb-0 md:w-1/2 md:p-10
   `}
 
   ${props => props.withText && tw`items-center justify-center`}
@@ -74,8 +74,13 @@ const Box = styled.div`
 
 const HeroImage = styled.div`
   background-image: url(${props => props.bg});
-  border-top: ${props => (props.isLandscape ? `75px solid white` : `none`)};
-  border-bottom: ${props => (props.isLandscape ? `75px solid white` : `none`)};
-  padding-top: 100%;
+  padding-top: 56.26%;
   ${tw`bg-cover w-full`}
+
+  @media only screen and (min-width: 768px) {
+    border-top: ${props => (props.isLandscape ? `75px solid white` : `none`)};
+    border-bottom: ${props =>
+      props.isLandscape ? `75px solid white` : `none`};
+    padding-top: 100%;
+  }
 `

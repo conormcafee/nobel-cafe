@@ -3,6 +3,7 @@ import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 import { Heading } from "../Typography"
 import FoodRating from "../../images/food-hygiene-rating.jpg"
+import Logo from "../../images/logo.png"
 
 const Footer = () => (
   <footer>
@@ -34,7 +35,11 @@ const Footer = () => (
         </ExternalLink>
       </Box>
     </Main>
-    <Logo src={FoodRating} alt="Nobel Cafe Hygine Rating" />
+    <Flex>
+      <FooterImg src={Logo} alt="Nobel Cafe Logo" />
+
+      <FooterImg src={FoodRating} alt="Nobel Cafe Hygine Rating" />
+    </Flex>
   </footer>
 )
 
@@ -42,7 +47,7 @@ export default Footer
 
 const Main = styled.main`
   ${tw`
-    flex items-start justify-center -mx-4 pt-10 pb-5 text-center
+    flex flex-wrap items-start justify-center pt-5 sm:pt-10 pb-5 text-center
   `}
 
   ul {
@@ -59,14 +64,18 @@ const Main = styled.main`
 `
 
 const Box = styled.div`
-  ${tw`p-4`}
+  ${tw`w-full sm:w-1/3 p-4`}
 `
 
-const Logo = styled.img`
+const FooterImg = styled.img`
   ${tw`
-      w-32 mx-auto mb-20
+      w-32 mx-2
     `}
 `
 const ExternalLink = styled.a`
   ${tw`block text-purple-600 hover:text-purple-400`}
+`
+
+const Flex = styled.div`
+  ${tw`flex items-center justify-center mt-8 mb-32`}
 `

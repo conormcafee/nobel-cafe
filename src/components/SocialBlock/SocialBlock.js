@@ -29,7 +29,7 @@ const socialChannels = [
 const Footer = () => (
   <Wrapper>
     <Socials>
-      <Heading as="h4" newLine={true}>
+      <Heading as="h4" fontBold={true} newLine={true}>
         Follow us
       </Heading>
       <Heading as="h2" textColor="purple">
@@ -57,7 +57,7 @@ const Footer = () => (
 export default Footer
 
 const Wrapper = styled.footer`
-  ${tw`bg-gray-200`}
+  ${tw`bg-gray-300`}
 `
 
 const Socials = styled.aside`
@@ -85,5 +85,5 @@ const InstaMock = styled.section`
 `
 
 const InstaBox = styled.div`
-  ${tw`p-5 w-1/6`}
+  ${tw`p-5 w-1/2 md:w-1/3 lg:w-1/6`}
 `
