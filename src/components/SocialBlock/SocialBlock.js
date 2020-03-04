@@ -6,7 +6,13 @@ import FB from "../../svg/facebook.svg"
 import Insta from "../../svg/instagram.svg"
 import Snap from "../../svg/snapchat.svg"
 
-import Shopfront from "../../images/hero/nobel-shopfront-desktop.jpg"
+// import Shopfront from "../../images/hero/nobel-shopfront-desktop.jpg"
+import Image07 from "../../images/nobel-07.jpg"
+import Image08 from "../../images/nobel-08.jpg"
+import Image09 from "../../images/nobel-09.jpg"
+import Image10 from "../../images/nobel-10.jpg"
+import Image11 from "../../images/nobel-11.jpg"
+import Image12 from "../../images/nobel-12.jpg"
 
 const socialChannels = [
   {
@@ -45,11 +51,13 @@ const Footer = () => (
     </Socials>
 
     <InstaMock>
-      {[0, 1, 2, 3, 4, 5].map((a, index) => (
-        <InstaBox key={index}>
-          <img src={Shopfront} alt="Test" />
-        </InstaBox>
-      ))}
+      {[Image07, Image08, Image09, Image10, Image11, Image12].map(
+        (a, index) => (
+          <InstaBox key={index}>
+            <InstaImg bg={a} />
+          </InstaBox>
+        )
+      )}
     </InstaMock>
   </Wrapper>
 )
@@ -86,4 +94,13 @@ const InstaMock = styled.section`
 
 const InstaBox = styled.div`
   ${tw`p-5 w-1/2 md:w-1/3 lg:w-1/6`}
+`
+
+const InstaImg = styled.div`
+  background-image: url(${props => props.bg});
+  padding-top: 100%;
+
+  ${tw`
+      w-full bg-cover bg-center
+    `}
 `

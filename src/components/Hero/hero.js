@@ -3,7 +3,20 @@ import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 import { Heading } from "../Typography"
 
-import Shopfront from "../../images/hero/nobel-shopfront-desktop.jpg"
+// import Shopfront from "../../images/hero/nobel-shopfront-desktop.jpg"
+
+import Image01 from "../../images/nobel-01.jpg"
+import Image02 from "../../images/nobel-02.jpg"
+import Image03 from "../../images/nobel-03.jpg"
+import Image04 from "../../images/nobel-04.jpg"
+import Image05 from "../../images/nobel-05.jpg"
+import Image06 from "../../images/nobel-06.jpg"
+// import Image07 from "../../images/nobel-07.jpg"
+// import Image08 from "../../images/nobel-08.jpg"
+// import Image09 from "../../images/nobel-09.jpg"
+// import Image10 from "../../images/nobel-10.jpg"
+// import Image11 from "../../images/nobel-11.jpg"
+// import Image12 from "../../images/nobel-12.jpg"
 
 const Hero = () => (
   <Main>
@@ -16,10 +29,10 @@ const Hero = () => (
 
     <Section>
       <Box>
-        <HeroImage isLandscape bg={Shopfront} />
+        <HeroImage isLandscape bg={Image01} />
       </Box>
       <Box>
-        <HeroImage bg={Shopfront} />
+        <HeroImage bg={Image03} />
       </Box>
     </Section>
     {/* Section 02 */}
@@ -30,16 +43,25 @@ const Hero = () => (
         </Heading>
       </Box>
       <Box>
-        <HeroImage bg={Shopfront} />
+        <HeroImage bg={Image02} />
       </Box>
     </Section>
     {/* Section 03 */}
     <Section>
       <Box>
-        <HeroImage isLandscape bg={Shopfront} />
+        <HeroImage isLandscape bg={Image01} />
       </Box>
       <Box>
-        <HeroImage bg={Shopfront} />
+        <HeroImage bg={Image04} />
+      </Box>
+    </Section>
+    {/* Section 04 */}
+    <Section>
+      <Box>
+        <HeroImage bg={Image05} />
+      </Box>
+      <Box>
+        <HeroImage isLandscape bg={Image06} />
       </Box>
     </Section>
   </Main>
@@ -75,7 +97,7 @@ const Box = styled.div`
 const HeroImage = styled.div`
   background-image: url(${props => props.bg});
   padding-top: 56.26%;
-  ${tw`bg-cover w-full`}
+  ${tw`bg-cover bg-center w-full`}
 
   @media only screen and (min-width: 768px) {
     border-top: ${props => (props.isLandscape ? `75px solid white` : `none`)};
