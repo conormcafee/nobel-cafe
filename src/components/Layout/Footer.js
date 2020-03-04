@@ -1,124 +1,53 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 import { Heading } from "../Typography"
-import { Container } from "../Layout"
-import FB from "../../svg/facebook.svg"
-import Insta from "../../svg/instagram.svg"
-import Snap from "../../svg/snapchat.svg"
-import NCLogo from "../../images/logo.png"
-
-const socialChannels = [
-  {
-    title: "Like us on Facebook",
-    icon: FB,
-    link: "https://www.facebook.com/NobelBallymena/",
-  },
-  {
-    title: "Follow us on Instagram",
-    icon: Insta,
-    link: "https://www.instagram.com/nobelcafe_ballymena",
-  },
-  {
-    title: "Add us Snapchat",
-    icon: Snap,
-    link: "https://www.snapchat.com/add/nobel-cafe",
-  },
-]
-
-const menu = [
-  { title: "Menu", to: "/menu" },
-  { title: "Videos", to: "/videos" },
-  { title: "Jobs", to: "/jobs" },
-  { title: "Find Us", to: "/find-us" },
-]
+import FoodRating from "../../images/food-hygiene-rating.jpg"
+import Logo from "../../images/logo.png"
 
 const Footer = () => (
-  <Wrapper>
-    <Container>
-      <Socials>
-        <Boxes>
-          {socialChannels.map((a, index) => (
-            <Box href={a.link} target="_blank" key={index}>
-              <div>
-                <img src={a.icon} alt={a.title} />
-                <Heading as="h5" upperCase={true}>
-                  {a.title}
-                </Heading>
-              </div>
-            </Box>
-          ))}
-        </Boxes>
-      </Socials>
-    </Container>
+  <footer>
+    <Main>
+      <Box>
+        <Heading as="h4" fontBold={true}>
+          Visit Us
+        </Heading>
+        <p>102-104 Church Street</p>
+        <p>Ballymena</p>
+        <p>BT43 6DF</p>
+      </Box>
+      <Box>
+        <Heading as="h4" fontBold={true}>
+          We Are Open
+        </Heading>
+        <p>Monday - Saturday</p>
+        <p>8am - 5pm</p>
+      </Box>
+      <Box>
+        <Heading as="h4" fontBold={true}>
+          Speak with Us
+        </Heading>
+        <ExternalLink href="tel:+442825654302" title="Call Us">
+          028 256 54302
+        </ExternalLink>
+        <ExternalLink href="mailto:info@nobelcafe.co.uk" title="Email Us">
+          info@nobelcafe.co.uk
+        </ExternalLink>
+      </Box>
+    </Main>
+    <Flex>
+      <FooterImg src={Logo} alt="Nobel Cafe Logo" />
 
-    <Container>
-      <Main>
-        <ul>
-          {menu.map((a, index) => (
-            <li key={index}>
-              <Heading as="h5" upperCase={true}>
-                <Link to={a.to}>{a.title}</Link>
-              </Heading>
-            </li>
-          ))}
-        </ul>
-      </Main>
-      <Logo src={NCLogo} alt="Nobel Cafe Logo" />
-    </Container>
-  </Wrapper>
+      <FooterImg src={FoodRating} alt="Nobel Cafe Hygine Rating" />
+    </Flex>
+  </footer>
 )
 
 export default Footer
 
-const Wrapper = styled.footer`
-  ${tw`
-    bg-white py-10
-  `}
-`
-
-const Socials = styled.aside`
-  ${tw`
-    bg-purple-100 shadow p-10 rounded-lg
-  `}
-`
-
-const Boxes = styled.div`
-  ${tw`
-    flex flex-wrap -mx-5
-  `}
-`
-
-const Box = styled.a`
-  ${tw`
-    w-full md:w-1/3 p-5
-  `}
-
-  > div {
-    ${tw`
-      flex
-      flex-col
-      items-center
-      justify-center
-      bg-white
-      shadow
-      p-10
-      rounded-lg
-      text-center
-    `}
-  }
-
-  img {
-    ${tw`
-      w-16 mb-4
-    `}
-  }
-`
-
 const Main = styled.main`
   ${tw`
-    flex items-center justify-center pt-10 pb-5 text-center
+    flex flex-wrap items-start justify-center pt-5 sm:pt-10 pb-5 text-center
   `}
 
   ul {
@@ -134,8 +63,19 @@ const Main = styled.main`
   }
 `
 
-const Logo = styled.img`
+const Box = styled.div`
+  ${tw`w-full sm:w-1/3 p-4`}
+`
+
+const FooterImg = styled.img`
   ${tw`
-      w-32 mx-auto
+      w-32 mx-2
     `}
+`
+const ExternalLink = styled.a`
+  ${tw`block text-purple-600 hover:text-purple-400`}
+`
+
+const Flex = styled.div`
+  ${tw`flex items-center justify-center mt-8 mb-32`}
 `

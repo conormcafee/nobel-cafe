@@ -44,26 +44,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
 
-  const menuPages = result.data.allMarkdownRemark.edges.filter(
-    a => a.node.frontmatter.path && a.node.frontmatter.path.includes("/menu/")
-  )
   const jobPages = result.data.allMarkdownRemark.edges.filter(
     a => a.node.frontmatter.path && a.node.frontmatter.path.includes("/jobs/")
   )
 
   console.log("Dynamic Pages")
   console.log("----")
-  menuPages.map(node => console.log(node.node.frontmatter.path))
   jobPages.map(node => console.log(node.node.frontmatter.path))
   console.log("----")
-
-  menuPages.forEach(({ node }) => {
-    createPage({
-      path: node.frontmatter.path,
-      component: menuTemplate,
-      context: {}, // additional data can be passed via context
-    })
-  })
 
   jobPages.forEach(({ node }) => {
     createPage({

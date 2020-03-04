@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
@@ -16,13 +16,6 @@ const OurStory = () => {
               slides {
                 heading
                 text
-                image {
-                  childImageSharp {
-                    fluid(maxWidth: 1600) {
-                      src
-                    }
-                  }
-                }
               }
             }
           }
@@ -31,23 +24,18 @@ const OurStory = () => {
     }
   `)
   return (
-    <Fragment>
+    <Wrapper>
       {data.allFile.nodes[0].childMarkdownRemark.frontmatter.slides.map(
         (item, index) => (
-          <Section
-            key={index}
-            background={item.image.childImageSharp.fluid.src}
-          >
-            <Article className="bg-overlay">
-              <Heading as="h2" upperCase={true} textColor="white">
-                {item.heading}
-              </Heading>
+          <Section key={index}>
+            <Article>
+              <Heading as="h2">{item.heading}</Heading>
               <Intro>{item.text}</Intro>
             </Article>
           </Section>
         )
       )}
-    </Fragment>
+    </Wrapper>
   )
 }
 
@@ -59,20 +47,36 @@ OurStory.defaultProps = {
   text: "",
 }
 
+const Wrapper = styled.main`
+  ${tw`py-16`}
+`
+
 const Section = styled.section`
-  background-image: url(${props => props.background});
-  ${tw`
-    md:bg-fixed bg-cover md:h-screen relative md:z-30
-  `}
+  ${tw`relative py-16`}
+
+  &:before,
+  &:after {
+    content: "";
+    left: 50%;
+    ${tw`
+      h-8 sm:h-16 w-2 block bg-gray-300 absolute
+    `}
+  }
+
+  &:before {
+    top: 0;
+  }
+
+  &:after {
+    bottom: 0;
+  }
 `
 
 const Article = styled.article`
   ${tw`
     flex flex-col items-center justify-center
-    text-center text-white
-    h-full
-    py-32
-    px-4
+    text-center
+    py-2 px-4 sm:py-4
   `}
 `
 

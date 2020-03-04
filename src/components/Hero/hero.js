@@ -1,59 +1,68 @@
 import React from "react"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
-import { Button } from "../Button"
 import { Heading } from "../Typography"
 
-import Shopfront01 from "../../images/hero/nobel-shopfront-mobile-01.jpg"
-import Shopfront02 from "../../images/hero/nobel-shopfront-mobile-02.jpg"
-import Shopfront03 from "../../images/hero/nobel-shopfront-mobile-03.jpg"
-import Shopfront from "../../images/hero/nobel-shopfront-desktop.jpg"
+// import Shopfront from "../../images/hero/nobel-shopfront-desktop.jpg"
+
+import Image01 from "../../images/nobel-01.jpg"
+import Image02 from "../../images/nobel-02.jpg"
+import Image03 from "../../images/nobel-03.jpg"
+import Image04 from "../../images/nobel-04.jpg"
+import Image05 from "../../images/nobel-05.jpg"
+import Image06 from "../../images/nobel-06.jpg"
+// import Image07 from "../../images/nobel-07.jpg"
+// import Image08 from "../../images/nobel-08.jpg"
+// import Image09 from "../../images/nobel-09.jpg"
+// import Image10 from "../../images/nobel-10.jpg"
+// import Image11 from "../../images/nobel-11.jpg"
+// import Image12 from "../../images/nobel-12.jpg"
 
 const Hero = () => (
   <Main>
     <Aside>
-      <Heading as="h1" upperCase={true}>
-        Serving first class breakfast
+      <Heading as="h1">
+        The best place to kick off your day or just take a break and enjoy a
+        <span> yummy breakfast</span>
       </Heading>
-      <Intro>
-        Nobel Café first opened in 1994, a long time ago. Since 1994 we have
-        been serving first class breakfast and lunch to the people of Ballymena.
-        Nobel is Ballymena, Ballymena is Nobel!
-      </Intro>
-
-      <Button url="/menu">Check out our menu</Button>
     </Aside>
 
     <Section>
-      <HeroImageWrapper>
-        <picture>
-          <source srcSet={Shopfront01} media="(min-width: 768px)" />
-          <HeroImage
-            src={Shopfront}
-            alt="Nobel Cafe Shopfront on Church St Ballymena"
-          />
-        </picture>
-      </HeroImageWrapper>
-
-      <HeroImageWrapper hasMarginTop={true} hideMobile={true}>
-        <picture>
-          <source srcSet={Shopfront02} media="(min-width: 768px)" />
-          <HeroImage
-            src={Shopfront}
-            alt="Nobel Cafe Shopfront on Church St Ballymena"
-          />
-        </picture>
-      </HeroImageWrapper>
-
-      <HeroImageWrapper hideMobile={true}>
-        <picture>
-          <source srcSet={Shopfront03} media="(min-width: 768px)" />
-          <HeroImage
-            src={Shopfront}
-            alt="Nobel Cafe Shopfront on Church St Ballymena"
-          />
-        </picture>
-      </HeroImageWrapper>
+      <Box>
+        <HeroImage isLandscape bg={Image01} />
+      </Box>
+      <Box>
+        <HeroImage bg={Image03} />
+      </Box>
+    </Section>
+    {/* Section 02 */}
+    <Section>
+      <Box withText={true}>
+        <Heading as="h2">
+          Our Special for Today - <span>Breakfast!</span> All Day. Every Day.
+        </Heading>
+      </Box>
+      <Box>
+        <HeroImage bg={Image02} />
+      </Box>
+    </Section>
+    {/* Section 03 */}
+    <Section>
+      <Box>
+        <HeroImage isLandscape bg={Image01} />
+      </Box>
+      <Box>
+        <HeroImage bg={Image04} />
+      </Box>
+    </Section>
+    {/* Section 04 */}
+    <Section>
+      <Box>
+        <HeroImage bg={Image05} />
+      </Box>
+      <Box>
+        <HeroImage isLandscape bg={Image06} />
+      </Box>
     </Section>
   </Main>
 )
@@ -69,32 +78,31 @@ const Main = styled.main`
 
 const Aside = styled.aside`
   ${tw`
-    max-w-sm md:max-w-xl text-center mx-auto mb-8
+    max-w-sm md:max-w-5xl text-center mx-auto mb-8
   `}
 `
 
 const Section = styled.section`
-  ${tw`
-    flex flex-col md:flex-row md:items-center md:justify-center
-  `}
+  ${tw`flex flex-wrap max-w-3xl mx-auto`}
 `
 
-const Intro = styled.p`
+const Box = styled.div`
   ${tw`
-    tracking-wide font-light block my-4 mx-auto
+    flex w-full mb-10 md:mb-0 md:w-1/2 md:p-10
   `}
+
+  ${props => props.withText && tw`items-center justify-center`}
 `
 
-const HeroImageWrapper = styled.div`
-  ${tw`
-    md:px-5
-  `}
-  ${props => props.hasMarginTop && tw`md:mt-20`}
-  ${props => props.hideMobile && tw`hidden md:block`}
-`
+const HeroImage = styled.div`
+  background-image: url(${props => props.bg});
+  padding-top: 56.26%;
+  ${tw`bg-cover bg-center w-full`}
 
-const HeroImage = styled.img`
-  ${tw`
-    rounded-lg shadow-xl mb-10 md:mb-0 border-2 border-gray-200
-  `}
+  @media only screen and (min-width: 768px) {
+    border-top: ${props => (props.isLandscape ? `75px solid white` : `none`)};
+    border-bottom: ${props =>
+      props.isLandscape ? `75px solid white` : `none`};
+    padding-top: 100%;
+  }
 `

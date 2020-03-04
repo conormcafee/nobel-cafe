@@ -7,7 +7,7 @@ import tw from "tailwind.macro"
 
 const Sandwiches = ({ data }) => (
   <Wrapper>
-    <Heading as="h3" textColor="purple" upperCase={true}>
+    <Heading as="h4" textColor="purple" fontBold={true}>
       Sandwiches
     </Heading>
 
@@ -15,16 +15,18 @@ const Sandwiches = ({ data }) => (
       <MenuItems>
         {data.map((sandwich, index) => (
           <MenuItem key={index}>
-            <Heading as="h4">{sandwich.item}</Heading>
-            <Heading as="p" textColor="purple">
+            <Heading as="h5" fontBold={true}>
+              {sandwich.item}
+            </Heading>
+            <Heading as="p" textColor="purple" fontBold={true}>
               {allergens(sandwich.allergens)}
             </Heading>
             <span>{sandwich.desc}</span>
             <MenuFooter>
-              <Heading as="h5" textColor="purple">
+              <Heading as="h5" textColor="purple" fontBold={true}>
                 £{sandwich.priceWithChips} w/ Chips & Dip
               </Heading>
-              <Heading as="h5" textColor="purple">
+              <Heading as="h5" textColor="purple" fontBold={true}>
                 £{sandwich.priceWithSoup} w/ Soup
               </Heading>
             </MenuFooter>
@@ -44,7 +46,7 @@ Sandwiches.defaultProps = {
 const Wrapper = styled.section`
   ${tw`mt-10 max-w-4xl mx-auto`}
 
-  h3 {
+  h4 {
     ${tw`mb-5 sm:mb-10 sm:text-center`}
   }
 `

@@ -20,12 +20,17 @@ export default function JobsTemplate({ path, data }) {
       <Fragment>
         <Introduction>
           <Container>
-            <Heading as="h1" upperCase={true}>
+            <Heading as="h2" fontBold={true}>
               {jobTitle}
             </Heading>
 
             <Intro>{intro}</Intro>
-            <Button>Apply Now</Button>
+            <Button
+              external
+              url="mailto:info@nobel-cafe.co.uk?Subject=Job Application"
+            >
+              Apply Now
+            </Button>
           </Container>
         </Introduction>
 
@@ -46,7 +51,12 @@ export default function JobsTemplate({ path, data }) {
               <Button url="/jobs" ghostButton={true}>
                 Back to Jobs
               </Button>
-              <Button>Apply Now</Button>
+              <Button
+                external
+                url="mailto:info@nobel-cafe.co.uk?Subject=Job Application"
+              >
+                Apply Now
+              </Button>
             </JobActions>
           </Wrapper>
         </Container>
@@ -99,7 +109,7 @@ const JobContent = styled.div`
   h4,
   h5 {
     ${tw`
-      font-heading font-black uppercase tracking-wide text-purple-700
+      font-black uppercase tracking-wide text-purple-700
     `}
   }
 
