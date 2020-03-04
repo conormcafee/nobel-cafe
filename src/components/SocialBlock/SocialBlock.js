@@ -65,7 +65,7 @@ const Footer = () => (
 export default Footer
 
 const Wrapper = styled.footer`
-  ${tw`bg-gray-300`}
+  ${tw`bg-purple-100`}
 `
 
 const Socials = styled.aside`

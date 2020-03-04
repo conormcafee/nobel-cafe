@@ -19,7 +19,7 @@ export default function Video({ data }) {
 
       <Introduction>
         <Container>
-          <Heading as="h1" upperCase={true}>
+          <Heading as="h2" fontBold={true}>
             Jobs
           </Heading>
 
@@ -38,10 +38,15 @@ export default function Video({ data }) {
                     alt={job.childMarkdownRemark.frontmatter.jobTitle}
                   />
                   <div>
-                    <Heading as="h4">
+                    <Heading as="h4" fontBold={true}>
                       {job.childMarkdownRemark.frontmatter.jobTitle}
                     </Heading>
-                    <Heading as="h5" textColor="purple" upperCase={true}>
+                    <Heading
+                      as="h5"
+                      textColor="purple"
+                      fontBold={true}
+                      upperCase={true}
+                    >
                       {job.childMarkdownRemark.frontmatter.fullTime
                         ? "Full Time"
                         : "Part Time"}

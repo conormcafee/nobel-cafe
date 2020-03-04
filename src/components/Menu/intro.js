@@ -203,7 +203,7 @@ const Wrapper = styled.section`
 `
 
 const Introduction = styled.section`
-  ${tw`bg-gray-200 text-center pt-6 pb-4`}
+  ${tw`bg-purple-100 text-center pt-6 pb-4`}
 `
 
 const Intro = styled.p`

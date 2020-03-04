@@ -10,7 +10,6 @@ const menu = [
   { title: "Menu", to: "/menu" },
   { title: "Videos", to: "/videos" },
   { title: "Jobs", to: "/jobs" },
-  { title: "Find Us", to: "/find-us" },
 ]
 
 const Header = ({ siteTitle }) => (

@@ -42,7 +42,7 @@ export default function Video() {
 
       <Introduction>
         <Container>
-          <Heading as="h1" upperCase={true}>
+          <Heading as="h2" fontBold={true}>
             Videos
           </Heading>
 
@@ -54,7 +54,9 @@ export default function Video() {
         <Videos>
           {videos.map((video, index) => (
             <VideoElement key={index}>
-              <Heading as="h4">{video.title}</Heading>
+              <Heading as="h4" fontBold={true}>
+                {video.title}
+              </Heading>
               <VideoIframe>
                 <iframe
                   title={video.title}
