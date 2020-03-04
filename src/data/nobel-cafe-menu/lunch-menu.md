@@ -3,46 +3,56 @@ title: Lunch Menu
 path: "/menu/lunch-menu"
 desc: Lunch is available in Nobel Cafe from 11:30am.  We have a great selection of sandwiches, hot plates, & some nice treats for all ages.
 sandwiches:
-  - item: Chinese Chicken
-    desc: Oriental chilli sauce, spring onion, lettuce, tomato & cucumber
-    allergens: [1, 11]
-    priceWithChips: 5.45
+  - item: Chicken Deluxe
+    desc: Sweet Chilli Chicken, Mozzarella, Red Pesto Mayo
+    allergens: [2, 5, 6, 7]
+    priceWithChips: 5.75
     priceWithSoup: 6.95
   - item: Melt
     desc: Irish ham, cheddar, mustard mayo, lettuce, tomato & tobacco onions
     allergens: [3, 5, 6, 11]
-    priceWithChips: 5.45
+    priceWithChips: 5.75
     priceWithSoup: 6.95
   - item: The Maryland
     desc: Southern fried chicken, pineapple, bbq sauce, lettuce, tomato and cheese melt
     allergens: [1, 3, 5, 2]
-    priceWithChips: 5.45
-    priceWithSoup: 6.95
-  - item: Chicken Combo
-    desc: Chicken, bacon, spring onion, lettuce, tomato and mayo
-    allergens: [11, 3, 5]
-    priceWithChips: 5.45
-    priceWithSoup: 6.95
-  - item: Nobel Noel
-    desc: Roast turkey, crispy bacon, herb stuffing, lettuce, tomato & cranberry
-    allergens: [11]
-    priceWithChips: 5.45
+    priceWithChips: 5.75
     priceWithSoup: 6.95
   - item: Tasty Tuna
     desc: Tuna, red onion, sweetcorn, lettuce, tomato & mayo
     allergens: [4, 3, 6]
-    priceWithChips: 5.45
+    priceWithChips: 5.75
     priceWithSoup: 6.95
-  - item: Chicken Kebab Tortilla Wrap
-    desc: with lettuce, tomato & house sauce
-    allergens: [3, 6]
-    priceWithChips: 5.95
-    priceWithSoup: 7.45
+  - item: Roast Chicken
+    desc: Sausage & Herp Stuffing, Chicken Gravy
+    allergens: [2, 11, 3, 5]
+    priceWithChips: 5.75
+    priceWithSoup: 6.95
+  - item: Kebab Chicken
+    desc: Lettuce, Tomato, Onion, Lettuce & House Sauce
+    allergens: null
+    priceWithChips: 5.75
+    priceWithSoup: 6.95
+  - item: Chicken Combo
+    desc: Chicken, Bacon, Spring Onion, Lettuce, Tomato & Mayo
+    allergens: null
+    priceWithChips: 5.75
+    priceWithSoup: 6.95
+  - item: Toasted Sourdough
+    allergens: null
+    desc: With Avocado, 2 Lean Bacon & 2 Poached Eggs
+    priceWithChips: 6.45
+    priceWithSoup: null
+  - item: Grilled Chorizo
+    allergens: null
+    desc: On Toasted Sourdough, Red Pepper Relish & 2 Poached Eggs
+    priceWithChips: 6.45
+    priceWithSoup: null
   - item: Shaved Roast Beef
-    desc: Mustard mayo, tobacco onions, pepper sauce, lettuce, tomato, served in a rosemary and sea salt flat bread
-    allergens: [3, 6]
-    priceWithChips: 5.95
-    priceWithSoup: 7.45
+    desc: Mustard Mayo, Tobacco Onions, Pepper Sauce, Lettuce, Tomato, on a Sea Salt Flat Bread
+    allergens: [2, 3, 5, 6]
+    priceWithChips: 6.45
+    priceWithSoup: null
 soups:
   - item: Potato & Leek Soup
     allergens: [1, 5]
@@ -51,51 +61,61 @@ soups:
     allergens: [1, 2]
     gf: false
 lunch:
-  - item: Penne Pasta
-    allergens: [1, 3, 5]
+  - item: Fish Pie
+    allergens: [4, 5, 6]
     gf: true
-    desc: Chilli steak, pepper cream sauce
-    price: 8.45
-  - item: Baked Cod Pieces
-    allergens: [4, 5]
-    gf: true
-    desc: Buttered leeks, mornay sauce, parmesan crumb - includes side
+    desc: Cod, Salmon, Smoked Haddock, Mornay Sauce, Topped with Potato
     price: 8.95
-  - item: Nobel Chicken Curry
-    allergens: [5, 7, 8]
-    gf: true
-    desc: Steamed jasmine rice
-    price: 8.45
-  - item: Beef & Bird
-    allergens: [5]
-    gf: true
-    desc: Pan fried chicken fillet, peppered steak strips, tobacco onions - includes side
-    price: 8.95
-  - item: Classic Caesar Salad
-    allergens: [2, 3, 5, 6]
+  - item: Spicy Noodle Bowl
+    allergens: [2, 3, 7, 10]
     gf: false
-    desc: Crispy fried chicken, crispy bacon, parmesan, croutons
-    price: 7.95
-  - item: Crispy Fried Sweet Chilli Chicken
-    allergens: [3, 6]
-    gf: true
-    desc: Garlic dipping sauce - includes side
-    price: 8.45
-  - item: Breaded Goujons of Chicken
-    allergens: [3, 5]
-    gf: true
-    desc: Choice of dipping sauce - includes side
+    desc: Thai Coconut Noodles, Crispy Chilli Chicken
     price: 8.95
   - item: Hand Pressed Steak Burgers
     allergens: [5, 11]
     gf: false
-    desc: Bacon, cheese, gem lettuce, tomato, red onion and toasted bun (can be gluten free, please ask server)
-    price: 8.45
+    desc: Bacon, Cheese, Gem Lettuce, Tomato, Red Onion and Toasted Bun
+    price: 8.95
+  - item: Salt & Chilli Chicken Goujons
+    allergens: [3, 6]
+    gf: true
+    desc: Garlic Mayo Dip, Includes Side
+    price: 8.95
+  - item: Sticky Chilli Chicken
+    allergens: [3, 6]
+    gf: true
+    desc: Garlic Mayo Dip.  Includes Side
+    price: 8.95
   - item: Southern Fried Chicken Fillet Burger
     allergens: [1, 2, 3, 5, 6]
     gf: false
-    desc: Gem lettuce, beef tomato, mayo, red onion, toasted brioche bun - includes side
+    desc: Gem Lettuce, Beef Tomato, Mayo, Red Onion, Toasted Brioche Bun - Includes Side
     price: 8.45
+  - item: Pan Fried Chicken
+    allergens: [5]
+    gf: true
+    desc: Seasonal Vegetables, Tobacco Onions, Choice of Sauce.  Includes Side
+    price: 8.95
+  - item: Beef & Bird
+    allergens: [5]
+    gf: true
+    desc: Pan Fried Chicken Fillet, Peppered Steak Strips, Mushrooms, Tobacco Onions - Includes Side
+    price: 8.95
+  - item: Penne Pasta
+    allegens: [1, 2, 3, 5]
+    gf: false
+    desc: Chilli Steak Pasta, Pepper Cream Sauce, Garlic Bread
+    price: 8.95
+  - item: Breaded Chicken Goujons
+    allergens: [3, 5]
+    gf: true
+    desc: Choice of Dipping Sauce - Includes Side
+    price: 8.95
+  - item: Classic Caesar Salad
+    allergens: [2, 3, 5, 6]
+    gf: false
+    desc: Crispy Fried Chicken, Crispy Bacon, Parmesan, Croutons
+    price: 8.95
 kids:
   - item: Pasta
     allergens: [3, 5]
@@ -107,10 +127,10 @@ kids:
     gf: false
     desc: Bangers, Mash & Onion
     price: 3.95
-  - item: Nobel Fried Chicken
+  - item: Chicken Goujons
     allergens: [5, 3]
     gf: true
-    desc: Nobel Fried Chicken & Chips in a Basket, Includes BBQ Dip
+    desc: Nobel Fried Chicken & Chips, Includes BBQ Dip
     price: 3.95
   - item: Kids Soup
     allergens: [1, 2, 5]
@@ -122,13 +142,13 @@ kids:
     gf: false
     desc: Fries, BBQ Dip - Bun can be Gluten Free, Please Ask Server
     price: 3.95
-  - item: Cod Goujons
+  - item: Breaded Cod
     allergens: [4, 3, 5]
     gf: true
     desc: Served with Chips
     price: 3.95
 sides:
-  - price: 2.75
+  - price: 2.95
     options:
       [
         Chips,
@@ -139,6 +159,7 @@ sides:
         Steamed Rice,
         Baby Caesar,
         Seasonal Veg,
+        Chilli & Sour Cream Fries,
       ]
 sauces:
   - price: 1.00
