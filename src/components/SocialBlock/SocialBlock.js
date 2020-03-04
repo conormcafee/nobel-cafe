@@ -29,8 +29,12 @@ const socialChannels = [
 const Footer = () => (
   <Wrapper>
     <Socials>
-      <Heading as="h3">Follow us</Heading>
-      <Heading as="h3">#nobelcafe</Heading>
+      <Heading as="h4" newLine={true}>
+        Follow us
+      </Heading>
+      <Heading as="h2" textColor="purple">
+        #nobelcafe
+      </Heading>
       <Boxes>
         {socialChannels.map((a, index) => (
           <Box href={a.link} target="_blank" key={index}>

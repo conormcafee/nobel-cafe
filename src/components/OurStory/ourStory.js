@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
@@ -24,7 +24,7 @@ const OurStory = () => {
     }
   `)
   return (
-    <Fragment>
+    <Wrapper>
       {data.allFile.nodes[0].childMarkdownRemark.frontmatter.slides.map(
         (item, index) => (
           <Section key={index}>
@@ -35,7 +35,7 @@ const OurStory = () => {
           </Section>
         )
       )}
-    </Fragment>
+    </Wrapper>
   )
 }
 
@@ -47,14 +47,36 @@ OurStory.defaultProps = {
   text: "",
 }
 
-const Section = styled.section``
+const Wrapper = styled.main`
+  ${tw`py-16`}
+`
+
+const Section = styled.section`
+  ${tw`relative py-16`}
+
+  &:before,
+  &:after {
+    content: "";
+    left: 50%;
+    ${tw`
+      h-16 w-2 block bg-gray-300 absolute
+    `}
+  }
+
+  &:before {
+    top: 0;
+  }
+
+  &:after {
+    bottom: 0;
+  }
+`
 
 const Article = styled.article`
   ${tw`
     flex flex-col items-center justify-center
     text-center
-    py-16
-    px-4
+    p-4
   `}
 `
 

@@ -1,31 +1,40 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 import { Heading } from "../Typography"
-import NCLogo from "../../images/logo.png"
-
-const menu = [
-  { title: "Menu", to: "/menu" },
-  { title: "Videos", to: "/videos" },
-  { title: "Jobs", to: "/jobs" },
-  { title: "Find Us", to: "/find-us" },
-]
+import FoodRating from "../../images/food-hygiene-rating.jpg"
 
 const Footer = () => (
   <footer>
     <Main>
-      <ul>
-        {menu.map((a, index) => (
-          <li key={index}>
-            <Heading as="h5">
-              <Link to={a.to}>{a.title}</Link>
-            </Heading>
-          </li>
-        ))}
-      </ul>
+      <Box>
+        <Heading as="h4" fontBold={true}>
+          Visit Us
+        </Heading>
+        <p>102-104 Church Street</p>
+        <p>Ballymena</p>
+        <p>BT43 6DF</p>
+      </Box>
+      <Box>
+        <Heading as="h4" fontBold={true}>
+          We Are Open
+        </Heading>
+        <p>Monday - Saturday</p>
+        <p>8am - 5pm</p>
+      </Box>
+      <Box>
+        <Heading as="h4" fontBold={true}>
+          Speak with Us
+        </Heading>
+        <ExternalLink href="tel:+442825654302" title="Call Us">
+          028 256 54302
+        </ExternalLink>
+        <ExternalLink href="mailto:info@nobelcafe.co.uk" title="Email Us">
+          info@nobelcafe.co.uk
+        </ExternalLink>
+      </Box>
     </Main>
-    <Logo src={NCLogo} alt="Nobel Cafe Logo" />
+    <Logo src={FoodRating} alt="Nobel Cafe Hygine Rating" />
   </footer>
 )
 
@@ -33,7 +42,7 @@ export default Footer
 
 const Main = styled.main`
   ${tw`
-    flex items-center justify-center pt-10 pb-5 text-center
+    flex items-start justify-center -mx-4 pt-10 pb-5 text-center
   `}
 
   ul {
@@ -49,8 +58,15 @@ const Main = styled.main`
   }
 `
 
+const Box = styled.div`
+  ${tw`p-4`}
+`
+
 const Logo = styled.img`
   ${tw`
       w-32 mx-auto mb-20
     `}
+`
+const ExternalLink = styled.a`
+  ${tw`block text-purple-600 hover:text-purple-400`}
 `
