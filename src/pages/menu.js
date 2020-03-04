@@ -11,7 +11,7 @@ requirements.`
 const Menu = () => (
   <Layout>
     <SEO title="Menu" description={Desc} />
-    <MenuIntro description={Desc} />
+    <MenuIntro />
   </Layout>
 )
 

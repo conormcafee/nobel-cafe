@@ -1,13 +1,20 @@
-import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import React, { Fragment } from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
-import { Button } from "../Button"
 import { Heading } from "../Typography"
 import { Container } from "../Layout"
 import FoodIcon from "../../svg/food.svg"
+import {
+  Breakfast,
+  Sandwiches,
+  Lunch,
+  Kids,
+  SidesAndSauces,
+  Allergens,
+} from "../../templates/components"
 
-const MenuIntro = ({ hasButton, description }) => {
+const MenuIntro = () => {
   const data = useStaticQuery(graphql`
     query Menus {
       allMarkdownRemark(
@@ -19,38 +26,161 @@ const MenuIntro = ({ hasButton, description }) => {
               path
               title
               desc
+              sandwiches {
+                item
+                desc
+                allergens
+                priceWithChips
+                priceWithSoup
+              }
+              soups {
+                item
+                allergens
+                gf
+              }
+              sides {
+                price
+                options
+              }
+              sauces {
+                price
+                options
+              }
+              lunch {
+                item
+                allergens
+                gf
+                desc
+                price
+              }
+              kids {
+                item
+                allergens
+                gf
+                desc
+                price
+              }
+              fry {
+                item
+                extra
+              }
+              breakfastmenu {
+                item
+                desc
+                price
+                additional
+              }
             }
           }
         }
       }
     }
   `)
+
+  const breakfast = data.allMarkdownRemark.edges[0].node
+  const lunch = data.allMarkdownRemark.edges[1].node
   return (
-    <ColouredBackground>
-      <Container>
-        <Header>
-          <aside>
-            <Heading as="h2" upperCase={true}>
-              What are you eating?
+    <Fragment>
+      <Introduction>
+        <Container>
+          <Heading as="h3" fontBold={true}>
+            Breakfast Fry
+          </Heading>
+          <Heading as="h4" fontBold={true} textColor="purple">
+            from £3.95
+          </Heading>
+
+          <Intro>
+            Complimentary regular tea or coffee with 5 or more items.{" "}
+            <Heading as="h5" fontBold={true} textColor="purple">
+              Each item 79p
             </Heading>
-            <Intro>{description}</Intro>
-          </aside>
+          </Intro>
 
-          {hasButton && <Button url="/menu">Check out our full menu</Button>}
-        </Header>
+          <Intro>
+            Upgrade to cappuccino, latte or herbal tea.{" "}
+            <Heading as="h5" fontBold={true} textColor="purple">
+              £1.00 extra
+            </Heading>
+          </Intro>
+        </Container>
+      </Introduction>
 
-        <Section>
-          {data.allMarkdownRemark.edges.map((item, index) => (
-            <MenuType key={index} shift={index === 1}>
-              <MenuIcon src={FoodIcon} alt={item.node.frontmatter.title} />
-              <MenuTitle>{item.node.frontmatter.title}</MenuTitle>
-              <MenuText>{item.node.frontmatter.desc}</MenuText>
-              <MenuLink to={item.node.frontmatter.path}>See Menu</MenuLink>
-            </MenuType>
-          ))}
-        </Section>
+      <Container>
+        <Wrapper>
+          <Breakfast
+            data={breakfast.frontmatter.fry ? breakfast.frontmatter.fry : []}
+          />
+
+          <FoodMenuEnd>
+            <img src={FoodIcon} alt="Sandwich Menu Ends Here" />
+          </FoodMenuEnd>
+
+          <Lunch
+            title="More Breakfast Options"
+            data={
+              breakfast.frontmatter.breakfastmenu
+                ? breakfast.frontmatter.breakfastmenu
+                : []
+            }
+          />
+
+          <FoodMenuEnd>
+            <img src={FoodIcon} alt="Sandwich Menu Ends Here" />
+          </FoodMenuEnd>
+        </Wrapper>
       </Container>
-    </ColouredBackground>
+
+      {/* Lunch */}
+      <Fragment>
+        <Container>
+          <Wrapper>
+            <Sandwiches
+              data={
+                lunch.frontmatter.sandwiches ? lunch.frontmatter.sandwiches : []
+              }
+            />
+
+            <FoodMenuEnd>
+              <img src={FoodIcon} alt="Sandwich Menu Ends Here" />
+            </FoodMenuEnd>
+
+            <Lunch
+              data={lunch.frontmatter.lunch ? lunch.frontmatter.lunch : []}
+            />
+
+            <FoodMenuEnd>
+              <img src={FoodIcon} alt="Sandwich Menu Ends Here" />
+            </FoodMenuEnd>
+          </Wrapper>
+        </Container>
+
+        <Side>
+          <Container>
+            <Flex>
+              <SidesAndSauces
+                title="Sides"
+                price={lunch.frontmatter.sides[0].price}
+                data={lunch.frontmatter.sides[0].options}
+              />
+              <SidesAndSauces
+                title="Sauces"
+                price={lunch.frontmatter.sauces[0].price}
+                data={lunch.frontmatter.sauces[0].options}
+              />
+              <Allergens />
+            </Flex>
+          </Container>
+        </Side>
+
+        <Container>
+          <Kids data={lunch.frontmatter.kids ? lunch.frontmatter.kids : []} />
+          <FoodMenuEnd>
+            <img src={FoodIcon} alt="Sandwich Menu Ends Here" />
+          </FoodMenuEnd>
+        </Container>
+      </Fragment>
+    </Fragment>
   )
 }
 
@@ -60,78 +190,65 @@ MenuIntro.defaultProps = {
   hasButton: false,
 }
 
-const ColouredBackground = styled.section`
+const Wrapper = styled.section`
   ${tw`
-    flex
-    bg-purple-100
-    py-16
+    mt-10
   `}
+
+  h1 {
+    ${tw`
+      text-center
+    `}
+  }
 `
 
-const Header = styled.header`
-  ${tw`
-    md:flex flex-col justify-center items-center
-    text-center
-  `}
+const Introduction = styled.section`
+  ${tw`bg-gray-200 text-center pt-6 pb-4`}
 `
 
 const Intro = styled.p`
   ${tw`
-    max-w-lg tracking-wide font-light block mb-4
+    tracking-wide font-light block my-4 max-w-lg text-center mx-auto
   `}
 `
-
-const Section = styled.section`
-  ${tw`
-    md:flex md:flex-row md:items-center md:justify-between mt-10 md:-mx-5
+const Side = styled.aside`
+  ${tw` 
+    mt-10
+    py-10
+    bg-purple-100
+    relative
   `}
-`
 
-const MenuType = styled.div`
-  ${tw`
-    bg-white 
-    border-2 border-transparent
-    shadow-xl
-    p-8 
-    mb-10
-    md:mx-5
-    text-center
-    rounded-lg
-  `}
-  ${props => props.shift && tw`md:mt-20`}
-
-  &:hover {
-    ${tw`
-      border-2 border-purple-400
-    `}
-    transition: border-color 250ms ease-in-out;
+  h3 {
+    ${tw`mb-6`}
   }
 `
 
-const MenuIcon = styled.img`
-  ${tw`
-    w-16 mx-auto mb-3
-  `}
+const FoodMenuEnd = styled.figure`
+  ${tw`relative w-64 mx-auto`}
+
+  &:before {
+    content: "";
+    ${tw`
+      w-full
+      h-1
+      bg-gray-500
+      rounded-lg
+      block
+      absolute
+    `}
+    top: 50%;
+  }
+
+  img {
+    ${tw`
+      w-16 bg-white mx-auto relative z-10
+    `}
+  }
 `
 
-const MenuTitle = styled.h3`
+const Flex = styled.section`
   ${tw`
-    text-xl  leading-tight tracking-wide mb-2
-  `}
-`
-
-const MenuText = styled.p`
-  ${tw`
-    max-w-sm mb-4 font-light
-  `}
-`
-
-const MenuLink = styled(Link)`
-  ${tw`
-    inline-flex items-center justify-center
-    text-purple-600 hover:text-purple-400
-    border-b-2 border-purple-400
-     uppercase tracking-wide leading-tight
-    pb-1
-  `}
+  flex flex-wrap items-center
+`}
 `

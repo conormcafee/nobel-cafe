@@ -6,7 +6,7 @@ import tw from "tailwind.macro"
 
 const Breakfast = ({ title, data }) => (
   <Wrapper>
-    <Heading as="h3" textColor="purple" upperCase={true}>
+    <Heading as="h4" textColor="purple" fontBold={true}>
       {title}
     </Heading>
 
@@ -33,7 +33,7 @@ Breakfast.defaultProps = {
 const Wrapper = styled.section`
   ${tw`mt-10 max-w-4xl mx-auto`}
 
-  h3 {
-    ${tw`mb-5 sm:mb-10 sm:text-center`}
+  h4 {
+    ${tw`mb-5 sm:text-center`}
   }
 `

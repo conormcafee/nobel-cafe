@@ -6,8 +6,10 @@ import tw from "tailwind.macro"
 const SidesAndSauces = ({ title, price, data }) => (
   <Wrapper>
     <Main>
-      <Heading as="h4">{title}</Heading>
-      <Heading as="h5" textColor="purple">
+      <Heading as="h4" fontBold={true}>
+        {title}
+      </Heading>
+      <Heading as="h5" fontBold={true} textColor="purple">
         £{price}
       </Heading>
       {data.length > 0 && (

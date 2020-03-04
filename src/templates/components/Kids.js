@@ -7,7 +7,7 @@ import tw from "tailwind.macro"
 
 const Kids = ({ data }) => (
   <Wrapper>
-    <Heading as="h3" textColor="purple" upperCase={true}>
+    <Heading as="h4" fontBold={true} textColor="purple">
       Kids
     </Heading>
 
@@ -15,12 +15,14 @@ const Kids = ({ data }) => (
       <MenuItems>
         {data.map((kid, index) => (
           <MenuItem key={index}>
-            <Heading as="h4">{kid.item}</Heading>
-            <Heading as="p" textColor="purple">
+            <Heading as="h5" fontBold={true}>
+              {kid.item}
+            </Heading>
+            <Heading as="p" fontBold={true} textColor="purple">
               {allergens(kid.allergens)}
             </Heading>
             <span>{kid.desc}</span>
-            <Heading as="h5" textColor="purple">
+            <Heading as="h5" fontBold={true} textColor="purple">
               £{kid.price}
             </Heading>
           </MenuItem>
@@ -39,7 +41,7 @@ Kids.defaultProps = {
 const Wrapper = styled.section`
   ${tw`mt-10 max-w-4xl mx-auto`}
 
-  h3 {
+  h4 {
     ${tw`mb-5 sm:mb-10 sm:text-center`}
   }
 `
