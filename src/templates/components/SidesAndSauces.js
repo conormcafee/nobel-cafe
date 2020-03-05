@@ -31,12 +31,8 @@ const Wrapper = styled.section`
 
 const Main = styled.aside`
   ${tw`
-    bg-white rounded shadow p-5
+    h-full bg-white rounded shadow p-5
   `}
-
-  h4, h5 {
-    ${tw`text-center`}
-  }
 
   h5 {
     ${tw`mb-3`}
@@ -44,12 +40,12 @@ const Main = styled.aside`
 `
 
 const List = styled.ul`
-  ${tw`flex flex-wrap`}
+  ${tw`flex flex-col flex-wrap`}
   max-width: 250px;
 `
 
 const ListItem = styled.li`
-  ${tw`w-1/2`}
+  /* ${tw`w-1/2`} */
 `
 
 SidesAndSauces.defaultProps = {

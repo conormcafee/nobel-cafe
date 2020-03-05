@@ -27,10 +27,6 @@ const Aside = styled.aside`
   ${tw`
     bg-white rounded shadow p-5 h-full
   `}
-
-  h4 {
-    ${tw`text-center`}
-  }
 `
 
 Allergens.defaultProps = {

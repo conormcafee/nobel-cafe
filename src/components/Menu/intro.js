@@ -30,6 +30,7 @@ const MenuIntro = () => {
                 item
                 desc
                 allergens
+                price
                 priceWithChips
                 priceWithSoup
               }
@@ -43,6 +44,10 @@ const MenuIntro = () => {
                 options
               }
               sauces {
+                price
+                options
+              }
+              dips {
                 price
                 options
               }
@@ -134,11 +139,23 @@ const MenuIntro = () => {
             }
           />
 
-          <FoodMenuEnd>
-            <img src={FoodIcon} alt="Sandwich Menu Ends Here" />
-          </FoodMenuEnd>
+          <BG_WRAP>
+            <BG>
+              <h5 as="h5">Complimentary Tea/Coffee before 11:30am only</h5>
+            </BG>
+          </BG_WRAP>
         </Wrapper>
       </Container>
+
+      <Introduction hasMarginTop={true}>
+        <Container>
+          <Heading as="h3" fontBold={true}>
+            Lunch Menu
+          </Heading>
+
+          <Intro>Served from 11:30am</Intro>
+        </Container>
+      </Introduction>
 
       {/* Lunch */}
       <Fragment>
@@ -177,6 +194,11 @@ const MenuIntro = () => {
                 price={lunch.frontmatter.sauces[0].price}
                 data={lunch.frontmatter.sauces[0].options}
               />
+              <SidesAndSauces
+                title="Dips"
+                price={lunch.frontmatter.dips[0].price}
+                data={lunch.frontmatter.dips[0].options}
+              />
               <Allergens />
             </Flex>
           </Container>
@@ -211,6 +233,12 @@ const Wrapper = styled.section`
   }
 `
 
+const BG_WRAP = styled.div`
+  ${tw`
+    text-center mb-10
+  `}
+`
+
 const BG = styled.div`
   ${tw`bg-green-700 inline-flex items-center justify-center px-4 py-2 rounded`}
 
@@ -223,6 +251,7 @@ const BG = styled.div`
 
 const Introduction = styled.section`
   ${tw`bg-gray-200 text-center pt-6 pb-4`}
+  ${props => props.hasMarginTop && tw`mt-10`}
 `
 
 const Intro = styled.p`
@@ -268,6 +297,6 @@ const FoodMenuEnd = styled.figure`
 
 const Flex = styled.section`
   ${tw`
-  flex flex-wrap items-center
+  flex flex-wrap
 `}
 `

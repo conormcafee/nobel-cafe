@@ -24,12 +24,12 @@ sandwiches:
     priceWithChips: 5.75
     priceWithSoup: 6.95
   - item: Roast Chicken
-    desc: Sausage & Herp Stuffing, Chicken Gravy
+    desc: Sausage & Herb Stuffing, Chicken Gravy
     allergens: [2, 11, 3, 5]
     priceWithChips: 5.75
     priceWithSoup: 6.95
   - item: Kebab Chicken
-    desc: Lettuce, Tomato, Onion, Lettuce & House Sauce
+    desc: Lettuce, Tomato, Onion & House Sauce
     allergens: null
     priceWithChips: 5.75
     priceWithSoup: 6.95
@@ -41,12 +41,14 @@ sandwiches:
   - item: Toasted Sourdough
     allergens: null
     desc: With Avocado, 2 Lean Bacon & 2 Poached Eggs
-    priceWithChips: 6.45
+    price: 6.45
+    priceWithChips: null
     priceWithSoup: null
   - item: Grilled Chorizo
     allergens: null
     desc: On Toasted Sourdough, Red Pepper Relish & 2 Poached Eggs
-    priceWithChips: 6.45
+    price: 6.45
+    priceWithChips: null
     priceWithSoup: null
   - item: Shaved Roast Beef
     desc: Mustard Mayo, Tobacco Onions, Pepper Sauce, Lettuce, Tomato, on a Sea Salt Flat Bread
@@ -74,7 +76,7 @@ lunch:
   - item: Hand Pressed Steak Burgers
     allergens: [5, 11]
     gf: false
-    desc: Bacon, Cheese, Gem Lettuce, Tomato, Red Onion and Toasted Bun
+    desc: Bacon, Cheese, Gem Lettuce, Tomato, Red Onion and Toasted Bun - Includes Side
     price: 8.95
     addPrice: 6.95
   - item: Salt & Chilli Chicken Goujons
@@ -126,7 +128,7 @@ kids:
   - item: Bangers & Mash
     allergens: [2, 5]
     gf: false
-    desc: Bangers, Mash & Onion
+    desc: Bangers, Mash & Gravy
     price: 3.95
   - item: Chicken Goujons
     allergens: [5, 3]
@@ -154,7 +156,7 @@ sides:
       [
         Chips,
         Mash or Champ,
-        Skinny Fries,
+        Skin on Fries,
         Tossed Salad,
         Garlic Diced,
         Baby Caesar,
@@ -163,5 +165,8 @@ sides:
       ]
 sauces:
   - price: 1.00
-    options: [Pepper Cream, Gravy, Leek & Bacon, BBQ, Sweet Chilli, Garlic Mayo]
+    options: [Leek & Bacon, Gravy, Pepper Sauce]
+dips:
+  - price: 0.65
+    options: [Garlic Mayo, Sweet Chilli, BBQ, Mayo, Kebab]
 ---

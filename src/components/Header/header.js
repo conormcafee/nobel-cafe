@@ -36,7 +36,7 @@ const Header = ({ siteTitle }) => (
     <HeaderButton>
       <a href="tel:+442825654302" alt="Call Nobel Cafe">
         <img src={CallIcon} alt="Call Nobel Cafe" />
-        Takeway: Order Now
+        Takeaway: Order Now
       </a>
     </HeaderButton>
   </Fragment>

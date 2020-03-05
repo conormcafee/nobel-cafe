@@ -1,6 +1,6 @@
 ---
 title: Floor Staff
-intro: We currently have an open positions.  If you're looking to join an excellent, motivated team with great experience then read more below
+intro: If you're looking to join an excellent, motivated team with great experience then read more below
 path: "/jobs/positions-available"
 jobTitle: Positions Available
 ---
@@ -27,4 +27,4 @@ jobTitle: Positions Available
 ### Benefits
 
 - Full training program provided, Buddy system, free meals, uniform provided, tips/bonus system
-- Job Types: Full-time, Permanent
+- Job Types: Full-time, Part Time, Permanent

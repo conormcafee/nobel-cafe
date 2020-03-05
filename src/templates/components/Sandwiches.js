@@ -23,9 +23,16 @@ const Sandwiches = ({ data }) => (
             </Heading> */}
             <span>{sandwich.desc}</span>
             <MenuFooter>
-              <Heading as="h5" textColor="purple" fontBold={true}>
-                £{sandwich.priceWithChips} w/ Chips & Dip
-              </Heading>
+              {sandwich.price && (
+                <Heading as="h5" textColor="purple" fontBold={true}>
+                  £{sandwich.price}
+                </Heading>
+              )}
+              {sandwich.priceWithChips && (
+                <Heading as="h5" textColor="purple" fontBold={true}>
+                  £{sandwich.priceWithChips} w/ Chips & Dip
+                </Heading>
+              )}
               {sandwich.priceWithSoup && (
                 <Heading as="h5" textColor="purple" fontBold={true}>
                   £{sandwich.priceWithSoup} w/ Soup
