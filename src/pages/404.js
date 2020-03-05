@@ -30,7 +30,7 @@ const NotFound = () => (
 
 export default NotFound
 const Introduction = styled.section`
-  ${tw`bg-green-100 text-center py-10`}
+  ${tw`bg-gray-200 text-center py-10`}
 `
 
 const Intro = styled.p`

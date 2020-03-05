@@ -222,7 +222,7 @@ const BG = styled.div`
 `
 
 const Introduction = styled.section`
-  ${tw`bg-green-100 text-center pt-6 pb-4`}
+  ${tw`bg-gray-200 text-center pt-6 pb-4`}
 `
 
 const Intro = styled.p`
@@ -234,7 +234,7 @@ const Side = styled.aside`
   ${tw` 
     mt-10
     py-10
-    bg-green-100
+    bg-gray-200
     relative
   `}
 

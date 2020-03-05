@@ -38,10 +38,7 @@ const Footer = () => (
     <Container>
       <Socials>
         <Heading as="h4" fontBold={true} newLine={true}>
-          Follow us
-        </Heading>
-        <Heading as="h2" textColor="purple">
-          #nobelcafe
+          Follow us - <span>#nobelcafe</span>
         </Heading>
         <Boxes>
           {socialChannels.map((a, index) => (
@@ -53,13 +50,22 @@ const Footer = () => (
       </Socials>
 
       <InstaMock>
-        {[Image07, Image08, Image09, Image10, Image11, Image12].map(
-          (a, index) => (
-            <InstaBox key={index}>
-              <InstaImg bg={a} />
-            </InstaBox>
-          )
-        )}
+        {[
+          Image07,
+          Image08,
+          Image09,
+          Image10,
+          Image11,
+          Image12,
+          Image12,
+          Image12,
+          Image12,
+          Image12,
+        ].map((a, index) => (
+          <InstaBox key={index}>
+            <InstaImg bg={a} />
+          </InstaBox>
+        ))}
       </InstaMock>
     </Container>
   </Wrapper>
@@ -68,7 +74,7 @@ const Footer = () => (
 export default Footer
 
 const Wrapper = styled.footer`
-  ${tw`bg-green-100`}
+  ${tw`bg-gray-200`}
 `
 
 const Socials = styled.aside`
@@ -92,11 +98,11 @@ const Box = styled.a`
 `
 
 const InstaMock = styled.section`
-  ${tw`flex flex-wrap`}
+  ${tw`flex flex-wrap pb-10`}
 `
 
 const InstaBox = styled.div`
-  ${tw`p-5 w-1/2 md:w-1/3 lg:w-1/6`}
+  ${tw`p-5 w-1/2 md:w-1/3 lg:w-1/5`}
 `
 
 const InstaImg = styled.div`

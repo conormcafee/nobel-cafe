@@ -46,7 +46,7 @@ export default Footer
 
 const Main = styled.main`
   ${tw`
-    flex flex-wrap items-start justify-center pt-5 sm:pt-10 pb-5 text-center
+    flex flex-wrap items-start justify-center pt-5 sm:pt-10 text-center
   `}
 
   ul {
