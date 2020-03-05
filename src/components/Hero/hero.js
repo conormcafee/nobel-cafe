@@ -6,11 +6,14 @@ import { Heading } from "../Typography"
 // import Shopfront from "../../images/hero/nobel-shopfront-desktop.jpg"
 
 import Image01 from "../../images/nobel-01.jpg"
-import Image02 from "../../images/nobel-02.jpg"
-import Image03 from "../../images/nobel-03.jpg"
+// import Image02 from "../../images/nobel-02.jpg"
+// import Image03 from "../../images/nobel-03.jpg"
 import Image04 from "../../images/nobel-04.jpg"
 import Image05 from "../../images/nobel-05.jpg"
 import Image06 from "../../images/nobel-06.jpg"
+import Image17 from "../../images/nobel-17.jpg"
+import Image18 from "../../images/nobel-18.jpg"
+import Image19 from "../../images/nobel-19.jpg"
 // import Image07 from "../../images/nobel-07.jpg"
 // import Image08 from "../../images/nobel-08.jpg"
 // import Image09 from "../../images/nobel-09.jpg"
@@ -32,7 +35,7 @@ const Hero = () => (
         <HeroImage isLandscape bg={Image01} />
       </Box>
       <Box>
-        <HeroImage bg={Image03} />
+        <HeroImage bg={Image18} />
       </Box>
     </Section>
     {/* Section 02 */}
@@ -43,13 +46,13 @@ const Hero = () => (
         </Heading>
       </Box>
       <Box>
-        <HeroImage bg={Image02} />
+        <HeroImage bg={Image17} />
       </Box>
     </Section>
     {/* Section 03 */}
     <Section>
       <Box>
-        <HeroImage isLandscape bg={Image01} />
+        <HeroImage isLandscape bg={Image19} />
       </Box>
       <Box>
         <HeroImage bg={Image04} />

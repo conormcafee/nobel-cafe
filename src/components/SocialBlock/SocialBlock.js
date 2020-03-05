@@ -13,6 +13,10 @@ import Image09 from "../../images/nobel-09.jpg"
 import Image10 from "../../images/nobel-10.jpg"
 import Image11 from "../../images/nobel-11.jpg"
 import Image12 from "../../images/nobel-12.jpg"
+import Image13 from "../../images/nobel-13.jpg"
+import Image14 from "../../images/nobel-14.jpg"
+import Image15 from "../../images/nobel-15.jpg"
+import Image16 from "../../images/nobel-16.jpg"
 import { Container } from "../Layout"
 
 const socialChannels = [
@@ -57,10 +61,10 @@ const Footer = () => (
           Image10,
           Image11,
           Image12,
-          Image12,
-          Image12,
-          Image12,
-          Image12,
+          Image13,
+          Image14,
+          Image16,
+          Image15,
         ].map((a, index) => (
           <InstaBox key={index}>
             <InstaImg bg={a} />
