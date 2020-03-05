@@ -6,7 +6,7 @@ import tw from "tailwind.macro"
 const colorSwitcher = color => {
   switch (color) {
     case "purple":
-      return css(tw`text-purple-800`)
+      return css(tw`text-green-800`)
     case "white":
       return css(tw`text-white`)
     default:
@@ -39,7 +39,7 @@ const Element = styled.span`
   ${props => props.fontBold && tw`font-black`}
 
   span {
-    ${tw`font-black text-purple-600`}
+    ${tw`font-black text-green-600`}
     ${props => props.newLine && tw`block`}
   }
 `

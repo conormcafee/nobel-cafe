@@ -15,7 +15,7 @@ const StyledButton = styled(Link)`
   ${tw`
       inline-flex items-center justify-center 
       h-12 px-4 
-      text-white bg-purple-700 hover:bg-purple-900
+      text-white bg-green-700 hover:bg-green-900
       text-sm sm:text-base
        uppercase tracking-wide leading-tight 
       rounded shadow-lg
@@ -33,7 +33,7 @@ const StyledButton = styled(Link)`
 const GhostButton = styled(Link)`
   ${tw`
       inline-flex items-center justify-center 
-      text-white text-purple-700 hover:text-purple-900
+      text-white text-green-700 hover:text-green-900
       text-sm sm:text-base
        uppercase tracking-wide leading-tight
        cursor-pointer
@@ -45,7 +45,7 @@ const ExternalButton = styled.a`
   ${tw`
       inline-flex items-center justify-center 
       h-12 px-4 
-      text-white bg-purple-700 hover:bg-purple-900
+      text-white bg-green-700 hover:bg-green-900
       text-sm sm:text-base
        uppercase tracking-wide leading-tight 
       rounded shadow-lg

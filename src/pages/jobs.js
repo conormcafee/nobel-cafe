@@ -8,7 +8,7 @@ import tw from "tailwind.macro"
 import { Button } from "../components/Button"
 import JobIcon from "../svg/job.svg"
 
-const description = `We are always on the look out for great talent to add to the Nobel Cafe team.  If you see a job below which you're interested in, please click on the Apply now button`
+const description = `We are always on the look out for great talent to add to the Nobel Cafe team`
 
 export default function Video({ data }) {
   const { allFile } = data
@@ -47,9 +47,7 @@ export default function Video({ data }) {
                       fontBold={true}
                       upperCase={true}
                     >
-                      {job.childMarkdownRemark.frontmatter.fullTime
-                        ? "Full Time"
-                        : "Part Time"}
+                      Full & Part Time
                     </Heading>
                   </div>
                 </Header>
@@ -113,7 +111,7 @@ const Header = styled.header`
 `
 
 const Introduction = styled.section`
-  ${tw`bg-purple-100 text-center py-10`}
+  ${tw`bg-green-100 text-center py-10`}
 `
 
 const Intro = styled.p`
@@ -144,7 +142,6 @@ export const pageQuery = graphql`
             title
             path
             jobTitle
-            fullTime
             intro
           }
         }

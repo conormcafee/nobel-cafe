@@ -53,6 +53,6 @@ breakfastmenu:
     price: 3.95
     additional: Add on Roasted Nuts & Toasted Sunflower Seeds 50p
   - item: Buttermilk Pancake Stack
-    desc: Cripsy Smoked Bacon & Maple Syrup
-    price: 1.95
+    desc: Cripsy Smoked Bacon & Maple Syrup served with complimentary regular tea/coffee
+    price: 4.95
 ---

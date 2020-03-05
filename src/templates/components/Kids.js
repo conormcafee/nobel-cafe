@@ -1,7 +1,7 @@
 import React from "react"
 import { Heading } from "../../components/Typography"
 import { MenuItems, MenuItem } from "../components"
-import { allergens } from "../../utils"
+// import { allergens } from "../../utils"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 
@@ -18,9 +18,9 @@ const Kids = ({ data }) => (
             <Heading as="h5" fontBold={true}>
               {kid.item}
             </Heading>
-            <Heading as="p" fontBold={true} textColor="purple">
+            {/* <Heading as="p" fontBold={true} textColor="purple">
               {allergens(kid.allergens)}
-            </Heading>
+            </Heading> */}
             <span>{kid.desc}</span>
             <Heading as="h5" fontBold={true} textColor="purple">
               £{kid.price}

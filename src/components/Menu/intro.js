@@ -52,6 +52,7 @@ const MenuIntro = () => {
                 gf
                 desc
                 price
+                addPrice
               }
               kids {
                 item
@@ -79,30 +80,38 @@ const MenuIntro = () => {
 
   const breakfast = data.allMarkdownRemark.edges[0].node
   const lunch = data.allMarkdownRemark.edges[1].node
+
   return (
     <Fragment>
       <Introduction>
         <Container>
           <Heading as="h3" fontBold={true}>
-            Breakfast Fry
-          </Heading>
-          <Heading as="h4" fontBold={true} textColor="purple">
-            from £3.95
+            Breakfast Fry{" "}
+            <span>
+              from £3.95<sup>*</sup>
+            </span>
           </Heading>
 
           <Intro>
-            Complimentary regular tea or coffee with 5 or more items.{" "}
+            Complimentary<sup>*</sup> regular tea or coffee with 5 or more
+            items.{" "}
             <Heading as="h5" fontBold={true} textColor="purple">
-              Each item 79p
+              Each item 79p*
             </Heading>
           </Intro>
 
           <Intro>
             Upgrade to cappuccino, latte or herbal tea.{" "}
             <Heading as="h5" fontBold={true} textColor="purple">
-              £1.00 extra
+              £1.00 extra<sup>*</sup>
             </Heading>
           </Intro>
+
+          <BG>
+            <h5 as="h5">
+              <sup>*</sup>Prices & Complimentary Tea/Coffee before 11:30am only
+            </h5>
+          </BG>
         </Container>
       </Introduction>
 
@@ -202,8 +211,18 @@ const Wrapper = styled.section`
   }
 `
 
+const BG = styled.div`
+  ${tw`bg-green-700 inline-flex items-center justify-center px-4 py-2 rounded`}
+
+  h5 {
+    ${tw`
+      text-white mb-0 text-xs
+    `}
+  }
+`
+
 const Introduction = styled.section`
-  ${tw`bg-purple-100 text-center pt-6 pb-4`}
+  ${tw`bg-green-100 text-center pt-6 pb-4`}
 `
 
 const Intro = styled.p`
@@ -215,7 +234,7 @@ const Side = styled.aside`
   ${tw` 
     mt-10
     py-10
-    bg-purple-100
+    bg-green-100
     relative
   `}
 

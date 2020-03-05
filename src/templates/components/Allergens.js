@@ -1,20 +1,18 @@
 import React from "react"
 import { Heading } from "../../components/Typography"
-import { allergenList } from "../../utils"
+// import { allergenList } from "../../utils"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 
 const Allergens = ({ title }) => (
   <Wrapper>
     <Aside>
-      <Heading as="h4">{title}</Heading>
-      <List>
-        {allergenList.map(allergen => (
-          <ListItem key={allergen.no}>
-            {allergen.no}: {allergen.title}
-          </ListItem>
-        ))}
-      </List>
+      <Heading as="h4" fontBold={true}>
+        {title}
+      </Heading>
+      <Heading as="h5">
+        For any allergen advice please ask our friendly staff
+      </Heading>
     </Aside>
   </Wrapper>
 )
@@ -27,24 +25,12 @@ const Wrapper = styled.section`
 
 const Aside = styled.aside`
   ${tw`
-    bg-white rounded shadow p-5
+    bg-white rounded shadow p-5 h-full
   `}
 
   h4 {
     ${tw`text-center`}
   }
-`
-
-const List = styled.ol`
-  ${tw`
-    flex flex-wrap
-  `}
-`
-
-const ListItem = styled.li`
-  ${tw`
-    w-1/2
-  `}
 `
 
 Allergens.defaultProps = {

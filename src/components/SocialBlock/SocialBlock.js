@@ -13,6 +13,7 @@ import Image09 from "../../images/nobel-09.jpg"
 import Image10 from "../../images/nobel-10.jpg"
 import Image11 from "../../images/nobel-11.jpg"
 import Image12 from "../../images/nobel-12.jpg"
+import { Container } from "../Layout"
 
 const socialChannels = [
   {
@@ -34,38 +35,40 @@ const socialChannels = [
 
 const Footer = () => (
   <Wrapper>
-    <Socials>
-      <Heading as="h4" fontBold={true} newLine={true}>
-        Follow us
-      </Heading>
-      <Heading as="h2" textColor="purple">
-        #nobelcafe
-      </Heading>
-      <Boxes>
-        {socialChannels.map((a, index) => (
-          <Box href={a.link} target="_blank" key={index}>
-            <img src={a.icon} alt={a.title} />
-          </Box>
-        ))}
-      </Boxes>
-    </Socials>
+    <Container>
+      <Socials>
+        <Heading as="h4" fontBold={true} newLine={true}>
+          Follow us
+        </Heading>
+        <Heading as="h2" textColor="purple">
+          #nobelcafe
+        </Heading>
+        <Boxes>
+          {socialChannels.map((a, index) => (
+            <Box href={a.link} target="_blank" key={index}>
+              <img src={a.icon} alt={a.title} />
+            </Box>
+          ))}
+        </Boxes>
+      </Socials>
 
-    <InstaMock>
-      {[Image07, Image08, Image09, Image10, Image11, Image12].map(
-        (a, index) => (
-          <InstaBox key={index}>
-            <InstaImg bg={a} />
-          </InstaBox>
-        )
-      )}
-    </InstaMock>
+      <InstaMock>
+        {[Image07, Image08, Image09, Image10, Image11, Image12].map(
+          (a, index) => (
+            <InstaBox key={index}>
+              <InstaImg bg={a} />
+            </InstaBox>
+          )
+        )}
+      </InstaMock>
+    </Container>
   </Wrapper>
 )
 
 export default Footer
 
 const Wrapper = styled.footer`
-  ${tw`bg-purple-100`}
+  ${tw`bg-green-100`}
 `
 
 const Socials = styled.aside`

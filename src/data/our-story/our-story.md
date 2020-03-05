@@ -2,9 +2,9 @@
 title: Our Story
 path: "/our-story"
 slides:
-  - heading: Since 1994
-    text: Nobel Café first opened in 1994, a long time ago. Since 1994 we have been serving first class breakfast and lunch to the people of Ballymena. Nobel is Ballymena, Ballymena is Nobel!
-    image: ../../images/nobel-shopfront.jpg
+  # - heading: Since 1994
+  #   text: Nobel Café first opened in 1994, a long time ago. Since 1994 we have been serving first class breakfast and lunch to the people of Ballymena. Nobel is Ballymena, Ballymena is Nobel!
+  #   image: ../../images/nobel-shopfront.jpg
   - heading: Our Staff Rock
     text: They will make your visit worthwhile. They smile, provide the best, efficient service for miles and they love Nobel Café. We look after them, they look after our customers. Simple.
     image: ../../images/nobel-ability.jpg

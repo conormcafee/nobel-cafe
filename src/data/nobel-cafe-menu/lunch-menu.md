@@ -76,6 +76,7 @@ lunch:
     gf: false
     desc: Bacon, Cheese, Gem Lettuce, Tomato, Red Onion and Toasted Bun
     price: 8.95
+    addPrice: 6.95
   - item: Salt & Chilli Chicken Goujons
     allergens: [3, 6]
     gf: true
@@ -156,7 +157,6 @@ sides:
         Skinny Fries,
         Tossed Salad,
         Garlic Diced,
-        Steamed Rice,
         Baby Caesar,
         Seasonal Veg,
         Chilli & Sour Cream Fries,

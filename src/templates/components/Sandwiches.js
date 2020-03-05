@@ -1,7 +1,7 @@
 import React from "react"
 import { Heading } from "../../components/Typography"
 import { MenuItems, MenuItem, MenuFooter } from "../components"
-import { allergens } from "../../utils"
+// import { allergens } from "../../utils"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 
@@ -18,17 +18,19 @@ const Sandwiches = ({ data }) => (
             <Heading as="h5" fontBold={true}>
               {sandwich.item}
             </Heading>
-            <Heading as="p" textColor="purple" fontBold={true}>
+            {/* <Heading as="p" textColor="purple" fontBold={true}>
               {allergens(sandwich.allergens)}
-            </Heading>
+            </Heading> */}
             <span>{sandwich.desc}</span>
             <MenuFooter>
               <Heading as="h5" textColor="purple" fontBold={true}>
                 £{sandwich.priceWithChips} w/ Chips & Dip
               </Heading>
-              <Heading as="h5" textColor="purple" fontBold={true}>
-                £{sandwich.priceWithSoup} w/ Soup
-              </Heading>
+              {sandwich.priceWithSoup && (
+                <Heading as="h5" textColor="purple" fontBold={true}>
+                  £{sandwich.priceWithSoup} w/ Soup
+                </Heading>
+              )}
             </MenuFooter>
           </MenuItem>
         ))}

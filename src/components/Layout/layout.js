@@ -36,7 +36,6 @@ const Main = styled.main`
   ${tw`
     mx-auto
   `}
-  max-width: 1600px;
 `
 
 Layout.propTypes = {

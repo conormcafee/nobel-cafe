@@ -36,9 +36,8 @@ const Footer = () => (
       </Box>
     </Main>
     <Flex>
-      <FooterImg src={Logo} alt="Nobel Cafe Logo" />
-
       <FooterImg src={FoodRating} alt="Nobel Cafe Hygine Rating" />
+      <FooterImg src={Logo} alt="Nobel Cafe Logo" />
     </Flex>
   </footer>
 )
@@ -70,12 +69,18 @@ const Box = styled.div`
 const FooterImg = styled.img`
   ${tw`
       w-32 mx-2
+  `}
+
+  &:first-of-type {
+    ${tw`
+      mb-10
     `}
+  }
 `
 const ExternalLink = styled.a`
-  ${tw`block text-purple-600 hover:text-purple-400`}
+  ${tw`block text-green-600 hover:text-green-400`}
 `
 
 const Flex = styled.div`
-  ${tw`flex items-center justify-center mt-8 mb-32`}
+  ${tw`flex flex-col items-center justify-center mt-8 mb-32`}
 `

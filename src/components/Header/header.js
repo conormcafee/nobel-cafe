@@ -36,7 +36,7 @@ const Header = ({ siteTitle }) => (
     <HeaderButton>
       <a href="tel:+442825654302" alt="Call Nobel Cafe">
         <img src={CallIcon} alt="Call Nobel Cafe" />
-        Order Now
+        Takeway: Order Now
       </a>
     </HeaderButton>
   </Fragment>
@@ -96,7 +96,7 @@ const Nav = styled.nav`
 const NavLink = styled(Link)`
   ${tw`
     text-sm sm:text-base 
-    text-gray-700 hover:text-purple-600 
+    text-gray-700 hover:text-green-600 
   `}
 `
 const HeaderButton = styled.div`
@@ -108,9 +108,9 @@ const HeaderButton = styled.div`
     ${tw`
       inline-flex items-center justify-center 
       h-12 px-4 
-      text-white bg-purple-700 hover:bg-purple-900
+      text-white bg-green-700 hover:bg-green-900
       text-sm sm:text-base
-      font-normal uppercase tracking-wide leading-tight 
+      font-black uppercase tracking-wide leading-tight 
       rounded shadow-lg
     `}
     transition: background-color 150ms ease-in-out;

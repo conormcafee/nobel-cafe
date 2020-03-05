@@ -1,9 +1,8 @@
 ---
 title: Floor Staff
-intro: We currently have an opening for new floor staff.  If you're looking to join an excellent, motivated team with great experience then read more below
-path: "/jobs/floor-staff-feb-19"
-jobTitle: Floor Staff
-fullTime: true
+intro: We currently have an open positions.  If you're looking to join an excellent, motivated team with great experience then read more below
+path: "/jobs/positions-available"
+jobTitle: Positions Available
 ---
 
 ## Job Summary

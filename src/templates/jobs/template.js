@@ -12,7 +12,7 @@ export default function JobsTemplate({ path, data }) {
   const { markdownRemark } = data
   const { html } = markdownRemark
   const { frontmatter } = markdownRemark
-  const { intro, jobTitle, fullTime } = frontmatter
+  const { intro, jobTitle } = frontmatter
   return (
     <Layout>
       <SEO title={jobTitle} />
@@ -27,7 +27,7 @@ export default function JobsTemplate({ path, data }) {
             <Intro>{intro}</Intro>
             <Button
               external
-              url="mailto:info@nobel-cafe.co.uk?Subject=Job Application"
+              url="mailto:info@nobelcafe.co.uk?Subject=Job Application"
             >
               Apply Now
             </Button>
@@ -41,7 +41,7 @@ export default function JobsTemplate({ path, data }) {
               <div>
                 <Heading as="h4">{jobTitle}</Heading>
                 <Heading as="h5" textColor="purple" upperCase={true}>
-                  {fullTime ? "Full Time" : "Part Time"}
+                  Full & Part Time
                 </Heading>
               </div>
             </JobIntro>
@@ -53,7 +53,7 @@ export default function JobsTemplate({ path, data }) {
               </Button>
               <Button
                 external
-                url="mailto:info@nobel-cafe.co.uk?Subject=Job Application"
+                url="mailto:info@nobelcafe.co.uk?Subject=Job Application"
               >
                 Apply Now
               </Button>
@@ -66,7 +66,7 @@ export default function JobsTemplate({ path, data }) {
 }
 
 const Introduction = styled.section`
-  ${tw`bg-purple-100 text-center py-10`}
+  ${tw`bg-green-100 text-center py-10`}
 `
 
 const Intro = styled.p`
@@ -109,7 +109,7 @@ const JobContent = styled.div`
   h4,
   h5 {
     ${tw`
-      font-black uppercase tracking-wide text-purple-700
+      font-black uppercase tracking-wide text-green-700
     `}
   }
 
@@ -141,7 +141,6 @@ export const pageQuery = graphql`
         intro
         path
         jobTitle
-        fullTime
       }
     }
   }
