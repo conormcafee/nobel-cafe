@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Nobel Cafe Ballymena`,
-    description: `Nobel Café first opened in 1994, a long time ago. Since 1994 we have been serving first class breakfast and lunch to the people of Ballymena. Nobel is Ballymena, Ballymena is Nobel!`,
+    description: `The best place to kick off your day or just take a break and enjoy a yummy breakfast in Ballymena.  For takeaway call 028 256 54302`,
     author: `@conormcafee`,
   },
   plugins: [
