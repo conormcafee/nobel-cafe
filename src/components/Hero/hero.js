@@ -99,7 +99,7 @@ const Box = styled.div`
 
 const HeroImage = styled.div`
   background-image: url(${props => props.bg});
-  padding-top: 56.26%;
+  padding-top: 100%;
   ${tw`bg-cover bg-center w-full`}
 
   @media only screen and (min-width: 768px) {
