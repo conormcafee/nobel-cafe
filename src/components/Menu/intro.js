@@ -83,136 +83,139 @@ const MenuIntro = () => {
     }
   `)
 
-  const breakfast = data.allMarkdownRemark.edges[0].node
-  const lunch = data.allMarkdownRemark.edges[1].node
+  const [breakfast, setBreakfast] = React.useState(null)
+  const [lunch, setLunch] = React.useState(null)
 
-  return (
-    <Fragment>
-      <Introduction>
-        <Container>
-          <Heading as="h3" fontBold={true}>
-            Breakfast Fry{" "}
-            <span>
-              from £3.95<sup>*</sup>
-            </span>
-          </Heading>
+  React.useEffect(() => {
+    data.allMarkdownRemark.edges.forEach(group => {
+      if (group.node.frontmatter.title === "Lunch Menu") {
+        setLunch(group.node.frontmatter)
+      } else {
+        setBreakfast(group.node.frontmatter)
+      }
+    })
+  }, [data])
 
-          <Intro>
-            Complimentary<sup>*</sup> regular tea or coffee with 5 or more
-            items.{" "}
-            <Heading as="h5" fontBold={true} textColor="purple">
-              Each item 79p*
-            </Heading>
-          </Intro>
-
-          <Intro>
-            Upgrade to cappuccino, latte or herbal tea.{" "}
-            <Heading as="h5" fontBold={true} textColor="purple">
-              £1.00 extra<sup>*</sup>
-            </Heading>
-          </Intro>
-
-          <BG>
-            <h5 as="h5">
-              <sup>*</sup>Prices & Complimentary Tea/Coffee before 11:30am only
-            </h5>
-          </BG>
-        </Container>
-      </Introduction>
-
-      <Container>
-        <Wrapper>
-          <Breakfast
-            data={breakfast.frontmatter.fry ? breakfast.frontmatter.fry : []}
-          />
-
-          <FoodMenuEnd>
-            <img src={FoodIcon} alt="Sandwich Menu Ends Here" />
-          </FoodMenuEnd>
-
-          <Lunch
-            title="More Breakfast Options"
-            data={
-              breakfast.frontmatter.breakfastmenu
-                ? breakfast.frontmatter.breakfastmenu
-                : []
-            }
-          />
-
-          <BG_WRAP>
-            <BG>
-              <h5 as="h5">Complimentary Tea/Coffee before 11:30am only</h5>
-            </BG>
-          </BG_WRAP>
-        </Wrapper>
-      </Container>
-
-      <Introduction hasMarginTop={true}>
-        <Container>
-          <Heading as="h3" fontBold={true}>
-            Lunch Menu
-          </Heading>
-
-          <Intro>Served from 11:30am</Intro>
-        </Container>
-      </Introduction>
-
-      {/* Lunch */}
+  if (breakfast && lunch)
+    return (
       <Fragment>
+        <Introduction>
+          <Container>
+            <Heading as="h3" fontBold={true}>
+              Breakfast Fry{" "}
+              <span>
+                from £3.95<sup>*</sup>
+              </span>
+            </Heading>
+
+            <Intro>
+              Complimentary<sup>*</sup> regular tea or coffee with 5 or more
+              items.{" "}
+              <Heading as="h5" fontBold={true} textColor="purple">
+                Each item 79p*
+              </Heading>
+            </Intro>
+
+            <Intro>
+              Upgrade to cappuccino, latte or herbal tea.{" "}
+              <Heading as="h5" fontBold={true} textColor="purple">
+                £1.00 extra<sup>*</sup>
+              </Heading>
+            </Intro>
+
+            <BG>
+              <h5 as="h5">
+                <sup>*</sup>Prices & Complimentary Tea/Coffee before 11:30am
+                only
+              </h5>
+            </BG>
+          </Container>
+        </Introduction>
+
         <Container>
           <Wrapper>
-            <Sandwiches
-              data={
-                lunch.frontmatter.sandwiches ? lunch.frontmatter.sandwiches : []
-              }
-            />
+            <Breakfast data={breakfast.fry ? breakfast.fry : []} />
 
             <FoodMenuEnd>
               <img src={FoodIcon} alt="Sandwich Menu Ends Here" />
             </FoodMenuEnd>
 
             <Lunch
-              data={lunch.frontmatter.lunch ? lunch.frontmatter.lunch : []}
+              title="More Breakfast Options"
+              data={breakfast.breakfastmenu ? breakfast.breakfastmenu : []}
             />
 
-            <FoodMenuEnd>
-              <img src={FoodIcon} alt="Sandwich Menu Ends Here" />
-            </FoodMenuEnd>
+            <BG_WRAP>
+              <BG>
+                <h5 as="h5">Complimentary Tea/Coffee before 11:30am only</h5>
+              </BG>
+            </BG_WRAP>
           </Wrapper>
         </Container>
 
-        <Side>
+        <Introduction hasMarginTop={true}>
           <Container>
-            <Flex>
-              <SidesAndSauces
-                title="Sides"
-                price={lunch.frontmatter.sides[0].price}
-                data={lunch.frontmatter.sides[0].options}
-              />
-              <SidesAndSauces
-                title="Sauces"
-                price={lunch.frontmatter.sauces[0].price}
-                data={lunch.frontmatter.sauces[0].options}
-              />
-              <SidesAndSauces
-                title="Dips"
-                price={lunch.frontmatter.dips[0].price}
-                data={lunch.frontmatter.dips[0].options}
-              />
-              <Allergens />
-            </Flex>
-          </Container>
-        </Side>
+            <Heading as="h3" fontBold={true}>
+              Lunch Menu
+            </Heading>
 
-        <Container>
-          <Kids data={lunch.frontmatter.kids ? lunch.frontmatter.kids : []} />
-          <FoodMenuEnd>
-            <img src={FoodIcon} alt="Sandwich Menu Ends Here" />
-          </FoodMenuEnd>
-        </Container>
+            <Intro>Served from 11:30am</Intro>
+          </Container>
+        </Introduction>
+
+        {/* Lunch */}
+        <Fragment>
+          <Container>
+            <Wrapper>
+              <Sandwiches data={lunch.sandwiches ? lunch.sandwiches : []} />
+
+              <FoodMenuEnd>
+                <img src={FoodIcon} alt="Sandwich Menu Ends Here" />
+              </FoodMenuEnd>
+
+              <Lunch data={lunch.lunch ? lunch.lunch : []} />
+
+              <FoodMenuEnd>
+                <img src={FoodIcon} alt="Sandwich Menu Ends Here" />
+              </FoodMenuEnd>
+            </Wrapper>
+          </Container>
+
+          <Side>
+            <Container>
+              <Flex>
+                <SidesAndSauces
+                  title="Sides"
+                  price={lunch.sides[0].price}
+                  data={lunch.sides[0].options}
+                />
+
+                <SidesAndSauces
+                  title="Sauces"
+                  price={lunch.sauces[0].price}
+                  data={lunch.sauces[0].options}
+                />
+                <SidesAndSauces
+                  title="Dips"
+                  price={lunch.dips[0].price}
+                  data={lunch.dips[0].options}
+                />
+                <Allergens />
+              </Flex>
+            </Container>
+          </Side>
+
+          <Container>
+            <Kids data={lunch.kids ? lunch.kids : []} />
+            <FoodMenuEnd>
+              <img src={FoodIcon} alt="Sandwich Menu Ends Here" />
+            </FoodMenuEnd>
+          </Container>
+        </Fragment>
       </Fragment>
-    </Fragment>
-  )
+    )
+
+  return null
 }
 
 export default MenuIntro
