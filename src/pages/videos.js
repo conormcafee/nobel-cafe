@@ -9,6 +9,11 @@ const description = `We love making videos at Nobel Café, have a look below at 
 
 const videos = [
   {
+    title: "We're Back!",
+    iframe:
+      "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FNobelBallymena%2Fvideos%2F3811324915560921%2F&show_text=0&width=560",
+  },
+  {
     title: "The Nobel Fry",
     iframe:
       "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FNobelBallymena%2Fvideos%2F445928015576157%2F&show_text=0&width=560",

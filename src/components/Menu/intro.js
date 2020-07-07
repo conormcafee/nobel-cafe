@@ -29,14 +29,10 @@ const MenuIntro = () => {
               sandwiches {
                 item
                 desc
-                allergens
-                price
                 priceWithChips
-                priceWithSoup
               }
               soups {
                 item
-                allergens
                 gf
               }
               sides {
@@ -53,7 +49,6 @@ const MenuIntro = () => {
               }
               lunch {
                 item
-                allergens
                 gf
                 desc
                 price
@@ -61,14 +56,12 @@ const MenuIntro = () => {
               }
               kids {
                 item
-                allergens
                 gf
                 desc
                 price
               }
               fry {
                 item
-                extra
               }
               breakfastmenu {
                 item
@@ -104,7 +97,7 @@ const MenuIntro = () => {
             <Heading as="h3" fontBold={true}>
               Breakfast Fry{" "}
               <span>
-                from £3.95<sup>*</sup>
+                from £5.00<sup>*</sup>
               </span>
             </Heading>
 
@@ -112,7 +105,7 @@ const MenuIntro = () => {
               Complimentary<sup>*</sup> regular tea or coffee with 5 or more
               items.{" "}
               <Heading as="h5" fontBold={true} textColor="purple">
-                Each item 79p*
+                Each item £1.00*
               </Heading>
             </Intro>
 

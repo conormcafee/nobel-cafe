@@ -7,12 +7,8 @@ fry:
     extra: null
   - item: Bacon
     extra: null
-  - item: Fried Egg
+  - item: Egg
     extra: null
-  - item: Scrambled Egg
-    extra: 1
-  - item: Poached Egg
-    extra: 1
   - item: Mushrooms
     extra: null
   - item: Beans
@@ -22,10 +18,6 @@ fry:
   - item: Black Pudding
     extra: null
   - item: White Pudding
-    extra: null
-  - item: Tomato
-    extra: null
-  - item: Diced Potato
     extra: null
   - item: Soda Bread
     extra: null
