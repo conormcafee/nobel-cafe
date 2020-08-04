@@ -30,21 +30,9 @@ fry:
 breakfastmenu:
   - item: Toasted Sourdough
     desc: With Avocado, 2 Lean Bacon & 2 Poached Eggs - includes complimentary regular tea/coffee
-    price: 6.45
-  - item: Grilled Chorizo
-    desc: On Toasted Sourdough with Red Pepper Relish & 2 Poached Eggs - includes complimentary regular tea/coffee
-    price: 6.45
-  - item: Nobel Breakfast Bap
-    desc: Sausage, Bacon & Egg - includes complimentary regular tea/coffee
-    price: 4.45
-  - item: Eggs & Toast
-    desc: 2 Poached Egg on 2 Toast or 2 Scambled Egg on 2 Toast - includes complimentary regular tea/coffee
-    price: 4.25
+    price: 7.00
   - item: Porridge & Fresh Fruit
     desc: Fresh fruit & honey or maple - includes complimentary regular tea/coffee
     price: 3.95
     additional: Add on Roasted Nuts & Toasted Sunflower Seeds 50p
-  - item: Buttermilk Pancake Stack
-    desc: Cripsy Smoked Bacon & Maple Syrup served with complimentary regular tea/coffee
-    price: 4.95
 ---
