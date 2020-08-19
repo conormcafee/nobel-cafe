@@ -8,39 +8,29 @@ sandwiches:
     allergens: null
     priceWithChips: 7.00
     priceWithSoup: null
-  - item: Melt
-    desc: Lean Sliced Ham, Cheddar Cheese, Mustard Mayo, Tobacco Onions, on a Cheese Roll
-    allergens: null
-    priceWithChips: 7.00
-    priceWithSoup: null
-  - item: The Maryland
-    desc: Southern Fried Chicken, Pineapple, Cheese, BBQ Sauce, on Sliced Brown Bread
-    allergens: null
-    priceWithChips: 7.00
-    priceWithSoup: null
-  - item: Chilli Chicken
-    desc: Marinaded Chicken, Roasted Red Peppers, Mozzarella Cheese, Chilli Mayo, in a Tortilla Wra
-    allergens: null
-    priceWithChips: 7.00
-    priceWithSoup: null
-  - item: Kebab Chicken
-    desc: Sliced Chicken, Fried Peppers & Onions, House Kebab Sauce, in a Tortilla Wrap
-    allergens: null
-    priceWithChips: 7.00
-    priceWithSoup: null
-  - item: Peppered Roast Beef
-    desc: Sliced Roast Beef, Crispy Onions, Mustard Mayo, Pepper Sauce, on Rosemary Flatbread
-    allergens: null
-    priceWithChips: 7.00
-    priceWithSoup: null
   - item: Club
     desc: Roast Chicken, Crispy Bacon, Mayo, on Sliced White Bread
     allergens: null
     priceWithChips: 7.00
     priceWithSoup: null
-  - item: Chicken Dinner
+  - item: Classic
+    desc: Shaved Ham, Cheddar Cheese and Fresh Pineapple on Sliced Wholemeal Bread
     allergens: null
-    desc: Roast Chicken, Herb & Sausage Stuffing, Roast Gravy, on Ciabatta Bread
+    priceWithChips: 7.00
+    priceWithSoup: null
+  - item: Chilli Chicken
+    desc: Shredded Roast Chicken, Jalapeno, Relish, Mozarella in a Flour Tortilla
+    allergens: null
+    priceWithChips: 7.00
+    priceWithSoup: null
+  - item: Philly Beef
+    desc: Shaved Roast Beef, Carmelisied Onion, Mustard, Pickle, Swiss Cheese on Rosemary Focaccia
+    allergens: null
+    priceWithChips: 7.00
+    priceWithSoup: null
+  - item: Nobel Noel
+    desc: Roast Turkey, Shaved Ham, Stuffing, Cranberry Sauce on Ciabatta Bread
+    allergens: null
     priceWithChips: 7.00
     priceWithSoup: null
   - item: Avocado Toast
@@ -64,7 +54,7 @@ lunch:
     price: 10.00
   - item: Southern Fried Chicken Filet Burger
     gf: false
-    desc: Gem Lettuce, Beef Tomato, Mayo, Red Onion, Toasted Bun. Includes Side
+    desc: Gem Lettuce, Beef Tomato, Mayo, Red Onion, Bacon & Cheese, Toasted Bun. Includes Side
     price: 10.00
   - item: Penne Pasta
     gf: true
@@ -81,6 +71,10 @@ lunch:
   - item: Salt & Chilli Chicken Goujons
     gf: false
     desc: Garlic Mayo Dip. Includes Side
+    price: 10.00
+  - item: Vegetarian Pasta
+    gf: false
+    desc: Penne Pasta, Roasted Red Pepper and Tomato Sauce, Basil, Parmesan and Garlic Bread
     price: 10.00
 kids:
   - item: Pasta
@@ -108,6 +102,7 @@ sides:
     options:
       [
         Chips,
+        Kebab Fries,
         Mash,
         Champ,
         Skin on Fries,
