@@ -38,6 +38,11 @@ sandwiches:
     desc: Sliced Avocado, Lean Bacon, 2 Poached Eggs, on a Toasted Sourdough
     priceWithChips: 7.00
     priceWithSoup: null
+  - item: Pig Out
+    allergens: null
+    desc: BBQ Pulled Pork, Pepperoni, Mozzarella, Slaw on a Griddled Flat Bread (does not include side)
+    priceWithChips: 7.00
+    priceWithSoup: null
 soups:
   - item: Potato & Leek Soup
     allergens: [1, 5]
