@@ -3,46 +3,41 @@ title: Lunch Menu
 path: "/menu/lunch-menu"
 desc: Lunch is available in Nobel Cafe from 11:30am.  We have a great selection of sandwiches, hot plates, & some nice treats for all ages.
 sandwiches:
-  - item: Tasty Tuna
-    desc: Flaked Tuna, Red Onion, Sweetcorn, Mayo, on a Seeded Sub Roll
-    allergens: null
-    priceWithChips: 7.00
-    priceWithSoup: null
   - item: Club
-    desc: Roast Chicken, Crispy Bacon, Mayo, on Sliced White Bread
+    desc: Sliced Roast Chicken Breast, Crispy Smoked Bacon, Lettuce, Tomato and Mayonnaise on Sliced White Bread
     allergens: null
-    priceWithChips: 7.00
-    priceWithSoup: null
-  - item: Classic
-    desc: Shaved Ham, Cheddar Cheese and Fresh Pineapple on Sliced Wholemeal Bread
+    priceWithChips: 6.50
+    priceWithSoup: 8.00
+  - item: Melt
+    desc: Sliced Ham, Cheddar Cheese, Mustard Mayo, Tobacco Onions, Lettuce and Tomato on Sliced White Bread
     allergens: null
-    priceWithChips: 7.00
-    priceWithSoup: null
-  - item: Chilli Chicken
-    desc: Shredded Roast Chicken, Jalapeno, Relish, Mozarella in a Flour Tortilla
-    allergens: null
-    priceWithChips: 7.00
-    priceWithSoup: null
-  - item: Philly Beef
-    desc: Shaved Roast Beef, Carmelisied Onion, Mustard, Pickle, Swiss Cheese on Rosemary Focaccia
-    allergens: null
-    priceWithChips: 7.00
-    priceWithSoup: null
+    priceWithChips: 6.50
+    priceWithSoup: 8.00
   - item: Nobel Noel
-    desc: Roast Turkey, Shaved Ham, Stuffing, Cranberry Sauce on Ciabatta Bread
+    desc: Roast Turkey, Ham, Stuffing and Cranberry with Lettuce and Tomato on Sliced Brown Bread
     allergens: null
-    priceWithChips: 7.00
-    priceWithSoup: null
-  - item: Avocado Toast
+    priceWithChips: 6.50
+    priceWithSoup: 8.00
+  - item: Tasty Tuna
+    desc: Flaked Tuna, Red Onion, Sweetcorn and Mayonnaise on Sliced Brown Bread
     allergens: null
-    desc: Sliced Avocado, Lean Bacon, 2 Poached Eggs, on a Toasted Sourdough
-    priceWithChips: 7.00
-    priceWithSoup: null
-  - item: Pig Out
+    priceWithChips: 6.50
+    priceWithSoup: 8.00
+  - item: B.O.B
+    desc: Silverside of Beef, Fried Onions, Melted Brie on Sourdough
     allergens: null
-    desc: BBQ Pulled Pork, Pepperoni, Mozzarella, Slaw on a Griddled Flat Bread (does not include side)
-    priceWithChips: 7.00
-    priceWithSoup: null
+    priceWithChips: 6.50
+    priceWithSoup: 8.00
+loadedFries:
+  - item: Southern Fried Chicken
+    desc: Tobacco Onions, Creamy Pepper Sauce
+    price: 7.00
+  - item: Spice Box
+    desc: Salt & Chilli Chicken, Onions, Peppers, Garlic Mayo
+    price: 7.00
+  - item: Creamy Chilli
+    desc: Steak or Chicken with Tobacco Onions
+    price: 7.00
 soups:
   - item: Potato & Leek Soup
     allergens: [1, 5]
@@ -100,25 +95,25 @@ lunch:
     addPrice: false
 kids:
   - item: Pasta
-    gf: true
-    desc: Penne Pasta, Carbonara
+    gf: false
+    desc: Penne Pasta, Creamy Chilli Chicken
+    price: 5.00
+  - item: Chicken Goujons
+    gf: false
+    desc: Nobel Fried Chicken & Chips. Includes BBQ Dip
+    price: 5.00
+  - item: Cheeseburger
+    gf: false
+    desc: Fries & BBQ Dip
     price: 5.00
   - item: Bangers & Mash
     gf: false
     desc: Bangers, Mash & Gravy
     price: 5.00
-  - item: Chicken Goujons
-    gf: true
-    desc: Nobel Fried Chicken & Chips, Includes BBQ Dip
-    price: 5.00
   - item: Kids Soup
     gf: false
-    desc: Along with a Potato or Roll
+    desc: Potato & Leek, served with Potato or Roll
     price: 4.00
-  - item: CheeseBurger
-    gf: false
-    desc: Fries, BBQ Dip
-    price: 5.00
 sides:
   - price: 3.00
     options:

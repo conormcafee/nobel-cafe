@@ -5,7 +5,7 @@ import { MenuItems, MenuItem } from "../components"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 
-const Lunch = ({ title, data }) => {
+const Lunch = ({ title, data, isActuallyLunch }) => {
   const burgers = data.filter(a => a.item === "Burgers")
   const goujons = data.filter(a => a.item === "Goujons")
   const pasta = data.filter(a => a.item === "Pasta")
@@ -16,12 +16,32 @@ const Lunch = ({ title, data }) => {
     if (data.length > 0)
       return (
         <>
-          <Heading as="h5" fontBold={true}>
+          <Heading as="h3" fontBold={true}>
             {title}
           </Heading>
           <MenuItems>
             {data.map((lunch, index) => (
               <MenuItem key={index}>
+                <p>{lunch.desc}</p>
+              </MenuItem>
+            ))}
+          </MenuItems>
+        </>
+      )
+
+    return null
+  }
+
+  const renderBreakfast = data => {
+    if (data.length > 0)
+      return (
+        <>
+          <MenuItems>
+            {data.map((lunch, index) => (
+              <MenuItem key={index}>
+                <Heading as="h5" fontBold={true}>
+                  {lunch.item}
+                </Heading>
                 <p>{lunch.desc}</p>
 
                 {lunch.addPrice && (
@@ -47,12 +67,24 @@ const Lunch = ({ title, data }) => {
       <Heading as="h4" textColor="purple" fontBold={true}>
         {title}
       </Heading>
+      {isActuallyLunch && (
+        <Heading
+          as="h5"
+          textColor="purple"
+          fontBold={true}
+          style={{ textAlign: "center", marginTop: -10 }}
+        >
+          £7.00 (Sides Not Included)
+        </Heading>
+      )}
 
       {renderContent(burgers, "Burgers")}
       {renderContent(goujons, "Goujons")}
       {renderContent(pasta, "Pasta")}
       {renderContent(panFry, "Pan Fry")}
       {renderContent(salad, "Classic Caesar Salad")}
+
+      {!isActuallyLunch && renderBreakfast(data)}
     </Wrapper>
   )
 }
@@ -68,6 +100,6 @@ const Wrapper = styled.section`
   ${tw`mt-10 max-w-4xl mx-auto`}
 
   h4 {
-    ${tw`mb-5 sm:text-center`}
+    ${tw`mb-5 text-center`}
   }
 `

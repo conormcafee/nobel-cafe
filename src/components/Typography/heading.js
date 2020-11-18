@@ -14,13 +14,22 @@ const colorSwitcher = color => {
   }
 }
 
-const Heading = ({ as, upperCase, textColor, children, newLine, fontBold }) => (
+const Heading = ({
+  as,
+  upperCase,
+  textColor,
+  children,
+  newLine,
+  fontBold,
+  style,
+}) => (
   <Element
     as={as}
     upperCase={upperCase}
     css={colorSwitcher(textColor)}
     newLine={newLine}
     fontBold={fontBold}
+    style={style}
   >
     {children}
   </Element>
@@ -49,4 +58,5 @@ Heading.defaultProps = {
   upperCase: false,
   newLine: false,
   fontBold: false,
+  style: {},
 }
