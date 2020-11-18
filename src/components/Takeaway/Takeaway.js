@@ -189,7 +189,7 @@ const MobileHeading = styled.div`
 const MainOptions = styled.section`
   @media only screen and (min-width: 768px) {
     display: grid;
-    /* grid-gap: 60px; */
+    grid-gap: 60px;
     grid-template-columns: 1fr 2fr;
   }
 `
@@ -199,7 +199,7 @@ const SidesGrid = styled.section`
 
   @media only screen and (min-width: 768px) {
     display: grid;
-    /* grid-gap: 60px; */
+    grid-gap: 60px;
     grid-template-columns: 1fr 1fr 1fr;
   }
 `

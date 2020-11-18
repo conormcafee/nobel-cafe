@@ -4,7 +4,6 @@ import { Layout } from "../components/Layout"
 import { Hero } from "../components/Hero"
 import { OurStory } from "../components/OurStory"
 import { SocialBlock } from "../components/SocialBlock"
-// import Takeaway from "../components/Takeaway/Takeaway"
 
 const HomePage = () => (
   <Layout>
