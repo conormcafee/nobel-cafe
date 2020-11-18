@@ -5,10 +5,10 @@ import { MenuItems, MenuItem, MenuFooter } from "../components"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 
-const Sandwiches = ({ data }) => (
+const Sandwiches = ({ data, title }) => (
   <Wrapper>
     <Heading as="h4" textColor="purple" fontBold={true}>
-      Sandwiches
+      {title}
     </Heading>
 
     {data.length > 0 && (

@@ -62,18 +62,17 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `Simonetta`,
-            variants: [`400`, `900`],
-          },
-        ],
+        fonts: [`Simonetta\:400,900`],
+        display: "swap",
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: "1237998103239389",
+      },
+    },
   ],
 }

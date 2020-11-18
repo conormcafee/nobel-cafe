@@ -6,11 +6,11 @@ import tw from "tailwind.macro"
 import NCLogo from "../../images/logo.png"
 import CallIcon from "../../svg/call.svg"
 
-// const menu = [
-//   { title: "Menu", to: "/menu" },
-//   { title: "Videos", to: "/videos" },
-//   { title: "Jobs", to: "/jobs" },
-// ]
+const menu = [
+  { title: "Menu", to: "/menu" },
+  { title: "Videos", to: "/videos" },
+  { title: "Jobs", to: "/jobs" },
+]
 
 const Header = ({ siteTitle }) => (
   <Fragment>
@@ -20,7 +20,7 @@ const Header = ({ siteTitle }) => (
           <HeaderLogo src={NCLogo} alt={`${siteTitle} Logo`} />
         </Link>
 
-        {/* <Nav>
+        <Nav>
           <ul>
             {menu.map((a, index) => (
               <HiddenMobile as="li" key={index} isHiddenMobile={false}>
@@ -30,7 +30,7 @@ const Header = ({ siteTitle }) => (
               </HiddenMobile>
             ))}
           </ul>
-        </Nav> */}
+        </Nav>
       </InnerWrapper>
     </Wrapper>
     <HeaderButton>
@@ -76,29 +76,29 @@ const HeaderLogo = styled.img`
   `}
 `
 
-// const HiddenMobile = styled.span`
-//   ${props =>
-//     props.isHiddenMobile ? tw`hidden sm:inline-block` : tw`inline-block`}
-// `
+const HiddenMobile = styled.span`
+  ${props =>
+    props.isHiddenMobile ? tw`hidden sm:inline-block` : tw`inline-block`}
+`
 
-// const Nav = styled.nav`
-//   ${tw`
-//     flex items-center justify-between
-//     font-normal
-//     mt-6
-//   `}
+const Nav = styled.nav`
+  ${tw`
+    flex items-center justify-between
+    font-normal
+    mt-6
+  `}
 
-//   li:not(:last-of-type) {
-//     ${tw`mr-4 md:mr-8`}
-//   }
-// `
+  li:not(:last-of-type) {
+    ${tw`mr-4 md:mr-8`}
+  }
+`
 
-// const NavLink = styled(Link)`
-//   ${tw`
-//     text-sm sm:text-base
-//     text-gray-700 hover:text-green-600
-//   `}
-// `
+const NavLink = styled(Link)`
+  ${tw`
+    text-sm sm:text-base
+    text-gray-700 hover:text-green-600
+  `}
+`
 const HeaderButton = styled.div`
   ${tw`
     p-5 md:p-10 z-50 fixed bottom-0 right-0 left-0 text-center lg:text-left lg:left-auto

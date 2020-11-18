@@ -30,6 +30,12 @@ const MenuIntro = () => {
                 item
                 desc
                 priceWithChips
+                priceWithSoup
+              }
+              loadedFries {
+                item
+                desc
+                price
               }
               soups {
                 item
@@ -67,7 +73,6 @@ const MenuIntro = () => {
                 item
                 desc
                 price
-                additional
               }
             }
           }
@@ -136,6 +141,7 @@ const MenuIntro = () => {
             <Lunch
               title="More Breakfast Options"
               data={breakfast.breakfastmenu ? breakfast.breakfastmenu : []}
+              isActuallyLunch={false}
             />
 
             <BG_WRAP>
@@ -160,13 +166,24 @@ const MenuIntro = () => {
         <Fragment>
           <Container>
             <Wrapper>
-              <Sandwiches data={lunch.sandwiches ? lunch.sandwiches : []} />
+              <Sandwiches
+                title="Toasted Sandwiches"
+                data={lunch?.sandwiches || []}
+              />
+
+              <Sandwiches
+                title="Loaded Fries"
+                data={lunch?.loadedFries || []}
+              />
 
               <FoodMenuEnd>
                 <img src={FoodIcon} alt="Sandwich Menu Ends Here" />
               </FoodMenuEnd>
 
-              <Lunch data={lunch.lunch ? lunch.lunch : []} />
+              <Lunch
+                data={lunch.lunch ? lunch.lunch : []}
+                isActuallyLunch={true}
+              />
 
               <FoodMenuEnd>
                 <img src={FoodIcon} alt="Sandwich Menu Ends Here" />

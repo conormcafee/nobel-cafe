@@ -5,42 +5,89 @@ import { MenuItems, MenuItem } from "../components"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 
-const Lunch = ({ title, data }) => (
-  <Wrapper>
-    <Heading as="h4" textColor="purple" fontBold={true}>
-      {title}
-    </Heading>
+const Lunch = ({ title, data, isActuallyLunch }) => {
+  const burgers = data.filter(a => a.item === "Burgers")
+  const goujons = data.filter(a => a.item === "Goujons")
+  const pasta = data.filter(a => a.item === "Pasta")
+  const panFry = data.filter(a => a.item === "Pan Fry")
+  const salad = data.filter(a => a.item === "Classic Caesar Salad")
 
-    {data.length > 0 && (
-      <MenuItems>
-        {data.map((lunch, index) => (
-          <MenuItem key={index}>
-            <Heading as="h5" fontBold={true}>
-              {lunch.item}
-            </Heading>
-            {/* {lunch.allergens && (
-              <Heading as="p" textColor="purple" fontBold={true}>
-                {allergens(lunch.allergens)}
-              </Heading>
-            )} */}
+  const renderContent = (data, title = "") => {
+    if (data.length > 0)
+      return (
+        <>
+          <Heading as="h3" fontBold={true}>
+            {title}
+          </Heading>
+          <MenuItems>
+            {data.map((lunch, index) => (
+              <MenuItem key={index}>
+                <p>{lunch.desc}</p>
+              </MenuItem>
+            ))}
+          </MenuItems>
+        </>
+      )
 
-            <p>{lunch.desc}</p>
+    return null
+  }
 
-            {lunch.addPrice && (
-              <Heading as="h5" textColor="purple" fontBold={true}>
-                Single - £{lunch.addPrice}
-              </Heading>
-            )}
+  const renderBreakfast = data => {
+    if (data.length > 0)
+      return (
+        <>
+          <MenuItems>
+            {data.map((lunch, index) => (
+              <MenuItem key={index}>
+                <Heading as="h5" fontBold={true}>
+                  {lunch.item}
+                </Heading>
+                <p>{lunch.desc}</p>
 
-            <Heading as="h5" textColor="purple" fontBold={true}>
-              {lunch.addPrice && `Double - `}£{lunch.price}
-            </Heading>
-          </MenuItem>
-        ))}
-      </MenuItems>
-    )}
-  </Wrapper>
-)
+                {lunch.addPrice && (
+                  <Heading as="h5" textColor="purple" fontBold={true}>
+                    Single - £{lunch.addPrice}
+                  </Heading>
+                )}
+
+                <Heading as="h5" textColor="purple" fontBold={true}>
+                  {lunch.addPrice && `Double - `}£{lunch.price}
+                </Heading>
+              </MenuItem>
+            ))}
+          </MenuItems>
+        </>
+      )
+
+    return null
+  }
+
+  return (
+    <Wrapper>
+      <Heading as="h4" textColor="purple" fontBold={true}>
+        {title}
+      </Heading>
+      {isActuallyLunch && (
+        <Heading
+          as="h5"
+          textColor="purple"
+          fontBold={true}
+          style={{ textAlign: "center", marginTop: -10 }}
+        >
+          £7.00 (Sides Not Included)
+        </Heading>
+      )}
+
+      {renderContent(burgers, "Burgers")}
+      {renderContent(goujons, "Goujons")}
+      {renderContent(pasta, "Pasta")}
+      {renderContent(panFry, "Pan Fry")}
+      {renderContent(salad, "Classic Caesar Salad")}
+
+      {!isActuallyLunch && renderBreakfast(data)}
+    </Wrapper>
+  )
+}
 
 export default Lunch
 
@@ -53,6 +100,6 @@ const Wrapper = styled.section`
   ${tw`mt-10 max-w-4xl mx-auto`}
 
   h4 {
-    ${tw`mb-5 sm:text-center`}
+    ${tw`mb-5 text-center`}
   }
 `
