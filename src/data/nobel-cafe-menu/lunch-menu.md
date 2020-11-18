@@ -48,39 +48,56 @@ soups:
     allergens: [1, 5]
     gf: true
 lunch:
-  - item: Hand Pressed Steak Burger
-    gf: true
-    desc: Bacon, Cheese, Gem Lettuce, Tomato, Red Onion & Toasted Bun. Includes Side
-    price: 10.00
-    addPrice: 7.00
-  - item: Sticky Chilli Chicken
+  - item: Burgers
+    desc: Hand Pressed Steak Burger topped with Maple Bacon and Cheddar Cheese, served in a Toasted Bun with Gem Lettuce, Beef Tomato and Red Onion Rings. Secret Sauce on the side.
+    price: 7.00
     gf: false
-    desc: Garlic Mayo Dip. Includes Side
-    price: 10.00
-  - item: Southern Fried Chicken Filet Burger
+    addPrice: false
+  - item: Burgers
+    desc: Southern Fried Chicken Fillet, topped with Maple Bacon and Cheddar Cheese, served in a Toasted Bun with Gem Lettuce, Beef Tomato and Red Onion Rings. BBQ Sauce on the side.
+    price: 7.00
     gf: false
-    desc: Gem Lettuce, Beef Tomato, Mayo, Red Onion, Bacon & Cheese, Toasted Bun. Includes Side
-    price: 10.00
-  - item: Penne Pasta
-    gf: true
-    desc: Chilli Steak, Pepper Cream Sauce, Garlic Bread
-    price: 10.00
-  - item: Breaded Chicken Goujons
-    gf: true
-    desc: Choice of Dipping Sauce. Includes Side
-    price: 10.00
+    addPrice: false
+  - item: Goujons
+    desc: Chicken Tenders coated in Gluten Free Breadcrumbs, served with a Sauce or Dip of your choice.
+    price: 7.00
+    gf: false
+    addPrice: false
+  - item: Goujons
+    desc: Salt and Chilli Seasoned Chicken Goujons served with a Garlic Mayo Dip
+    price: 7.00
+    gf: false
+    addPrice: false
+  - item: Goujons
+    desc: Sticky Sweet Chilli Chicken, Garlic Mayo and Shredded Spring Onion
+    price: 7.00
+    gf: false
+    addPrice: false
+  - item: Pasta
+    desc: Penne Pasta, Chilli Steak, Pepper Cream
+    price: 7.00
+    gf: false
+    addPrice: false
+  - item: Pasta
+    desc: Penne Pasta, Courgette, Pesto Cream
+    price: 7.00
+    gf: false
+    addPrice: false
+  - item: Pasta
+    desc: Penne Pasta, Creamy Chilli Chicken
+    price: 7.00
+    gf: false
+    addPrice: false
+  - item: Pan Fry
+    desc: Pan Fried Escalope of Chicken, Steamed Seasonal Vegetables, Tobacco Onions and Sauce of your choice.
+    price: 7.00
+    gf: false
+    addPrice: false
   - item: Classic Caesar Salad
-    gf: false
     desc: Crispy Fried Chicken, Crispy Bacon, Parmesan, Croutons
-    price: 10.00
-  - item: Salt & Chilli Chicken Goujons
+    price: 7.00
     gf: false
-    desc: Garlic Mayo Dip. Includes Side
-    price: 10.00
-  - item: Vegetarian Pasta
-    gf: false
-    desc: Penne Pasta, Roasted Red Pepper and Tomato Sauce, Basil, Parmesan and Garlic Bread
-    price: 10.00
+    addPrice: false
 kids:
   - item: Pasta
     gf: true
@@ -106,20 +123,19 @@ sides:
   - price: 3.00
     options:
       [
-        Chips,
-        Kebab Fries,
-        Mash,
-        Champ,
-        Skin on Fries,
-        Garlic Diced Potatoes,
-        Baby Caesar Salad,
         Seasonal Vegetables,
+        Garlic Diced Potatoes,
+        Hand Cut Chips,
+        Skin on French Fries,
         Salt & Chilli Fries,
+        Kebab Fries,
+        Creamy Mash or Champ,
+        Garlic Bread,
       ]
 sauces:
   - price: 1.00
-    options: [Leek & Bacon, Gravy, Pepper Cream]
+    options: [Peppercorn Cream, Gravy, Leek & Bacon]
 dips:
   - price: 1.00
-    options: [Garlic Mayo, Sweet Chilli, BBQ, Mayo, Kebab]
+    options: [Mayo, Garlic Mayo, BBQ Sauce, Sweet Chilli, House Sauce]
 ---
