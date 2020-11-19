@@ -110,14 +110,7 @@ const MenuIntro = () => {
               Complimentary<sup>*</sup> regular tea or coffee with 5 or more
               items.{" "}
               <Heading as="h5" fontBold={true} textColor="purple">
-                Each item £1.00*
-              </Heading>
-            </Intro>
-
-            <Intro>
-              Upgrade to cappuccino, latte or herbal tea.{" "}
-              <Heading as="h5" fontBold={true} textColor="purple">
-                £1.00 extra<sup>*</sup>
+                Each item £0.70
               </Heading>
             </Intro>
 
