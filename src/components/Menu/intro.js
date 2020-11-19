@@ -100,10 +100,7 @@ const MenuIntro = () => {
         <Introduction>
           <Container>
             <Heading as="h3" fontBold={true}>
-              Breakfast Fry{" "}
-              <span>
-                from £5.00<sup>*</sup>
-              </span>
+              Breakfast Fry
             </Heading>
 
             <Intro>
@@ -115,8 +112,7 @@ const MenuIntro = () => {
 
             <BG>
               <h5 as="h5">
-                <sup>*</sup>before 11:30am
-                only
+                before 11:30am only
               </h5>
             </BG>
           </Container>
