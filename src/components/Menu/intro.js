@@ -107,8 +107,7 @@ const MenuIntro = () => {
             </Heading>
 
             <Intro>
-              Complimentary<sup>*</sup> regular tea or coffee with 5 or more
-              items.{" "}
+             
               <Heading as="h5" fontBold={true} textColor="purple">
                 Each item £0.70
               </Heading>
@@ -116,7 +115,7 @@ const MenuIntro = () => {
 
             <BG>
               <h5 as="h5">
-                <sup>*</sup>Prices & Complimentary Tea/Coffee before 11:30am
+                <sup>*</sup>before 11:30am
                 only
               </h5>
             </BG>
