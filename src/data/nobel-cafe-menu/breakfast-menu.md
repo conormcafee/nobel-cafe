@@ -27,7 +27,7 @@ fry:
     extra: null
   - item: Pancake
     extra: null
-  - item: Diced Potatos
+  - item: Diced Potato
     extra: null
   - item: Toast
     extra: null

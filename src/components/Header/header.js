@@ -7,7 +7,8 @@ import NCLogo from "../../images/logo.png"
 import CallIcon from "../../svg/call.svg"
 
 const menu = [
-  { title: "Menu", to: "/menu" },
+  { title: "Sit In Menu", to: "/menu" },
+  { title: "Takeaway Menu", to: "/menu/takeaway-menu" },
   { title: "Videos", to: "/videos" },
   { title: "Jobs", to: "/jobs" },
 ]
