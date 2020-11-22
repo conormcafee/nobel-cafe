@@ -82,10 +82,6 @@ export const takeaway = [
     description: "Seasonal Vegetables, Tobacco Onions, Choice of Sauce",
   },
   {
-    name: "Fresh Cod",
-    description: "Crispy Battered Cod, Homemade Tartare & Lemon",
-  },
-  {
     name: "Penne Pasta",
     description: "Chilli Steak or Chicken Penne Pasta",
   },
