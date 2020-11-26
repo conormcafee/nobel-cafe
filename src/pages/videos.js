@@ -1,9 +1,11 @@
 import React from "react"
 import SEO from "../components/seo"
-import { Layout, Container } from "../components/Layout"
-import { Heading } from "../components/Typography"
-import styled from "@emotion/styled"
-import tw from "tailwind.macro"
+import { Layout } from "../components/Layout"
+// import { Layout, Container } from "../components/Layout"
+// import { Heading } from "../components/Typography"
+// import styled from "@emotion/styled"
+// import tw from "tailwind.macro"
+import Takeaway from "../components/Takeaway/Takeaway"
 
 const description = `We love making videos at Nobel Café, have a look below at some of our favourites to date!  Have an idea of a great video we could make in the future, please let us know`
 
@@ -44,8 +46,8 @@ export default function Video() {
   return (
     <Layout>
       <SEO title="Videos" description={description} />
-
-      <Introduction>
+      <Takeaway />
+      {/* <Introduction>
         <Container>
           <Heading as="h2" fontBold={true}>
             Videos
@@ -78,43 +80,43 @@ export default function Video() {
             </VideoElement>
           ))}
         </Videos>
-      </Container>
+      </Container> */}
     </Layout>
   )
 }
 
-const Introduction = styled.section`
-  ${tw`bg-gray-200 text-center py-10`}
-`
+// const Introduction = styled.section`
+//   ${tw`bg-gray-200 text-center py-10`}
+// `
 
-const Intro = styled.p`
-  ${tw`
-    tracking-wide font-light block my-4 max-w-lg text-center mx-auto
-  `}
-`
+// const Intro = styled.p`
+//   ${tw`
+//     tracking-wide font-light block my-4 max-w-lg text-center mx-auto
+//   `}
+// `
 
-const Videos = styled.section`
-  ${tw`
-    flex flex-wrap mt-10 pb-8 -mx-10
-  `}
-`
+// const Videos = styled.section`
+//   ${tw`
+//     flex flex-wrap mt-10 pb-8 -mx-10
+//   `}
+// `
 
-const VideoElement = styled.aside`
-  ${tw`
-    w-full md:w-1/2 px-10 mb-10
-  `}
-`
+// const VideoElement = styled.aside`
+//   ${tw`
+//     w-full md:w-1/2 px-10 mb-10
+//   `}
+// `
 
-const VideoIframe = styled.div`
-  ${tw`
-      relative overflow-hidden max-w-full
-    `}
-  padding-bottom: 56.25%;
-  height: 0;
+// const VideoIframe = styled.div`
+//   ${tw`
+//       relative overflow-hidden max-w-full
+//     `}
+//   padding-bottom: 56.25%;
+//   height: 0;
 
-  & iframe {
-    ${tw`
-      absolute top-0 left-0 w-full h-full
-    `}
-  }
-`
+//   & iframe {
+//     ${tw`
+//       absolute top-0 left-0 w-full h-full
+//     `}
+//   }
+// `

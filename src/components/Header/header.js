@@ -7,31 +7,46 @@ import NCLogo from "../../images/logo.png"
 import CallIcon from "../../svg/call.svg"
 
 const menu = [
-  { title: "Sit In Menu", to: "/menu" },
-  { title: "Takeaway Menu", to: "/menu/takeaway-menu" },
-  { title: "Videos", to: "/videos" },
-  { title: "Jobs", to: "/jobs" },
+  // { title: "Sit In Menu", to: "/menu" },
+  // { title: "Takeaway Menu", to: "/menu/takeaway-menu" },
+  // { title: "Videos", to: "/videos" },
+  // { title: "Jobs", to: "/jobs" },
 ]
 
 const Header = ({ siteTitle }) => (
   <Fragment>
+    <p
+      style={{
+        background: "#38a169",
+        fontWeight: 900,
+        textAlign: "center",
+        fontSize: 20,
+        padding: "12px 0px",
+        marginBottom: 16,
+        color: "white",
+      }}
+    >
+      We're Still Open for Takeaway!
+    </p>
     <Wrapper>
       <InnerWrapper>
         <Link to="/" title="Go to Homepage">
           <HeaderLogo src={NCLogo} alt={`${siteTitle} Logo`} />
         </Link>
 
-        <Nav>
-          <ul>
-            {menu.map((a, index) => (
-              <HiddenMobile as="li" key={index} isHiddenMobile={false}>
-                <NavLink to={a.to} title="Go to">
-                  {a.title}
-                </NavLink>
-              </HiddenMobile>
-            ))}
-          </ul>
-        </Nav>
+        {menu.length > 0 && (
+          <Nav>
+            <ul>
+              {menu.map((a, index) => (
+                <HiddenMobile as="li" key={index} isHiddenMobile={false}>
+                  <NavLink to={a.to} title="Go to">
+                    {a.title}
+                  </NavLink>
+                </HiddenMobile>
+              ))}
+            </ul>
+          </Nav>
+        )}
       </InnerWrapper>
     </Wrapper>
     <HeaderButton>

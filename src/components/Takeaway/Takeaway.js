@@ -27,7 +27,7 @@ const Takeaway = () => {
       <Container>
         <MainOptions>
           <Aside>
-            <BreakfastWarning>Served from 8am to 12pm</BreakfastWarning>
+            <BreakfastWarning>Served from 10am to 2pm</BreakfastWarning>
             <div style={{ padding: 24 }}>
               <div data-group="03">
                 <Heading as="h3">Breakfast Items</Heading>

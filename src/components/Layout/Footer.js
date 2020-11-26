@@ -20,8 +20,14 @@ const Footer = () => (
         <Heading as="h4" fontBold={true}>
           We Are Open
         </Heading>
-        <p>Monday - Saturday</p>
-        <p>8am - 5pm</p>
+        <p>Monday - Tuesday</p>
+        <p>
+          <b>Closed</b>
+        </p>
+        <p>Wednesday - Sunday</p>
+        <p>
+          <b>10am - 7pm</b>
+        </p>
       </Box>
       <Box>
         <Heading as="h4" fontBold={true}>

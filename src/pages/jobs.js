@@ -1,12 +1,14 @@
 import React from "react"
 import { graphql } from "gatsby"
 import SEO from "../components/seo"
-import { Layout, Container } from "../components/Layout"
-import { Heading } from "../components/Typography"
+import { Layout } from "../components/Layout"
+// import { Layout, Container } from "../components/Layout"
+// import { Heading } from "../components/Typography"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
-import { Button } from "../components/Button"
-import JobIcon from "../svg/job.svg"
+// import { Button } from "../components/Button"
+// import JobIcon from "../svg/job.svg"
+import Takeaway from "../components/Takeaway/Takeaway"
 
 const description = `We are always on the look out for great talent to add to the Nobel Cafe team`
 
@@ -16,8 +18,9 @@ export default function Video({ data }) {
   return (
     <Layout>
       <SEO title="Jobs" description={description} />
-
-      <Introduction>
+      {/* REMOVE GLOBAL TAKEAWAY */}
+      <Takeaway />
+      {/* <Introduction>
         <Container>
           <Heading as="h2" fontBold={true}>
             Jobs
@@ -75,62 +78,62 @@ export default function Video({ data }) {
             </p>
           </NoJobs>
         )}
-      </Container>
+      </Container> */}
     </Layout>
   )
 }
 
-const Wrapper = styled.section`
-  ${tw`
-    py-10 -mx-10 flex flex-wrap
-  `}
-`
+// const Wrapper = styled.section`
+//   ${tw`
+//     py-10 -mx-10 flex flex-wrap
+//   `}
+// `
 
-const NoJobs = styled.section`
-  ${tw`
-    py-16 flex flex-col text-center max-w-sm mx-auto
-  `}
+// const NoJobs = styled.section`
+//   ${tw`
+//     py-16 flex flex-col text-center max-w-sm mx-auto
+//   `}
 
-  img {
-    ${tw`
-      w-16 mb-4 opacity-50 mx-auto
-    `}
-  }
-`
+//   img {
+//     ${tw`
+//       w-16 mb-4 opacity-50 mx-auto
+//     `}
+//   }
+// `
 
-const Header = styled.header`
-  ${tw`
-    flex items-center mb-6
-  `}
+// const Header = styled.header`
+//   ${tw`
+//     flex items-center mb-6
+//   `}
 
-  img {
-    ${tw`
-      w-16 mr-5
-    `}
-  }
-`
+//   img {
+//     ${tw`
+//       w-16 mr-5
+//     `}
+//   }
+// `
 
-const Introduction = styled.section`
-  ${tw`bg-gray-200 text-center py-10`}
-`
+// const Introduction = styled.section`
+//   ${tw`bg-gray-200 text-center py-10`}
+// `
 
-const Intro = styled.p`
-  ${tw`
-    tracking-wide font-light block my-4 max-w-lg text-center mx-auto
-  `}
-`
+// const Intro = styled.p`
+//   ${tw`
+//     tracking-wide font-light block my-4 max-w-lg text-center mx-auto
+//   `}
+// `
 
-const Job = styled.aside`
-  ${tw`
-    w-full md:w-1/3 p-10
-  `}
+// const Job = styled.aside`
+//   ${tw`
+//     w-full md:w-1/3 p-10
+//   `}
 
-  p {
-    ${tw`
-      my-4
-    `}
-  }
-`
+//   p {
+//     ${tw`
+//       my-4
+//     `}
+//   }
+// `
 
 export const pageQuery = graphql`
   query Jobs {
