@@ -26,7 +26,7 @@ const Footer = () => (
         </p>
         <p>Wednesday - Sunday</p>
         <p>
-          <b>10am - 7pm</b>
+          <b>9am - 7pm</b>
         </p>
       </Box>
       <Box>
