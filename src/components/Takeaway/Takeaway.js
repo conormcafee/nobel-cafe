@@ -46,7 +46,7 @@ const Takeaway = () => {
               <div data-group="04">
                 <Heading as="h3">Breakfast Bap</Heading>
                 <SubHeading hasBorder>
-                  <span>£3.00</span>
+                  <span>£3.50</span>
                 </SubHeading>
 
                 <Box>
@@ -57,10 +57,22 @@ const Takeaway = () => {
               <div data-group="05">
                 <Heading as="h3">Porridge</Heading>
                 <SubHeading hasBorder>
-                  <span>£3.00</span>
+                  <span>£3.50</span>
                 </SubHeading>
                 <Box>
-                  <p>{porridge}</p>
+                  {porridge.map(p => (
+                    <p>{p}</p>
+                  ))}
+                </Box>
+              </div>
+
+              <div data-group="06">
+                <Heading as="h3">Toasted Sourdough</Heading>
+                <SubHeading hasBorder>
+                  <span>£6.00</span>
+                </SubHeading>
+                <Box>
+                  <p>With Avocado, 2 Lean Bacon & 2 Poached Eggs</p>
                 </Box>
               </div>
             </div>
@@ -68,34 +80,36 @@ const Takeaway = () => {
 
           <div>
             <Box>
-              <Heading as="h3">Takeaway</Heading>
+              {/* <Heading as="h3">Takeaway</Heading> */}
+
+              <Grid>
+                <Item highlight={true} noBorder={true}>
+                  <SubHeading>
+                    Chistmas Turkey & Ham <span>£8.95</span>
+                  </SubHeading>
+                  <p>
+                    Traditional Turkey, Ham & Stuffing. Served with Seasonal
+                    Vegetables, Roast & Mashed Potatoes, Gravy, Cranberry Sauce
+                    & Chipolatas.
+                  </p>
+                </Item>
+              </Grid>
+
               <SubHeading hasBorder={true}>
                 Any Option Below <span>£4.95</span>
               </SubHeading>
 
-              <div
-                style={{
-                  display: "grid",
-                  gridGap: 30,
-                  gridTemplateColumns: `1fr 1fr`,
-                }}
-              >
+              <Grid>
                 {takeaway.map((item, index) => (
                   <Item key={index}>
                     <SubHeading>{item.name}</SubHeading>
                     <p>{item.description}</p>
                   </Item>
                 ))}
-              </div>
+              </Grid>
             </Box>
 
-            <div
-              style={{
-                display: "grid",
-                gridGap: 30,
-                gridTemplateColumns: `1fr 1fr`,
-              }}
-            >
+            <Grid>
               <Box>
                 <Heading as="h3">Loaded Chips or Garlic Fries</Heading>
                 <SubHeading hasBorder>
@@ -122,7 +136,7 @@ const Takeaway = () => {
                   </div>
                 ))}
               </Box>
-            </div>
+            </Grid>
           </div>
         </MainOptions>
       </Container>
@@ -131,7 +145,9 @@ const Takeaway = () => {
         <Container>
           <SidesGrid>
             <div data-group="06">
-              <Heading as="h3">Side Orders</Heading>
+              <Heading as="h3">
+                <b>Side Orders</b>
+              </Heading>
               <SubHeading hasBorder>
                 <span>£3.00</span>
               </SubHeading>
@@ -144,7 +160,9 @@ const Takeaway = () => {
             </div>
 
             <div data-group="07">
-              <Heading as="h3">Sauces and Dips</Heading>
+              <Heading as="h3">
+                <b>Sauces and Dips</b>
+              </Heading>
               <SubHeading hasBorder>
                 <span>£1.00</span>
               </SubHeading>
@@ -157,7 +175,9 @@ const Takeaway = () => {
             </div>
 
             <div data-group="07">
-              <Heading as="h3">Treats</Heading>
+              <Heading as="h3">
+                <b>Treats</b>
+              </Heading>
               <SubHeading hasBorder>
                 <span>£2.00</span>
               </SubHeading>
@@ -195,11 +215,13 @@ const MainOptions = styled.section`
 `
 
 const SidesGrid = styled.section`
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr;
 
   @media only screen and (min-width: 768px) {
-    display: grid;
-    grid-gap: 60px;
     grid-template-columns: 1fr 1fr 1fr;
   }
 `
@@ -219,7 +241,11 @@ const Box = styled.div`
 `
 
 const Item = styled.div`
-  ${tw`py-2 pb-4 mb-2 border-b border-gray-300`}
+  ${tw`py-2 pb-4 border-b`}
+  ${props => (props.noBorder ? tw`border-transparent` : tw`border-gray-300`)}
+  ${props =>
+    props.highlight &&
+    tw`border bg-gray-200 border-gray-300 p-4 mb-8 rounded-md`}
 `
 
 const Aside = styled.aside`
@@ -232,4 +258,12 @@ const Sides = styled.section`
 
 const BreakfastWarning = styled.p`
   ${tw`bg-green-600 text-white py-2 px-4 text-center font-black`}
+`
+
+const Grid = styled.div`
+  @media only screen and (min-width: 768px) {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
 `

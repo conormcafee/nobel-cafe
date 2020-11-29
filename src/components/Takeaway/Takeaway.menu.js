@@ -42,7 +42,7 @@ export const breakfast = [
   "Pancake",
 ]
 
-export const breakfastBap = "Choose from 2 fillings from Sausage, Bacon and Egg"
+export const breakfastBap = "Choose from 3 fillings from Sausage, Bacon and Egg"
 
 export const porridge = [
   "Fresh Fruit",
@@ -77,10 +77,10 @@ export const takeaway = [
     name: "Sticky Chilli Chicken",
     description: "Crispy Fried Chicken, Sweet Chilli Sauce, Garlic Mayo",
   },
-  {
-    name: "Pan-Fried Chicken",
-    description: "Seasonal Vegetables, Tobacco Onions, Choice of Sauce",
-  },
+  // {
+  //   name: "Pan-Fried Chicken",
+  //   description: "Seasonal Vegetables, Tobacco Onions, Choice of Sauce",
+  // },
   {
     name: "Penne Pasta",
     description: "Chilli Steak or Chicken Penne Pasta",
@@ -103,7 +103,9 @@ export const loadedChips = [
 ]
 
 export const kidsMeals = [
+  "Cheeseburger & Chips",
   "Small Fish and Chips",
   "2 Sausages and Chips",
   "2 Chicken Goujons and Chips",
+  "Creamy Chilli Chicken Pasta",
 ]
