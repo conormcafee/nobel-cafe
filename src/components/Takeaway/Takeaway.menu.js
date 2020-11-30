@@ -104,7 +104,6 @@ export const loadedChips = [
 
 export const kidsMeals = [
   "Cheeseburger & Chips",
-  "Small Fish and Chips",
   "2 Sausages and Chips",
   "2 Chicken Goujons and Chips",
   "Creamy Chilli Chicken Pasta",
