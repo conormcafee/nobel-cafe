@@ -88,14 +88,14 @@ lunch:
     price: 8.00
     gf: false
     addPrice: false
-  - item: Pan Fry
-    desc: Pan Fried Escalope of Chicken, Steamed Seasonal Vegetables, Tobacco Onions and Sauce of your choice.
-    price: 7.00
-    gf: false
-    addPrice: false
+  # - item: Pan Fry
+  #   desc: Pan Fried Escalope of Chicken, Steamed Seasonal Vegetables, Tobacco Onions and Sauce of your choice.
+  #   price: 7.00
+  #   gf: false
+  #   addPrice: false
   - item: Classic Caesar Salad
     desc: Crispy Fried Chicken, Crispy Bacon, Parmesan, Croutons
-    price: 7.00
+    price: 8.00
     gf: false
     addPrice: false
 kids:

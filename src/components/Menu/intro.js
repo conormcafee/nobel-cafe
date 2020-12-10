@@ -181,6 +181,7 @@ const MenuIntro = () => {
               <Flex>
                 <SidesAndSauces
                   title="Sides"
+                  customPrice={true}
                   price="Small: £2 | Large: £3"
                   data={lunch.sides[0].options}
                 />

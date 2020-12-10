@@ -3,15 +3,21 @@ import { Heading } from "../../components/Typography"
 import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 
-const SidesAndSauces = ({ title, price, data }) => (
+const SidesAndSauces = ({ customPrice, title, price, data }) => (
   <Wrapper>
     <Main>
       <Heading as="h4" fontBold={true}>
         {title}
       </Heading>
-      <Heading as="h5" fontBold={true} textColor="purple">
-        £{price}
-      </Heading>
+      {customPrice ? (
+        <Heading as="h5" fontBold={true} textColor="purple">
+          {price}
+        </Heading>
+      ) : (
+        <Heading as="h5" fontBold={true} textColor="purple">
+          £{price}
+        </Heading>
+      )}
       {data.length > 0 && (
         <List>
           {data.map((side, index) => (

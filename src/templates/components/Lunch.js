@@ -23,6 +23,9 @@ const Lunch = ({ title, data, isActuallyLunch }) => {
             {data.map((lunch, index) => (
               <MenuItem key={index}>
                 <p>{lunch.desc}</p>
+                <Heading as="h5" textColor="purple" fontBold={true}>
+                  £{lunch.price}
+                </Heading>
               </MenuItem>
             ))}
           </MenuItems>
@@ -74,7 +77,7 @@ const Lunch = ({ title, data, isActuallyLunch }) => {
           fontBold={true}
           style={{ textAlign: "center", marginTop: -10 }}
         >
-          £7.00 (Sides Not Included)
+          Sides Not Included
         </Heading>
       )}
 
