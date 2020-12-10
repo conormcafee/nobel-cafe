@@ -85,7 +85,7 @@ const Takeaway = () => {
               <Grid>
                 <Item highlight={true} noBorder={true}>
                   <SubHeading>
-                    Chistmas Turkey & Ham <span>£10.95</span>
+                    Chistmas Turkey & Ham <span>£8.95</span>
                   </SubHeading>
                   <p>
                     Traditional Turkey, Ham & Stuffing. Served with Seasonal

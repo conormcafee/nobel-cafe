@@ -6,6 +6,7 @@ import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 
 const Lunch = ({ title, data, isActuallyLunch }) => {
+  const christmas = data.filter(a => a.item === "Christmas Turkey & Ham")
   const burgers = data.filter(a => a.item === "Burgers")
   const goujons = data.filter(a => a.item === "Goujons")
   const pasta = data.filter(a => a.item === "Pasta")
@@ -81,6 +82,7 @@ const Lunch = ({ title, data, isActuallyLunch }) => {
         </Heading>
       )}
 
+      {renderContent(christmas, "Christmas Turkey & Ham")}
       {renderContent(burgers, "Burgers")}
       {renderContent(goujons, "Goujons")}
       {renderContent(pasta, "Pasta")}
