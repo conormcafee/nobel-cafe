@@ -7,15 +7,15 @@ import NCLogo from "../../images/logo.png"
 import CallIcon from "../../svg/call.svg"
 
 const menu = [
-  // { title: "Sit In Menu", to: "/menu" },
-  // { title: "Takeaway Menu", to: "/menu/takeaway-menu" },
-  // { title: "Videos", to: "/videos" },
-  // { title: "Jobs", to: "/jobs" },
+  { title: "Sit In Menu", to: "/menu" },
+  { title: "Takeaway Menu", to: "/menu/takeaway-menu" },
+  { title: "Videos", to: "/videos" },
+  { title: "Jobs", to: "/jobs" },
 ]
 
 const Header = ({ siteTitle }) => (
   <Fragment>
-    <p
+    {/* <p
       style={{
         background: "#38a169",
         fontWeight: 900,
@@ -27,7 +27,7 @@ const Header = ({ siteTitle }) => (
       }}
     >
       We're Still Open for Takeaway!
-    </p>
+    </p> */}
     <Wrapper>
       <InnerWrapper>
         <Link to="/" title="Go to Homepage">

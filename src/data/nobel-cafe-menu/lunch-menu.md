@@ -31,18 +31,23 @@ sandwiches:
 loadedFries:
   - item: Southern Fried Chicken
     desc: Tobacco Onions, Creamy Pepper Sauce
-    price: 7.00
+    price: 8.00
   - item: Spice Box
     desc: Salt & Chilli Chicken, Onions, Peppers, Garlic Mayo
-    price: 7.00
+    price: 8.00
   - item: Creamy Chilli
     desc: Steak or Chicken with Tobacco Onions
-    price: 7.00
+    price: 8.00
 soups:
   - item: Potato & Leek Soup
     allergens: [1, 5]
     gf: true
 lunch:
+  - item: Christmas Turkey & Ham
+    desc: Traditional Turkey, Ham & Stuffing. Served with Seasonal Vegetables, Roast & Mashed Potatoes, Gravy, Cranberry Sauce & Chipolatas.
+    price: 10.95
+    gf: false
+    addPrice: false
   - item: Burgers
     desc: Hand Pressed Steak Burger topped with Maple Bacon and Cheddar Cheese, served in a Toasted Bun with Gem Lettuce, Beef Tomato and Red Onion Rings. Secret Sauce on the side.
     price: 7.00
@@ -70,17 +75,17 @@ lunch:
     addPrice: false
   - item: Pasta
     desc: Penne Pasta, Chilli Steak, Pepper Cream
-    price: 7.00
+    price: 8.00
     gf: false
     addPrice: false
   - item: Pasta
     desc: Penne Pasta, Courgette, Pesto Cream
-    price: 7.00
+    price: 8.00
     gf: false
     addPrice: false
   - item: Pasta
     desc: Penne Pasta, Creamy Chilli Chicken
-    price: 7.00
+    price: 8.00
     gf: false
     addPrice: false
   - item: Pan Fry
@@ -118,14 +123,14 @@ sides:
   - price: 3.00
     options:
       [
-        Seasonal Vegetables,
-        Garlic Diced Potatoes,
-        Hand Cut Chips,
+        Chips,
         Skin on French Fries,
+        Garlic Fries,
         Salt & Chilli Fries,
         Kebab Fries,
-        Creamy Mash or Champ,
-        Garlic Bread,
+        Tobacco Onions,
+        Champ,
+        Mash,
       ]
 sauces:
   - price: 1.00

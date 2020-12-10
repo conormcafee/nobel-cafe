@@ -104,16 +104,13 @@ const MenuIntro = () => {
             </Heading>
 
             <Intro>
-             
               <Heading as="h5" fontBold={true} textColor="purple">
                 Each item £0.70
               </Heading>
             </Intro>
 
             <BG>
-              <h5 as="h5">
-                before 11:30am only
-              </h5>
+              <h5 as="h5">before 11:30am only</h5>
             </BG>
           </Container>
         </Introduction>
@@ -184,7 +181,7 @@ const MenuIntro = () => {
               <Flex>
                 <SidesAndSauces
                   title="Sides"
-                  price={lunch.sides[0].price}
+                  price="Small: £2 | Large: £3"
                   data={lunch.sides[0].options}
                 />
 

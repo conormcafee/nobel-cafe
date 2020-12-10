@@ -69,7 +69,7 @@ const Takeaway = () => {
               <div data-group="06">
                 <Heading as="h3">Toasted Sourdough</Heading>
                 <SubHeading hasBorder>
-                  <span>£6.00</span>
+                  <span>£7.00</span>
                 </SubHeading>
                 <Box>
                   <p>With Avocado, 2 Lean Bacon & 2 Poached Eggs</p>

@@ -1,19 +1,16 @@
 import React from "react"
 import SEO from "../components/seo"
 import { Layout } from "../components/Layout"
-// import { Hero } from "../components/Hero"
-// import { OurStory } from "../components/OurStory"
-// import { SocialBlock } from "../components/SocialBlock"
-import Takeaway from "../components/Takeaway/Takeaway"
+import { Hero } from "../components/Hero"
+import { OurStory } from "../components/OurStory"
+import { SocialBlock } from "../components/SocialBlock"
 
 const HomePage = () => (
   <Layout>
     <SEO title="Home" />
-    {/* REMOVE GLOBAL TAKEAWAY */}
-    <Takeaway />
-    {/* <Hero />
+    <Hero />
     <SocialBlock />
-    <OurStory /> */}
+    <OurStory />
   </Layout>
 )
 
