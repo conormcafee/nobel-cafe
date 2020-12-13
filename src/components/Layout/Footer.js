@@ -22,7 +22,7 @@ const Footer = () => (
         </Heading>
         <p>Monday - Saturday</p>
         <p>
-          <b>8am - 5pm</b>
+          <b>8am - 6pm</b>
         </p>
         <p>Sunday</p>
         <p>
