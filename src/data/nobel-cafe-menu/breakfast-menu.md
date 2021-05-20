@@ -31,14 +31,22 @@ fry:
     extra: null
   - item: Toast
     extra: null
-breakfastmenu:
   - item: Toasted Sourdough
-    desc: With Avocado, 2 Lean Bacon & 2 Poached Eggs
-    price: 7.00
+    extra: null
+breakfastmenu:
+  - item: Sweetcorn Fritter
+    desc: Topped with avocado, salsa & poached egg
+    price: 6.25
+  - item: Fried Potatos
+    desc: Chorizo sausage & fried egg topped with spicy mayo
+    price: 5.25
+  - item: Toasted Waffles
+    desc: With pulled sugar pit ham, chilli maple glaze & fried egg
+    price: 6.25
+  - item: Nobel Bap
+    desc: Sausage, bacon, egg
+    price: 3.95
   - item: Porridge
-    desc: Choose your toppings (Fresh Fruit, Honey, Maple Syrup, Cinnamon).  Add Roasted Nuts & Toasted Sunflower Seeds for 50p
-    price: 3.50
-  - item: Breakfast Bap
-    desc: Choose three fillings from Sausage, Bacon & Egg
-    price: 3.50
+    desc: Choose toppings from Fresh Fruit, Honey, Maple Syrup, Cinnamon, Nuts & Seeds
+    price: 3.95
 ---
