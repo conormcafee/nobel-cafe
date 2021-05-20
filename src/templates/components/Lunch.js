@@ -6,12 +6,10 @@ import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 
 const Lunch = ({ title, data, isActuallyLunch }) => {
-  const christmas = data.filter(a => a.item === "Christmas Turkey & Ham")
-  const burgers = data.filter(a => a.item === "Burgers")
-  const goujons = data.filter(a => a.item === "Goujons")
+  const chicken = data.filter(a => a.item === "Chicken")
   const pasta = data.filter(a => a.item === "Pasta")
-  const panFry = data.filter(a => a.item === "Pan Fry")
-  const salad = data.filter(a => a.item === "Classic Caesar Salad")
+  const burgers = data.filter(a => a.item === "Burgers")
+  const fish = data.filter(a => a.item === "Fish")
 
   const renderContent = (data, title = "") => {
     if (data.length > 0)
@@ -82,12 +80,10 @@ const Lunch = ({ title, data, isActuallyLunch }) => {
         </Heading>
       )}
 
-      {renderContent(christmas, "Christmas Turkey & Ham")}
-      {renderContent(burgers, "Burgers")}
-      {renderContent(goujons, "Goujons")}
+      {renderContent(chicken, "Chicken")}
       {renderContent(pasta, "Pasta")}
-      {renderContent(panFry, "Pan Fry")}
-      {renderContent(salad, "Classic Caesar Salad")}
+      {renderContent(burgers, "Burgers")}
+      {renderContent(fish, "Fish")}
 
       {!isActuallyLunch && renderBreakfast(data)}
     </Wrapper>

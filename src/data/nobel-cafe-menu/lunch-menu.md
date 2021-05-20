@@ -3,106 +3,95 @@ title: Lunch Menu
 path: "/menu/lunch-menu"
 desc: Lunch is available in Nobel Cafe from 11:30am.  We have a great selection of sandwiches, hot plates, & some nice treats for all ages.
 sandwiches:
-  - item: Club
-    desc: Sliced Roast Chicken Breast, Crispy Smoked Bacon, Lettuce, Tomato and Mayonnaise on Sliced White Bread
+  - item: Ham & Cheese
+    desc: Pulled sugar pit ham & cheddar cheese
     allergens: null
     priceWithChips: 6.50
     priceWithSoup: 8.00
-  - item: Melt
-    desc: Sliced Ham, Cheddar Cheese, Mustard Mayo, Tobacco Onions, Lettuce and Tomato on Sliced White Bread
+  - item: French Dip
+    desc: Shaved salted beef brisket, dijon mustard, Swiss cheese, french onion sauce
     allergens: null
     priceWithChips: 6.50
     priceWithSoup: 8.00
-  - item: Nobel Noel
-    desc: Roast Turkey, Ham, Stuffing and Cranberry with Lettuce and Tomato on Sliced Brown Bread
+  - item: Classic Club
+    desc: Sliced roast chicken, crispy smoked bacon, lettuce, tomato & mayo
     allergens: null
     priceWithChips: 6.50
     priceWithSoup: 8.00
-  - item: Tasty Tuna
-    desc: Flaked Tuna, Red Onion, Sweetcorn and Mayonnaise on Sliced Brown Bread
-    allergens: null
-    priceWithChips: 6.50
-    priceWithSoup: 8.00
-  - item: B.O.B
-    desc: Silverside of Beef, Fried Onions, Melted Brie on Sourdough
+  - item: Hot Tuna
+    desc: Tuna flakes, sweetcorn, red onion, cajun mayo
     allergens: null
     priceWithChips: 6.50
     priceWithSoup: 8.00
 loadedFries:
-  - item: Southern Fried Chicken
-    desc: Tobacco Onions, Creamy Pepper Sauce
+  - item: BBQ Sugar Pit Ham
+    desc: Chilli maple glaze, cheese fondue & bacon crispies
     price: 8.00
-  - item: Spice Box
-    desc: Salt & Chilli Chicken, Onions, Peppers, Garlic Mayo
+  - item: Sticky Korean Chicken
+    desc: Kimchi slaw, toasted sesame & garlic mayo
     price: 8.00
-  - item: Creamy Chilli
-    desc: Steak or Chicken with Tobacco Onions
+  - item: Crispy Pork
+    desc: Soya & ginger glaze, cucumber & spring onion
+    price: 8.00
+  - item: Salt & Chilli Prawns
+    desc: Asian salad & curry mayo
     price: 8.00
 soups:
   - item: Potato & Leek Soup
     allergens: [1, 5]
     gf: true
 lunch:
-  - item: Christmas Turkey & Ham
-    desc: Traditional Turkey, Ham & Stuffing. Served with Seasonal Vegetables, Roast & Mashed Potatoes, Gravy, Cranberry Sauce & Chipolatas.
-    price: 10.95
+  - item: Chicken
+    desc: Crispy fried goujons in a gluten free breadcrumb, served with a choice of sauce or dip
+    price: 8.00
     gf: false
     addPrice: false
-  - item: Burgers
-    desc: Hand Pressed Steak Burger topped with Maple Bacon and Cheddar Cheese, served in a Toasted Bun with Gem Lettuce, Beef Tomato and Red Onion Rings. Secret Sauce on the side.
-    price: 7.00
+  - item: Chicken
+    desc: Salt & chilli seasoned chicken goujons with garlic mayo
+    price: 8.00
     gf: false
     addPrice: false
-  - item: Burgers
-    desc: Southern Fried Chicken Fillet, topped with Maple Bacon and Cheddar Cheese, served in a Toasted Bun with Gem Lettuce, Beef Tomato and Red Onion Rings. BBQ Sauce on the side.
-    price: 7.00
+  - item: Chicken
+    desc: Sticky Korean chicken strips, chilli, spring onion, sesame & garlic mayo
+    price: 8.00
     gf: false
     addPrice: false
-  - item: Goujons
-    desc: Chicken Tenders coated in Gluten Free Breadcrumbs, served with a Sauce or Dip of your choice.
-    price: 7.00
-    gf: false
-    addPrice: false
-  - item: Goujons
-    desc: Salt and Chilli Seasoned Chicken Goujons served with a Garlic Mayo Dip
-    price: 7.00
-    gf: false
-    addPrice: false
-  - item: Goujons
-    desc: Sticky Sweet Chilli Chicken, Garlic Mayo and Shredded Spring Onion
-    price: 7.00
-    gf: false
-    addPrice: false
-  - item: Pasta
-    desc: Penne Pasta, Chilli Steak, Pepper Cream
+  - item: Chicken
+    desc: Roast supreme of chicken, herb stuffing, smoked bacon, seasonal vegetables & onion grav
     price: 8.00
     gf: false
     addPrice: false
   - item: Pasta
-    desc: Penne Pasta, Courgette, Pesto Cream
+    desc: Our famous chilli steak penne pasta
     price: 8.00
     gf: false
     addPrice: false
   - item: Pasta
-    desc: Penne Pasta, Creamy Chilli Chicken
+    desc: Truffled mac & cheese topped with sugar pit pulled gammon & Parmesan
     price: 8.00
     gf: false
     addPrice: false
-  # - item: Pan Fry
-  #   desc: Pan Fried Escalope of Chicken, Steamed Seasonal Vegetables, Tobacco Onions and Sauce of your choice.
-  #   price: 7.00
-  #   gf: false
-  #   addPrice: false
-  - item: Classic Caesar Salad
-    desc: Crispy Fried Chicken, Crispy Bacon, Parmesan, Croutons
-    price: 8.00
+  - item: Burgers (on toasted brioche bun)
+    desc: 6oz ground hand pressed beef patty, crispy bacon, cheese, gem lettuce, tomato, red onion & secret sauce
+    price: 7.00
+    gf: false
+    addPrice: false
+  - item: Burgers (on toasted brioche bun)
+    desc: Fried fillet of buttermilk chicken, crispy bacon, cheese, gem lettuce, tomato, red onion & mayo
+    price: 7.00
+    gf: false
+    addPrice: false
+  - item: Fish
+    desc: Panfried salmon, tenderstem broccoli, baby boiled potatoes & herb cream
+    price: 11.00
+    gf: false
+    addPrice: false
+  - item: Fish
+    desc: Gluten free battered scampi, tartar sauce & lemon wedge (includes choice of side)
+    price: 11.00
     gf: false
     addPrice: false
 kids:
-  - item: Pasta
-    gf: false
-    desc: Penne Pasta, Creamy Chilli Chicken
-    price: 5.00
   - item: Chicken Goujons
     gf: false
     desc: Nobel Fried Chicken & Chips. Includes BBQ Dip
@@ -111,7 +100,7 @@ kids:
     gf: false
     desc: Fries & BBQ Dip
     price: 5.00
-  - item: Bangers & Mash
+  - item: Sausages & Mash
     gf: false
     desc: Bangers, Mash & Gravy
     price: 5.00
@@ -123,19 +112,17 @@ sides:
   - price: 3.00
     options:
       [
-        Chips,
-        Skin on French Fries,
-        Garlic Fries,
+        Garlic Diced Potatoes,
         Salt & Chilli Fries,
-        Kebab Fries,
-        Tobacco Onions,
-        Champ,
-        Mash,
+        Fresh Cut Chips,
+        Mash or Champ,
+        Cheese Fondue & Bacon Fries,
+        Garlic Bread,
       ]
 sauces:
   - price: 1.00
-    options: [Peppercorn Cream, Gravy, Leek & Bacon]
+    options: [Peppercorn Cream, Onion Gravy]
 dips:
   - price: 1.00
-    options: [Mayo, Garlic Mayo, BBQ Sauce, Sweet Chilli, House Sauce]
+    options: [Mayo, Garlic Mayo, Curry Mayo, BBQ Sauce, Sweet Chilli]
 ---

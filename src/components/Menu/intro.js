@@ -157,7 +157,7 @@ const MenuIntro = () => {
               />
 
               <Sandwiches
-                title="Loaded Fries"
+                title="Loaded Fries or Bao Buns"
                 data={lunch?.loadedFries || []}
               />
 
