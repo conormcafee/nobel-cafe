@@ -128,12 +128,6 @@ const MenuIntro = () => {
               data={breakfast.breakfastmenu ? breakfast.breakfastmenu : []}
               isActuallyLunch={false}
             />
-
-            <BG_WRAP>
-              <BG>
-                <h5 as="h5">Complimentary Tea/Coffee before 11:30am only</h5>
-              </BG>
-            </BG_WRAP>
           </Wrapper>
         </Container>
 

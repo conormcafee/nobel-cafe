@@ -8,7 +8,9 @@ import tw from "tailwind.macro"
 const Lunch = ({ title, data, isActuallyLunch }) => {
   const chicken = data.filter(a => a.item === "Chicken")
   const pasta = data.filter(a => a.item === "Pasta")
-  const burgers = data.filter(a => a.item === "Burgers")
+  const burgers = data.filter(
+    a => a.item === "Burgers (on toasted brioche bun)"
+  )
   const fish = data.filter(a => a.item === "Fish")
 
   const renderContent = (data, title = "") => {

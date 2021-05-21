@@ -57,7 +57,12 @@ lunch:
     gf: false
     addPrice: false
   - item: Chicken
-    desc: Roast supreme of chicken, herb stuffing, smoked bacon, seasonal vegetables & onion grav
+    desc: Roast supreme of chicken, herb stuffing, smoked bacon, seasonal vegetables & onion gravy
+    price: 8.00
+    gf: false
+    addPrice: false
+  - item: Chicken
+    desc: Classic Caesar salad with crispy fried chicken, crispy bacon, parmesan & croutons
     price: 8.00
     gf: false
     addPrice: false
