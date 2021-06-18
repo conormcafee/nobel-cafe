@@ -36,7 +36,7 @@ soups:
     gf: true
 lunch:
   - item: Chicken
-    desc: Goukons - Fresh chicken fillet tenders, coated in a crisp gluten free crumb served with a choice of dipping sauce & side (Salt & chilli seasoning can be added)
+    desc: Goujons - Fresh chicken fillet tenders, coated in a crisp gluten free crumb served with a choice of dipping sauce & side (Salt & chilli seasoning can be added)
     price: 9.45
     gf: false
     addPrice: false
