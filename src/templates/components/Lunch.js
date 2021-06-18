@@ -8,10 +8,8 @@ import tw from "tailwind.macro"
 const Lunch = ({ title, data, isActuallyLunch }) => {
   const chicken = data.filter(a => a.item === "Chicken")
   const pasta = data.filter(a => a.item === "Pasta")
-  const burgers = data.filter(
-    a => a.item === "Burgers (on toasted brioche bun)"
-  )
-  const fish = data.filter(a => a.item === "Fish")
+  const burgers = data.filter(a => a.item === "Burgers")
+  const risotto = data.filter(a => a.item === "Risotto Bowl")
 
   const renderContent = (data, title = "") => {
     if (data.length > 0)
@@ -71,21 +69,11 @@ const Lunch = ({ title, data, isActuallyLunch }) => {
       <Heading as="h4" textColor="purple" fontBold={true}>
         {title}
       </Heading>
-      {isActuallyLunch && (
-        <Heading
-          as="h5"
-          textColor="purple"
-          fontBold={true}
-          style={{ textAlign: "center", marginTop: -10 }}
-        >
-          Sides Not Included
-        </Heading>
-      )}
 
       {renderContent(chicken, "Chicken")}
       {renderContent(pasta, "Pasta")}
       {renderContent(burgers, "Burgers")}
-      {renderContent(fish, "Fish")}
+      {renderContent(risotto, "Risotto Bowl")}
 
       {!isActuallyLunch && renderBreakfast(data)}
     </Wrapper>
