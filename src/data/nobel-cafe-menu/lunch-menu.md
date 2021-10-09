@@ -4,32 +4,45 @@ path: "/menu/lunch-menu"
 desc: Lunch is available in Nobel Cafe from 11:30am.  We have a great selection of sandwiches, hot plates, & some nice treats for all ages.
 sandwiches:
   - item: Melt
-    desc: Pulled sugar pit ham, onion chutney, cheese melt
+    desc: Sliced ham, Cheddar cheese, Mustard mayo, Tobacco onions.
     allergens: null
-    priceWithChips: 6.50
-    priceWithSoup: 8.00
-  - item: Classic Club
-    desc: Sliced roast chicken breast, smoked bacon rashers, lettuce, tomato & mayonnaise
+    priceWithChips: 6.75
+    priceWithSoup: 8.25
+  - item: Deluxe
+    desc: Chilli chicken, mozzarella, red pepper mayo
     allergens: null
-    priceWithChips: 6.50
-    priceWithSoup: 8.00
-  - item: New Yorker
-    desc: Deli style salted beef, swiss cheese, mustard mayo, tobacco onions
+    priceWithChips: 6.75
+    priceWithSoup: 8.25
+  - item: Nobel Noel
+    desc: Sliced turkey, Ham, Pork & herb stuffing, Cranberry sauce
     allergens: null
-    priceWithChips: 6.50
-    priceWithSoup: 8.00
+    priceWithChips: 6.75
+    priceWithSoup: 8.25
   - item: Tasty Tuna
     desc: Flaked tuna, sweetcorn, red onion, mayonnaise
     allergens: null
-    priceWithChips: 6.50
-    priceWithSoup: 8.00
+    priceWithChips: 6.75
+    priceWithSoup: 8.25
+  - item: Smokey Joe
+    desc: Southern fried chicken, crispy bacon, bbq sauce, applewood cheese
+    allergens: null
+    priceWithChips: 6.75
+    priceWithSoup: 8.25
+  - item: Classic Club
+    desc: Sliced roast chicken breast, smoked bacon rashers, lettuce, tomato & mayonaise
+    allergens: null
+    priceWithChips: 6.75
+    priceWithSoup: 8.25
 loadedFries:
   - item: Southern Fried Chicken
     desc: Peppercorn cream, tobacco onions
-    price: 8.00
+    price: 8.45
   - item: Salt & Chilli Prawns
     desc: Sauteed onions, peppers, sesame, curry mayo
-    price: 8.00
+    price: 8.45
+  - item: Spice Box
+    desc: Crispy chicken, sautéed onions & peppers, garlic mayo
+    price: 8.45
 soups:
   - item: Potato & Leek Soup
     allergens: [1, 5]
@@ -42,7 +55,7 @@ lunch:
     addPrice: false
   - item: Chicken
     desc: Sticky Chili Chicken - Crispy fried chicken strips tossed in a sticky sweet chilli sauce topped with toasted sesame & spring onion served with a garlic mayo dip & choice of side
-    price: 9.45
+    price: 9.75
     gf: false
     addPrice: false
   - item: Chicken
@@ -56,28 +69,28 @@ lunch:
     gf: false
     addPrice: false
   - item: Pasta
-    desc: Chilli steak strips, pepper cream, penne pasta with garlic ciabatta slice
-    price: 8.95
+    desc: Chilli steak strips, pepper cream, penne pasta served with garlic ciabatta slice
+    price: 9.25
     gf: false
     addPrice: false
   - item: Pasta
-    desc: Creamy carbonara penne pasta topped with parmesan with garlic ciabatta slice
-    price: 8.95
+    desc: Creamy carbonara penne pasta topped with parmesan, served with garlic ciabatta slice
+    price: 9.25
     gf: false
     addPrice: false
-  - item: Risotto Bowl
-    desc: Choose pulled ham hock or smoked haddock with garden peas, parmesan, topped with a soft poached egg
+  - item: Waffles
+    desc: Toasted sweet waffle, southern fried chicken, chilli honey butter sauce and side of coleslaw
     price: 8.95
     gf: false
     addPrice: false
   - item: Burgers
-    desc: 6oz steak burger, maple bacon rashers, BBQ sauce, cheddar cheese & tobacco onions on toasted brioche bun, includes a side
-    price: 9.45
+    desc: 6oz steak burger, maple bacon rashers, cheddar cheese, lettuce, tomato, onion & mayo on toasted brioche bun, includes a side.
+    price: 9.75
     gf: false
     addPrice: false
   - item: Burgers
-    desc: Southern fried chicken fillet, maple bacon rashers, mayo, cheddar cheese & tobacco onions on toasted brioche bun, includes a side
-    price: 9.45
+    desc: Southern fried chicken fillet, lettuce, tomato, onion & mayo, on toasted brioche bun, includes a side
+    price: 9.75
     gf: false
     addPrice: false
 kids:

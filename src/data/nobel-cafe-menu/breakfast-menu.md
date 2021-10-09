@@ -34,19 +34,22 @@ fry:
   - item: Toasted Sourdough
     extra: null
 breakfastmenu:
-  - item: Sweetcorn Fritter
-    desc: Topped with avocado, salsa & poached egg
+  - item: French Toast
+    desc: Topped with sugar pit bacon, fried egg & maple syrup
     price: 6.25
-  - item: Fried Potatos
-    desc: Chorizo sausage & fried egg topped with spicy mayo
-    price: 5.25
-  - item: Toasted Waffles
-    desc: With pulled sugar pit ham, chilli maple glaze & fried egg
+  - item: French Toast
+    desc: Topped with seasonal berries, greek yogurt & lemon syrup
+    price: 5.95
+  - item: Toasted Sourdough
+    desc: Topped with avocado, lean bacon & poached egg
     price: 6.25
   - item: Nobel Bap
     desc: Sausage, bacon, egg
-    price: 3.95
+    price: 4.25
   - item: Porridge
     desc: Choose toppings from Fresh Fruit, Honey, Maple Syrup, Cinnamon, Nuts & Seeds
-    price: 3.95
+    price: 4.25
+  - item: Small Porridge
+    desc: Choose toppings from Fresh Fruit, Honey, Maple Syrup, Cinnamon, Nuts & Seeds
+    price: 2.95
 ---

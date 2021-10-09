@@ -9,7 +9,7 @@ const Lunch = ({ title, data, isActuallyLunch }) => {
   const chicken = data.filter(a => a.item === "Chicken")
   const pasta = data.filter(a => a.item === "Pasta")
   const burgers = data.filter(a => a.item === "Burgers")
-  const risotto = data.filter(a => a.item === "Risotto Bowl")
+  const waffles = data.filter(a => a.item === "Waffles")
 
   const renderContent = (data, title = "") => {
     if (data.length > 0)
@@ -73,7 +73,7 @@ const Lunch = ({ title, data, isActuallyLunch }) => {
       {renderContent(chicken, "Chicken")}
       {renderContent(pasta, "Pasta")}
       {renderContent(burgers, "Burgers")}
-      {renderContent(risotto, "Risotto Bowl")}
+      {renderContent(waffles, "Waffles")}
 
       {!isActuallyLunch && renderBreakfast(data)}
     </Wrapper>
