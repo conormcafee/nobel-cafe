@@ -1,16 +1,29 @@
-### Job Template
+# Next.js + Tailwind CSS Example
 
+This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+
+It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+
+## Preview
+
+Preview the example live on [StackBlitz](http://stackblitz.com/):
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+
+## Deploy your own
+
+Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+
+## How to use
+
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+
+```bash
+npx create-next-app --example with-tailwindcss with-tailwindcss-app
+# or
+yarn create next-app --example with-tailwindcss with-tailwindcss-app
 ```
-  ---
-  title: Title
-  intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae libero et est pretium consectetur ut ut ligula. Maecenas eu massa et enim faucibus porttitor.
-  path: "/jobs/:jobTitle"
-  jobTitle: Job Title
-  ---
 
-  Aliquam ultrices diam quis est varius, at luctus purus tempor. Nullam ut faucibus justo. Nulla venenatis et ipsum vitae ullamcorper. Curabitur ultrices fermentum sapien sed ultricies. In nec convallis ligula. Proin et massa sodales dui cursus faucibus ut a nisi. Integer in finibus mauris. Fusce convallis metus ac nunc sodales auctor. Maecenas iaculis auctor egestas.
-
-  Suspendisse pulvinar arcu dolor, non laoreet lorem accumsan a. Suspendisse commodo eu quam vitae molestie. Maecenas accumsan, dui sed eleifend hendrerit, felis tortor dignissim metus, vel imperdiet massa diam at sapien. Aliquam ut semper augue. Suspendisse potenti. Phasellus id nunc est. Fusce nulla justo, aliquam vel gravida posuere, suscipit ut metus. Quisque ornare sed metus vel convallis.
-
-  Cras lobortis urna nulla, non malesuada purus pharetra quis. Sed quis volutpat ex. Mauris eu dolor felis. Sed bibendum nulla eros, ut dictum leo imperdiet nec. Sed vel mi tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam posuere tincidunt neque. Donec gravida vel tellus at sagittis. Sed vitae sem odio. Nulla porta felis ac eros imperdiet, sed condimentum arcu lobortis. Aenean varius efficitur lacus, quis sodales sem faucibus sit amet. Nulla lacinia mi ut eros aliquet suscipit. Maecenas ac sodales elit. Donec pharetra, neque id ornare maximus, est metus malesuada velit, ac facilisis elit nibh non enim.
-```
+Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).

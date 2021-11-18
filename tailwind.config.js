@@ -1,12 +1,12 @@
 module.exports = {
+  mode: 'jit',
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  darkMode: false, // or 'media' or 'class'
   theme: {
-    fontFamily: {
-      heading: [`"Lato", sans-serif`],
-      base: [`"Alegreya", serif`],
-    },
+    extend: {},
   },
-  variants: {},
+  variants: {
+    extend: {},
+  },
   plugins: [],
 }
-
-// See https://tailwindcss.com/docs/customizing-colors/
