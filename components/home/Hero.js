@@ -1,15 +1,22 @@
 import { Fragment } from "react";
+import Link from "next/link";
 
 export const Hero = () => {
   return (
     <Fragment>
-      <div className="wrapper py-16 md:py-24">
+      <div className="wrapper py-16 md:py-24 space-y-4">
         <h1 className="text-4xl md:text-5xl text-left max-w-4xl font-bold leading-snug md:leading-snug">
           The best place to kick off your day or just take a break and enjoy a{" "}
           <span className="text-green-500">
             <i>yummy breakfast</i>
           </span>
         </h1>
+
+        <Link href="/menu">
+          <a className="inline-flex items-center px-6 py-3 border border-transparent text-base font-bold rounded-full shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+            View Menu
+          </a>
+        </Link>
       </div>
 
       <div className="lg:grid lg:grid-cols-3 lg:gap-x-8">

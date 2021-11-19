@@ -11,7 +11,7 @@ const menu = [
 
 export const Header = () => {
   return (
-    <header className="py-6 [ bg-white shadow-sm ]">
+    <header className="sticky z-10 top-0 py-6 [ bg-white shadow-sm ][ border-t-4 border-green-700 ]">
       <div className="wrapper [ flex items-center justify-between ]">
         <Link href="/" title="Go to Homepage of Nobel Cafe">
           <a>
@@ -27,9 +27,7 @@ export const Header = () => {
         <nav className="space-x-4">
           {menu.map(({ label, href }) => (
             <Link href={href} key={href}>
-              <a className="text-sm tracking-wider uppercase font-bold hover:text-green-500">
-                {label}
-              </a>
+              <a className="text-sm font-bold hover:text-green-500">{label}</a>
             </Link>
           ))}
         </nav>

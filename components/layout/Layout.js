@@ -5,12 +5,12 @@ import { CallToAction, Header, Footer } from "@components/layout";
 
 export const Layout = ({ children }) => {
   return (
-    <div className="font-serif border-t-8 border-green-700 text-gray-700 bg-gray-50 antialiased">
+    <div className="font-serif text-gray-600 bg-gray-50 antialiased">
       <div className="min-h-screen">
         <Head>
           <title>Create Next App</title>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap"
             rel="stylesheet"
