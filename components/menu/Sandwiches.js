@@ -1,12 +1,16 @@
 import { getMenuDataByCategory } from "@utils/menu";
 import { TitleAndIntro, MenuItem } from "@components/menu";
+import { MENU_API_CATEGORIES } from "@constants/menu";
 
 export const Sandwiches = ({ records = [] }) => {
-  const category = "sandwiches";
-  const miscLunch = "misc-lunch";
-
-  const sandwiches = getMenuDataByCategory(records, category);
-  const miscLunches = getMenuDataByCategory(records, miscLunch);
+  const sandwiches = getMenuDataByCategory(
+    records,
+    MENU_API_CATEGORIES.sandwiches
+  );
+  const miscLunches = getMenuDataByCategory(
+    records,
+    MENU_API_CATEGORIES.miscLunch
+  );
 
   return (
     <section className="py-8 md:py-16 border-t border-gray-200">

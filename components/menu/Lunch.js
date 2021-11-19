@@ -1,6 +1,7 @@
+import { Fragment } from "react";
 import { getMenuDataByCategory } from "@utils/menu";
 import { TitleAndIntro, MenuItem } from "@components/menu";
-import { Fragment } from "react";
+import { MENU_API_CATEGORIES } from "@constants/menu";
 
 const Sides = ({ data = [] }) => {
   if (!data.length) return null;
@@ -57,13 +58,9 @@ const LunchList = ({ data = [] }) => {
 };
 
 export const Lunch = ({ records = [] }) => {
-  const lunchCategory = "lunch";
-  const sidesCategory = "sides";
-  const kidsCategory = "kids";
-
-  const lunch = getMenuDataByCategory(records, lunchCategory);
-  const sides = getMenuDataByCategory(records, sidesCategory);
-  const kids = getMenuDataByCategory(records, kidsCategory);
+  const lunch = getMenuDataByCategory(records, MENU_API_CATEGORIES.lunch);
+  const sides = getMenuDataByCategory(records, MENU_API_CATEGORIES.sides);
+  const kids = getMenuDataByCategory(records, MENU_API_CATEGORIES.kids);
 
   return (
     <section className="py-8 md:py-16 border-t border-gray-200">

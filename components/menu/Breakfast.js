@@ -1,6 +1,7 @@
 import { TitleAndIntro } from "@components/menu";
 import { getMenuDataByCategory } from "@utils/menu";
 import { alternateRowColour, chunkArray } from "@utils/global";
+import { MENU_API_CATEGORIES } from "@constants/menu";
 
 const BreakfastItems = ({ data = [] }) => {
   if (!data.length) return null;
@@ -65,14 +66,11 @@ const AdditionalBreakfastItems = ({ data = [] }) => {
 };
 
 export const Breakfast = ({ records = [] }) => {
-  const standardBreakfast = "breakfast";
-  const additionalBreakfast = "breakfast-additional";
-
-  const data = getMenuDataByCategory(records, standardBreakfast);
+  const data = getMenuDataByCategory(records, MENU_API_CATEGORIES.breakfast);
   const breakfast = chunkArray(data);
   const additionalBreakfastItems = getMenuDataByCategory(
     records,
-    additionalBreakfast
+    MENU_API_CATEGORIES.additionalBreakfast
   );
 
   return (
