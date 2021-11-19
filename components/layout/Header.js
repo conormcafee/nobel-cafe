@@ -11,25 +11,29 @@ const menu = [
 
 export const Header = () => {
   return (
-    <header className="flex items-center justify-between py-6">
-      <Link href="/" title="Go to Homepage of Nobel Cafe">
-        <a>
-          <Image
-            src={logo}
-            alt="Render of the Nobel Cafe logo"
-            width={200}
-            height={33}
-          />
-        </a>
-      </Link>
+    <header className="py-6 [ bg-white shadow-sm ]">
+      <div className="wrapper [ flex items-center justify-between ]">
+        <Link href="/" title="Go to Homepage of Nobel Cafe">
+          <a>
+            <Image
+              src={logo}
+              alt="Render of the Nobel Cafe logo"
+              width={200}
+              height={33}
+            />
+          </a>
+        </Link>
 
-      <nav className="space-x-4">
-        {menu.map(({ label, href }) => (
-          <Link href={href} key={href}>
-            <a className="font-bold hover:text-purple-400">{label}</a>
-          </Link>
-        ))}
-      </nav>
+        <nav className="space-x-4">
+          {menu.map(({ label, href }) => (
+            <Link href={href} key={href}>
+              <a className="text-sm tracking-wider uppercase font-bold hover:text-green-500">
+                {label}
+              </a>
+            </Link>
+          ))}
+        </nav>
+      </div>
     </header>
   );
 };

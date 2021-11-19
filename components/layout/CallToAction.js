@@ -1,4 +1,8 @@
+const enabled = false;
+
 export const CallToAction = () => {
+  if (!enabled) return null;
+
   return (
     <div className="fixed inset-x-0 bottom-0">
       <div className="bg-indigo-600">

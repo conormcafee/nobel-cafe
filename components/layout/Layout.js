@@ -5,8 +5,8 @@ import { CallToAction, Header, Footer } from "@components/layout";
 
 export const Layout = ({ children }) => {
   return (
-    <div className="font-serif border-t-8 border-purple-900 text-gray-700">
-      <div className="min-h-screen max-w-2xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div className="font-serif border-t-8 border-green-700 text-gray-700 bg-gray-50 antialiased">
+      <div className="min-h-screen">
         <Head>
           <title>Create Next App</title>
           <link rel="preconnect" href="https://fonts.googleapis.com" />

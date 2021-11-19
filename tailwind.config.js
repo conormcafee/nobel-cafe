@@ -1,4 +1,5 @@
 const colors = require("tailwindcss/colors");
+const plugin = require("tailwindcss/plugin");
 
 module.exports = {
   mode: "jit",
@@ -19,5 +20,19 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      const newUtilities = {
+        ".wrapper": {
+          maxWidth: "1400px",
+          marginLeft: "auto",
+          marginRight: "auto",
+          paddingLeft: "2rem",
+          paddingRight: "2rem",
+        },
+      };
+
+      addUtilities(newUtilities);
+    }),
+  ],
 };

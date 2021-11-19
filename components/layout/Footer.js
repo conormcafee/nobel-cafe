@@ -3,9 +3,7 @@ const Address = () => {
 
   return (
     <div>
-      <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-        Find Us
-      </h3>
+      <h3 className="text-sm font-bold tracking-wider uppercase">Find Us</h3>
       <ul role="list" className="mt-4 space-y-4">
         {address.map((line, idx) => (
           <li key={idx} className="text-base text-gray-500">
@@ -25,13 +23,13 @@ const OpeningHours = () => {
 
   return (
     <div className="mt-12 md:mt-0">
-      <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+      <h3 className="text-sm font-bold tracking-wider uppercase">
         Opening Hours
       </h3>
       <ul role="list" className="mt-4 space-y-4">
         {hours.map(({ days, time }) => (
-          <li className="text-base text-gray-500" key={days}>
-            {days} <span class="font-bold block">{time}</span>
+          <li className="text-base" key={days}>
+            {days} <span class="text-green-500 font-bold block">{time}</span>
           </li>
         ))}
       </ul>
@@ -49,15 +47,13 @@ const Speak = () => {
   ];
   return (
     <div className="mt-12 md:mt-0">
-      <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-        Contact Us
-      </h3>
+      <h3 className="text-sm font-bold tracking-wider uppercase">Contact Us</h3>
       <ul role="list" className="mt-4 space-y-4">
         {details.map(({ label, href }) => (
           <li key={href}>
             <a
               href={href}
-              className="text-base text-gray-500 hover:text-gray-900"
+              className="text-base text-gray-500 hover:text-green-500"
             >
               {label}
             </a>
@@ -72,19 +68,19 @@ export const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-white" aria-labelledby="footer-heading">
+    <footer className="wrapper" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+      <div className="py-12 lg:py-16">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
-            <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-              Follow us <span className="text-accent">#nobelcafe</span>
+            <h3 className="text-sm font-bold tracking-wider uppercase">
+              Follow us <span className="text-green-500">#nobelcafe</span>
             </h3>
 
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-accent">
+              <a href="#" className="text-gray-400 hover:text-green-500">
                 <span className="sr-only">Facebook</span>
                 <svg
                   className="h-6 w-6"
@@ -100,7 +96,7 @@ export const Footer = () => {
                 </svg>
               </a>
 
-              <a href="#" className="text-gray-400 hover:text-gray-500">
+              <a href="#" className="text-gray-400 hover:text-green-500">
                 <span className="sr-only">Instagram</span>
                 <svg
                   className="h-6 w-6"
@@ -116,7 +112,7 @@ export const Footer = () => {
                 </svg>
               </a>
 
-              <a href="#" className="text-gray-400 hover:text-gray-500">
+              <a href="#" className="text-gray-400 hover:text-green-500">
                 <span className="sr-only">Snapchat</span>
                 <svg className="h-6 w-6" aria-hidden="true" viewBox="0 0 24 24">
                   <path
