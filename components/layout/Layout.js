@@ -1,11 +1,16 @@
 import Head from "next/head";
 import { CallToAction, Header, Footer } from "@components/layout";
+import { Snow } from "@components/misc";
 
 // TODO: Pass Head Props
 
-export const Layout = ({ children }) => {
+export const Layout = ({ children, hasSnowFall = false }) => {
+  const backgroundColour = hasSnowFall ? "bg-gray-700" : "bg-gray-50";
+  const textColour = hasSnowFall ? "text-white" : "text-gray-600";
+
   return (
-    <div className="font-serif text-gray-600 bg-gray-50 antialiased">
+    <div className={`font-serif antialiased ${backgroundColour} ${textColour}`}>
+      {hasSnowFall && <Snow />}
       <div className="min-h-screen">
         <Head>
           <title>Create Next App</title>
@@ -18,7 +23,7 @@ export const Layout = ({ children }) => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <Header />
+        <Header hasSnowFall={hasSnowFall} />
 
         <main>{children}</main>
 
