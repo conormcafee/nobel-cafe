@@ -15,11 +15,13 @@ const Address = () => {
   );
 };
 
-const OpeningHours = () => {
+const OpeningHours = ({ hasSnowFall }) => {
   const hours = [
     { days: "Monday - Saturday", time: "8am - 5pm" },
     { days: "Sunday", time: "Closed" },
   ];
+
+  const textColour = hasSnowFall ? "text-red-400" : "text-green-500";
 
   return (
     <div className="mt-12 md:mt-0">
@@ -30,7 +32,7 @@ const OpeningHours = () => {
         {hours.map(({ days, time }) => (
           <li className="text-base" key={days}>
             {days}{" "}
-            <span className="text-green-500 font-bold block">{time}</span>
+            <span className={`${textColour} font-bold block`}>{time}</span>
           </li>
         ))}
       </ul>
@@ -38,7 +40,7 @@ const OpeningHours = () => {
   );
 };
 
-const Speak = () => {
+const Speak = ({ hasSnowFall }) => {
   const details = [
     { label: "(028) 256 54302", href: "tel:+442825654302" },
     {
@@ -46,13 +48,18 @@ const Speak = () => {
       href: "mailto:info@nobelcafe.co.uk",
     },
   ];
+
+  const hoverTextColour = hasSnowFall
+    ? "hover:text-red-400"
+    : "hover:text-green-500";
+
   return (
     <div className="mt-12 md:mt-0">
       <h3 className="text-sm font-bold tracking-wider uppercase">Contact Us</h3>
       <ul role="list" className="mt-4 space-y-4">
         {details.map(({ label, href }) => (
           <li key={href}>
-            <a href={href} className="text-base hover:text-green-500">
+            <a href={href} className={`text-base ${hoverTextColour}`}>
               {label}
             </a>
           </li>
@@ -62,8 +69,13 @@ const Speak = () => {
   );
 };
 
-export const Footer = () => {
+export const Footer = ({ hasSnowFall }) => {
   const year = new Date().getFullYear();
+
+  const textColour = hasSnowFall ? "text-red-500" : "text-green-500";
+  const hoverTextColour = hasSnowFall
+    ? "hover:text-red-400"
+    : "hover:text-green-500";
 
   return (
     <div className="bg-gray-700 text-white">
@@ -75,11 +87,11 @@ export const Footer = () => {
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="space-y-8 xl:col-span-1">
               <h3 className="text-sm font-bold tracking-wider uppercase">
-                Follow us <span className="text-green-500">#nobelcafe</span>
+                Follow us <span className={textColour}>#nobelcafe</span>
               </h3>
 
               <div className="flex space-x-6">
-                <a href="#" className="text-gray-400 hover:text-green-500">
+                <a href="#" className={`text-gray-400 ${hoverTextColour}`}>
                   <span className="sr-only">Facebook</span>
                   <svg
                     className="h-6 w-6"
@@ -95,7 +107,7 @@ export const Footer = () => {
                   </svg>
                 </a>
 
-                <a href="#" className="text-gray-400 hover:text-green-500">
+                <a href="#" className={`text-gray-400 ${hoverTextColour}`}>
                   <span className="sr-only">Instagram</span>
                   <svg
                     className="h-6 w-6"
@@ -111,7 +123,7 @@ export const Footer = () => {
                   </svg>
                 </a>
 
-                <a href="#" className="text-gray-400 hover:text-green-500">
+                <a href="#" className={`text-gray-400 ${hoverTextColour}`}>
                   <span className="sr-only">Snapchat</span>
                   <svg
                     className="h-6 w-6"
@@ -130,9 +142,9 @@ export const Footer = () => {
               <div className="md:grid md:grid-cols-3 md:gap-8">
                 <Address />
 
-                <OpeningHours />
+                <OpeningHours hasSnowFall={hasSnowFall} />
 
-                <Speak />
+                <Speak hasSnowFall={hasSnowFall} />
               </div>
             </div>
           </div>

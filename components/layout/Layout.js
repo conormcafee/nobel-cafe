@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { CallToAction, Header, Footer } from "@components/layout";
+import { Header, Footer } from "@components/layout";
 import { Snow } from "@components/misc";
 
 // TODO: Pass Head Props
@@ -27,8 +27,7 @@ export const Layout = ({ children, hasSnowFall = false }) => {
 
         <main>{children}</main>
 
-        <Footer />
-        <CallToAction />
+        <Footer hasSnowFall={hasSnowFall} />
       </div>
     </div>
   );
