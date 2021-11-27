@@ -91,7 +91,11 @@ export const Footer = ({ hasSnowFall }) => {
               </h3>
 
               <div className="flex space-x-6">
-                <a href="#" className={`text-gray-400 ${hoverTextColour}`}>
+                <a
+                  href="https://www.facebook.com/NobelBallymena/"
+                  target="_blank"
+                  className={`text-gray-400 ${hoverTextColour}`}
+                >
                   <span className="sr-only">Facebook</span>
                   <svg
                     className="h-6 w-6"
@@ -107,7 +111,11 @@ export const Footer = ({ hasSnowFall }) => {
                   </svg>
                 </a>
 
-                <a href="#" className={`text-gray-400 ${hoverTextColour}`}>
+                <a
+                  href="https://www.instagram.com/nobelcafe_ballymena"
+                  target="_blank"
+                  className={`text-gray-400 ${hoverTextColour}`}
+                >
                   <span className="sr-only">Instagram</span>
                   <svg
                     className="h-6 w-6"
@@ -123,7 +131,11 @@ export const Footer = ({ hasSnowFall }) => {
                   </svg>
                 </a>
 
-                <a href="#" className={`text-gray-400 ${hoverTextColour}`}>
+                <a
+                  href="https://www.snapchat.com/add/nobel-cafe"
+                  target="_blank"
+                  className={`text-gray-400 ${hoverTextColour}`}
+                >
                   <span className="sr-only">Snapchat</span>
                   <svg
                     className="h-6 w-6"
