@@ -27,8 +27,13 @@ module.exports = {
           maxWidth: "1400px",
           marginLeft: "auto",
           marginRight: "auto",
-          paddingLeft: "2rem",
-          paddingRight: "2rem",
+          paddingLeft: "0.75rem",
+          paddingRight: "0.75rem",
+
+          "(min-width: 500px)": {
+            paddingLeft: "2rem",
+            paddingRight: "2rem",
+          },
         },
       };
 

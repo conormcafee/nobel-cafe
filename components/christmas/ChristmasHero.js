@@ -56,7 +56,7 @@ export const ChristmasHero = () => {
               Christmas Lunch Prices
             </h2>
 
-            <ul className="flex items-center justify-center space-x-4">
+            <ul className="md:flex items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
               {prices.map(({ id, label, price }) => (
                 <li key={id}>
                   <span className="inline-flex px-4 py-1 rounded-full font-bold tracking-wide uppercase bg-red-200 text-red-600">

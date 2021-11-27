@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export const Hero = () => {
   return (
@@ -21,33 +22,32 @@ export const Hero = () => {
 
       <div className="lg:grid lg:grid-cols-3 lg:gap-x-8">
         <div className="aspect-w-3 aspect-h-4 overflow-hidden">
-          <img
-            src="https://nobel-cafe.co.uk/static/nobel-01-0ac2c5e122cf241c3a8f2c6e3c00985c.jpg"
-            alt="Two each of gray, white, and black shirts laying flat."
+          <Image
             className="w-full h-[600px] object-center object-cover"
+            src="/assets/images/homepage/nobel-01.jpeg"
+            alt="A Nobel Cafe Fry"
+            width="650"
+            height="650"
           />
         </div>
         <div className="hidden lg:grid lg:grid-cols-1 lg:gap-y-8 mt-16">
           <div className="aspect-w-3 aspect-h-2 overflow-hidden">
-            <img
-              src="https://nobel-cafe.co.uk/static/nobel-18-2f401df852bb1fc8916c0e611b7b6718.jpg"
-              alt="Model wearing plain black basic tee."
+            <Image
               className="w-full h-[284px] object-center object-cover"
-            />
-          </div>
-          <div className="aspect-w-3 aspect-h-2 overflow-hidden">
-            <img
-              src="https://nobel-cafe.co.uk/static/nobel-17-78a3a6a22c6e4ee2d16f7ebd3bd159fb.jpg"
-              alt="Model wearing plain gray basic tee."
-              className="w-full h-[284px] object-center object-cover"
+              src="/assets/images/homepage/nobel-03.jpeg"
+              alt="Cup of Coffee at Nobel Cafe"
+              width="800"
+              height="800"
             />
           </div>
         </div>
         <div className="hidden aspect-w-4 aspect-h-5 sm:overflow-hidden lg:aspect-w-3 lg:aspect-h-4 lg:block">
-          <img
-            src="https://nobel-cafe.co.uk/static/nobel-19-219a7b584a2e9d0f3d9835bb0e364094.jpg"
-            alt="Model wearing plain white basic tee."
+          <Image
             className="w-full h-[600px] object-center object-cover"
+            src="/assets/images/homepage/nobel-04.jpeg"
+            alt="Bowl of Porridge at Nobel Cafe"
+            width="800"
+            height="800"
           />
         </div>
       </div>

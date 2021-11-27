@@ -26,10 +26,10 @@ export const Header = ({ hasSnowFall }) => {
           </a>
         </Link>
 
-        <nav className="space-x-4">
+        <nav className="space-x-3 md:space-x-4 text-xs md:text-sm">
           {menu.map(({ label, href }) => (
             <Link href={href} key={href}>
-              <a className={`text-sm font-bold ${hoverTextColour}`}>{label}</a>
+              <a className={`font-bold ${hoverTextColour}`}>{label}</a>
             </Link>
           ))}
         </nav>

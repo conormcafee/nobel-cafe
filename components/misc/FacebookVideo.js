@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 export const FacebookVideo = ({ video }) => {
   if (!video) return null;
@@ -6,8 +6,7 @@ export const FacebookVideo = ({ video }) => {
   const { label, iframe } = video;
 
   return (
-    <Fragment>
-      {label && <h4 as="h4">{label}</h4>}
+    <div className="bg-white shadow-md p-4 rounded-lg">
       <div className="relative overflow-hidden max-w-full pb-[56.25%] h-0">
         <iframe
           title={label || "Facebook Video"}
@@ -22,6 +21,12 @@ export const FacebookVideo = ({ video }) => {
           className="absolute top-0 left-0 w-full h-full"
         ></iframe>
       </div>
-    </Fragment>
+
+      {label && (
+        <h4 className="font-bold text-lg mt-4" as="h4">
+          {label}
+        </h4>
+      )}
+    </div>
   );
 };
