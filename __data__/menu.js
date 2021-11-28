@@ -185,8 +185,7 @@ export const data = {
       id: "recBYzA5XJjI7BEPV",
       fields: {
         name: "Nobel Noel",
-        description:
-          "Sliced turkey, Ham, Pork & herb stuffing, Cranberry sauce\n",
+        description: "Sliced turkey, Ham, stuffing, Cranberry sauce\n",
         category: "sandwiches",
         price: 6.95,
         additional_price: 8.45,
@@ -309,7 +308,7 @@ export const data = {
         description:
           "Grilled chicken fillet or crispy chicken goujons served on crisp cos lettuce, caesar dressing, bacon, parmesan & herb croutons",
         category: "lunch",
-        price: 10.25,
+        price: 9.25,
         type: "Chicken",
       },
       createdTime: "2021-11-16T17:50:19.000Z",
@@ -438,7 +437,7 @@ export const data = {
       id: "recQdPy1asjcSqQq5",
       fields: {
         name: "Soup",
-        description: "Kids Potato & Leak Soup with Soft Roll or Mash\n",
+        description: "Kids Vegetable Soup with Soft Roll or Mash\n",
         category: "kids",
         price: 4,
       },
