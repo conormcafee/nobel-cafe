@@ -71,7 +71,7 @@ export const ChristmasHero = () => {
           </div>
 
           <p className="text-xs text-center">
-            * Christmas lunches can we purchased cold and cooking instructions
+            * Christmas lunches can be purchased cold and cooking instructions
             will be provided.
           </p>
 
