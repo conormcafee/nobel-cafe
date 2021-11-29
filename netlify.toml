@@ -2,7 +2,7 @@
   publish = ".next"
 
 [context.branch-deploy.environment]
-  NODE_ENV = "production"
+  NODE_ENV = "development"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
