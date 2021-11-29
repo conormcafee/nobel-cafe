@@ -1,15 +1,8 @@
+// If you want to use other PostCSS plugins, see the following:
+// https://tailwindcss.com/docs/using-with-preprocessors
 module.exports = {
-  plugins: [
-    require("postcss-import")({
-      plugins: [require("stylelint")],
-    }),
-    require("tailwindcss")("./tailwind.config.js"),
-    require("postcss-preset-env")({
-      autoprefixer: { grid: true },
-      features: {
-        "nesting-rules": true,
-      },
-      browsers: ["> 1%", "last 2 versions", "Firefox ESR"],
-    }),
-  ],
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
 }

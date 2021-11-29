@@ -1,0 +1,1 @@
+export { ChristmasHero } from "./ChristmasHero";
