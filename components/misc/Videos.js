@@ -2,6 +2,10 @@ import { FacebookVideo } from "@components/misc";
 
 const videos = [
   {
+    label: "Merry Christmas (2021)",
+    iframe: "https://www.facebook.com/plugins/video.php?height=316&href=https%3A%2F%2Fwww.facebook.com%2FNobelBallymena%2Fvideos%2F1337304330072814%2F&show_text=false&width=560&t=0" 
+  },
+  {
     label: "We're Back!",
     iframe:
       "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FNobelBallymena%2Fvideos%2F3811324915560921%2F&show_text=0&width=560",
