@@ -35,9 +35,9 @@ export const ChristmasHero = () => {
             </h1>
 
             <p className="max-w-2xl text-lg">
-              We can accommodate large bookings for sit in or takeaway! Perfect
+              We can accommodate large parties for sit in or takeaway! Perfect
               for a family get together or work Christmas lunch! If you would
-              like to book a time or arrange a takeaway order - either email{" "}
+              like to arrange a takeaway order - either email{" "}
               <ChristmasHeroInlineButton
                 href="mailto:info@nobelcafe.co.uk"
                 label="info@nobelcafe.co.uk"
