@@ -182,19 +182,6 @@ export const data = {
       createdTime: "2021-11-16T17:43:49.000Z",
     },
     {
-      id: "recBYzA5XJjI7BEPV",
-      fields: {
-        name: "Nobel Noel",
-        description: "Sliced turkey, Ham, stuffing, Cranberry sauce\n",
-        category: "sandwiches",
-        price: 6.95,
-        additional_price: 8.45,
-        price_text: "W/ Chips & Dip",
-        additional_price_text: "W/ Soup",
-      },
-      createdTime: "2021-11-16T17:44:57.000Z",
-    },
-    {
       id: "reckVOx5rVZ9qko74",
       fields: {
         name: "Smokey Joe",
@@ -236,6 +223,19 @@ export const data = {
       createdTime: "2021-11-16T17:45:11.000Z",
     },
     {
+      id: "recV6DAseHMDqsvXK",
+      fields: {
+        name: "Bombay Chicken",
+        description: "Tandoori chicken, mango chutney & curry mayo.\n",
+        category: "sandwiches",
+        price: 6.95,
+        additional_price: 8.45,
+        price_text: "W/ Chips & Dip",
+        additional_price_text: "W/ Soup",
+      },
+      createdTime: "2021-11-16T17:45:11.000Z",
+    },
+    {
       id: "recmAYc0bOh8GldUE",
       fields: {
         name: "Southern Fried Chicken",
@@ -268,12 +268,12 @@ export const data = {
     {
       id: "recvF8n64HO9QpLSDKF",
       fields: {
-        name: "Christmas Lunch",
+        name: "Panfried Chicken",
         description:
-          "Roast turkey, ham, herb stuffing, seasonal vegetables, mash, roast potatoes, chipolatas served with gravy & cranberry.\n",
+          "Serverd with tobacco onions, seasonal vegetables and a choice of side & sauce.\n",
         category: "lunch",
-        price: 12.95,
-        type: "Christmas",
+        price: 10.25,
+        type: "Chicken",
       },
       createdTime: "2021-11-16T17:48:55.000Z",
     },
