@@ -6,4 +6,6 @@ export const MENU_API_CATEGORIES = {
   miscLunch: "misc-lunch",
   sandwiches: "sandwiches",
   sides: "sides",
+  wrap: "wrap",
+  openSandwiches: "openSandwiches",
 };

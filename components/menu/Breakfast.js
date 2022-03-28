@@ -87,7 +87,7 @@ export const Breakfast = ({ records = [] }) => {
           <span className="block">After 11:30am</span>
           <ol className="text-right">
             <li className="block">
-              5 items <span className="text-green-500 font-bold">£5.25</span>
+              5 items <span className="text-green-500 font-bold">£5.50</span>
             </li>
             <li className="block">
               10 items <span className="text-green-500 font-bold">£9.95</span>

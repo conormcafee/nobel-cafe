@@ -182,14 +182,53 @@ export const data = {
       createdTime: "2021-11-16T17:43:49.000Z",
     },
     {
+      id: "recV6DAseHMDqsvTM",
+      fields: {
+        name: "Classic Club",
+        description: "Sliced roast chicken, bacon, lettuce, tomato & mayo\n",
+        category: "sandwiches",
+        price: 6.95,
+        additional_price: 8.45,
+        price_text: "W/ Chips & Dip",
+        additional_price_text: "W/ Soup",
+      },
+      createdTime: "2021-11-16T17:45:11.000Z",
+    },
+    {
+      id: "reckVOx5rVZ9qko5673",
+      fields: {
+        name: "Mexican",
+        description: "Spiced pulled beef brisket, mozzarella & chipotle mayo\n",
+        category: "wrap",
+        price: 7.95,
+        additional_price: 9.45,
+        price_text: "W/ Chips & Dip",
+        additional_price_text: "W/ Soup",
+      },
+      createdTime: "2021-11-16T17:45:10.000Z",
+    },
+    {
       id: "reckVOx5rVZ9qko74",
       fields: {
         name: "Smokey Joe",
         description:
-          "Southern fried chicken, crispy bacon, bbq sauce, applewood cheese\n",
-        category: "sandwiches",
-        price: 6.95,
-        additional_price: 8.45,
+          "Southern fried chicken, bacon, cheddar cheese & bbq sauce\n",
+        category: "wrap",
+        price: 7.95,
+        additional_price: 9.45,
+        price_text: "W/ Chips & Dip",
+        additional_price_text: "W/ Soup",
+      },
+      createdTime: "2021-11-16T17:45:10.000Z",
+    },
+    {
+      id: "reckVOx5rVZ9qko565",
+      fields: {
+        name: "Brunch",
+        description: "Sugar pit bacon, sausage, egg, black pudding & ketchup\n",
+        category: "wrap",
+        price: 7.95,
+        additional_price: 9.45,
         price_text: "W/ Chips & Dip",
         additional_price_text: "W/ Soup",
       },
@@ -198,42 +237,13 @@ export const data = {
     {
       id: "recZpb7ux3RGJ2PhE",
       fields: {
-        name: "Tasty Tuna",
-        description: "Flaked tuna, sweetcorn, red onion, mayonnaise\n",
-        category: "sandwiches",
-        price: 6.95,
-        additional_price: 8.45,
-        price_text: "W/ Chips & Dip",
-        additional_price_text: "W/ Soup",
+        name: "Prawns",
+        description:
+          "Prawns, salad, Marie Rose sauce & lemon served on wheaten\n",
+        category: "openSandwiches",
+        price: 8.95,
       },
       createdTime: "2021-11-16T17:45:04.000Z",
-    },
-    {
-      id: "recV6DAseHMDqsvTM",
-      fields: {
-        name: "Classic Club",
-        description:
-          "Sliced roast chicken breast, smoked bacon rashers, lettuce, tomato & mayonaise\n",
-        category: "sandwiches",
-        price: 6.95,
-        additional_price: 8.45,
-        price_text: "W/ Chips & Dip",
-        additional_price_text: "W/ Soup",
-      },
-      createdTime: "2021-11-16T17:45:11.000Z",
-    },
-    {
-      id: "recV6DAseHMDqsvXK",
-      fields: {
-        name: "Bombay Chicken",
-        description: "Tandoori chicken, mango chutney & curry mayo.\n",
-        category: "sandwiches",
-        price: 6.95,
-        additional_price: 8.45,
-        price_text: "W/ Chips & Dip",
-        additional_price_text: "W/ Soup",
-      },
-      createdTime: "2021-11-16T17:45:11.000Z",
     },
     {
       id: "recmAYc0bOh8GldUE",
@@ -272,7 +282,7 @@ export const data = {
         description:
           "Serverd with tobacco onions, seasonal vegetables and a choice of side & sauce.\n",
         category: "lunch",
-        price: 10.25,
+        price: 10.95,
         type: "Chicken",
       },
       createdTime: "2021-11-16T17:48:55.000Z",
@@ -284,7 +294,7 @@ export const data = {
         description:
           "Fresh chicken fillet tenders, coated in a crisp gluten free crumb served with a choice of dipping sauce & side\n",
         category: "lunch",
-        price: 10.25,
+        price: 10.95,
         type: "Chicken",
       },
       createdTime: "2021-11-16T17:48:55.000Z",
@@ -296,7 +306,7 @@ export const data = {
         description:
           "Crispy fried chicken strips tossed in a sticky sweet chilli sauce topped with toasted sesame & spring onion served with a garlic mayo dip & choice of side\n",
         category: "lunch",
-        price: 10.25,
+        price: 10.95,
         type: "Chicken",
       },
       createdTime: "2021-11-16T17:50:04.000Z",
@@ -308,7 +318,7 @@ export const data = {
         description:
           "Grilled chicken fillet or crispy chicken goujons served on crisp cos lettuce, caesar dressing, bacon, parmesan & herb croutons",
         category: "lunch",
-        price: 9.25,
+        price: 9.95,
         type: "Chicken",
       },
       createdTime: "2021-11-16T17:50:19.000Z",
@@ -320,7 +330,7 @@ export const data = {
         description:
           "Chilli steak strips, pepper cream, penne pasta served with garlic ciabatta slice\n",
         category: "lunch",
-        price: 10.25,
+        price: 10.95,
         type: "Pasta",
       },
       createdTime: "2021-11-16T17:50:30.000Z",
@@ -332,7 +342,7 @@ export const data = {
         description:
           "Creamy carbonara penne pasta topped with parmesan, served with garlic ciabatta slice\n",
         category: "lunch",
-        price: 10.25,
+        price: 10.95,
         type: "Pasta",
       },
       createdTime: "2021-11-16T17:50:42.000Z",
@@ -344,20 +354,43 @@ export const data = {
         description:
           "6oz steak burger, maple bacon rashers, cheddar cheese, lettuce, tomato, onion & mayo on toasted brioche bun, includes a side.\n",
         category: "lunch",
-        price: 10.25,
+        price: 10.95,
         type: "Burgers",
       },
       createdTime: "2021-11-16T17:50:55.000Z",
     },
     {
-      id: "recJpYrNRwul75xKJSK",
+      id: "recJpYrNRwul75x6569586",
       fields: {
-        name: "Loaded fries",
+        name: "Fish",
         description:
-          "Southern fried chicken fillet, pepper sauce & tobacco onions. \n",
+          "Battered cod fillet, tartare sauce, mushy peas, lemon wedge & choice of side\n",
         category: "lunch",
-        price: 10.25,
-        type: "Loaded Fries",
+        price: 11.95,
+        type: "Fish",
+      },
+      createdTime: "2021-11-16T17:50:55.000Z",
+    },
+    {
+      id: "recJpYrNRwul75x6569554168",
+      fields: {
+        name: "Curry Bowl",
+        description: "Thai chicken coconut curry with steamed jasmine rice\n",
+        category: "lunch",
+        price: 10.45,
+        type: "Chicken",
+      },
+      createdTime: "2021-11-16T17:50:55.000Z",
+    },
+    {
+      id: "recJpYrNRwul75x65693yhd",
+      fields: {
+        name: "BBQ Pork",
+        description:
+          "Pulled pork, toasted brioche bun, bbq sauce, coleslaw & choice of side\n",
+        category: "lunch",
+        price: 10.45,
+        type: "Pork",
       },
       createdTime: "2021-11-16T17:50:55.000Z",
     },
@@ -368,7 +401,7 @@ export const data = {
         description:
           "- Chips\n- Garlic Fries\n- Skin on Fries\n- Mash\n- Champ\n- Salt & Chill Fries\n- Kebab Fries\n- Tobacco Onions\n- Baby Caesar\n- Seasonal Veg\n",
         category: "sides",
-        price: 3,
+        price: 3.25,
       },
       createdTime: "2021-11-16T17:53:57.000Z",
     },
@@ -437,9 +470,19 @@ export const data = {
       id: "recQdPy1asjcSqQq5",
       fields: {
         name: "Soup",
-        description: "Kids Vegetable Soup with Soft Roll or Mash\n",
+        description: "Kids Potato & Leak Soup with Soft Roll or Mash\n",
         category: "kids",
         price: 4,
+      },
+      createdTime: "2021-11-16T17:59:30.000Z",
+    },
+    {
+      id: "30-mijfdgiu84r3",
+      fields: {
+        name: "Fish & Chips",
+        description: "Battered Fish & Chips\n",
+        category: "kids",
+        price: 6,
       },
       createdTime: "2021-11-16T17:59:30.000Z",
     },
