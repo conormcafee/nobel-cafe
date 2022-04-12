@@ -83,24 +83,21 @@ export const Breakfast = ({ records = [] }) => {
 
         <BreakfastItems data={breakfast} />
 
-        <div className="text-xs text-gray-500 mt-4 [ flex items-start justify-between ]">
+        <div className="text-xs text-gray-500 mt-4 [ flex items-center justify-between ]">
           <span className="block">After 11:30am</span>
-          <ol className="text-right">
-            <li className="block">
-              5 items <span className="text-green-500 font-bold">£5.50</span>
+          <ol className="flex gap-2 text-right">
+            <li className="block text-base bg-green-500 rounded-lg text-white px-2 py-1">
+              5 items <span className="font-bold">£5.50</span>
             </li>
-            <li className="block">
-              10 items <span className="text-green-500 font-bold">£9.95</span>
+            <li className="block text-base bg-green-500 rounded-lg text-white px-2 py-1">
+              10 items <span className="font-bold">£9.95</span>
             </li>
           </ol>
         </div>
       </aside>
 
       <div className="col-span-2">
-        <TitleAndIntro
-          title="More Breakfast Options"
-          intro={["Serverd until 11:30am"]}
-        />
+        <TitleAndIntro title="More Breakfast Options" />
 
         <AdditionalBreakfastItems data={additionalBreakfastItems} />
       </div>

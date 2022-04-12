@@ -22,7 +22,7 @@ export const Sandwiches = ({ records = [] }) => {
             title="Sandwiches"
             intro={[
               "Served after 11:30am",
-              "Available with Seasonal Vegetable Broth Soup",
+              "Available with Leek & Potato Soup",
             ]}
           />
           <ul
@@ -39,7 +39,7 @@ export const Sandwiches = ({ records = [] }) => {
             title="Wraps"
             intro={[
               "Served after 11:30am",
-              "Available with Seasonal Vegetable Broth Soup",
+              "Available with Leek & Potato Soup",
             ]}
           />
           <ul

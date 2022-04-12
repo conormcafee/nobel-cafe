@@ -195,6 +195,19 @@ export const data = {
       createdTime: "2021-11-16T17:45:11.000Z",
     },
     {
+      id: "recV6DAseHMDq564546",
+      fields: {
+        name: "Open Sandwich",
+        description:
+          "Roast chicken, sliced egg, salad and coronation mayo, serverd on wheaten bread\n",
+        category: "sandwiches",
+        price: 8.95,
+        price_text: "",
+        additional_price_text: "W/ Soup",
+      },
+      createdTime: "2021-11-16T17:45:11.000Z",
+    },
+    {
       id: "reckVOx5rVZ9qko5673",
       fields: {
         name: "Mexican",
