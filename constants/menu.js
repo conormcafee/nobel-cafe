@@ -7,5 +7,6 @@ export const MENU_API_CATEGORIES = {
   sandwiches: "sandwiches",
   sides: "sides",
   wrap: "wrap",
+  goujonWraps: "goujonWraps",
   openSandwiches: "openSandwiches",
 };

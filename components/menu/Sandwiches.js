@@ -12,9 +12,9 @@ export const Sandwiches = ({ records = [] }) => {
     MENU_API_CATEGORIES.wrap
   );
 
-  const openSandwiches = getMenuDataByCategory(
+  const goujonWraps = getMenuDataByCategory(
     records,
-    MENU_API_CATEGORIES.openSandwiches
+    MENU_API_CATEGORIES.goujonWraps
   );
 
   return (
@@ -37,7 +37,7 @@ export const Sandwiches = ({ records = [] }) => {
             ))}
           </ul>
         </div>
-        <div className="md:col-span-2">
+        <div>
           <TitleAndIntro
             title="Gourmet Sandwiches"
             intro={[
@@ -47,9 +47,23 @@ export const Sandwiches = ({ records = [] }) => {
           />
           <ul
             role="list"
-            className="[ grid md:grid-cols-2 gap-y-8 md:gap-16 mt-2 ][ bg-white p-4 rounded-md shadow-sm border border-gray-200 ]"
+            className="[ grid md:grid-cols-1 gap-y-8 md:gap-16 mt-2 ][ bg-white p-4 rounded-md shadow-sm border border-gray-200 ]"
           >
             {gourmetSandwiches.map((wrap) => (
+              <MenuItem key={wrap.id} item={wrap} />
+            ))}
+          </ul>
+        </div>
+        <div>
+          <TitleAndIntro
+            title="Wraps"
+            intro={["Served with a choice of side"]}
+          />
+          <ul
+            role="list"
+            className="[ grid md:grid-cols-1 gap-y-8 md:gap-16 mt-2 ][ bg-white p-4 rounded-md shadow-sm border border-gray-200 ]"
+          >
+            {goujonWraps.map((wrap) => (
               <MenuItem key={wrap.id} item={wrap} />
             ))}
           </ul>
