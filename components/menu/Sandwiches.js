@@ -7,7 +7,10 @@ export const Sandwiches = ({ records = [] }) => {
     records,
     MENU_API_CATEGORIES.sandwiches
   );
-  const wraps = getMenuDataByCategory(records, MENU_API_CATEGORIES.wrap);
+  const gourmetSandwiches = getMenuDataByCategory(
+    records,
+    MENU_API_CATEGORIES.wrap
+  );
 
   const openSandwiches = getMenuDataByCategory(
     records,
@@ -34,9 +37,9 @@ export const Sandwiches = ({ records = [] }) => {
             ))}
           </ul>
         </div>
-        <div>
+        <div className="md:col-span-2">
           <TitleAndIntro
-            title="Wraps"
+            title="Gourmet Sandwiches"
             intro={[
               "Served after 11:30am",
               "Available with Leek & Potato Soup",
@@ -44,24 +47,10 @@ export const Sandwiches = ({ records = [] }) => {
           />
           <ul
             role="list"
-            className="[ grid md:grid-cols-1 gap-y-8 md:gap-16 mt-2 ][ bg-white p-4 rounded-md shadow-sm border border-gray-200 ]"
+            className="[ grid md:grid-cols-2 gap-y-8 md:gap-16 mt-2 ][ bg-white p-4 rounded-md shadow-sm border border-gray-200 ]"
           >
-            {wraps.map((wrap) => (
+            {gourmetSandwiches.map((wrap) => (
               <MenuItem key={wrap.id} item={wrap} />
-            ))}
-          </ul>
-        </div>
-        <div>
-          <TitleAndIntro
-            title="Open Sandwiches"
-            intro={["Served after 11:30am"]}
-          />
-          <ul
-            role="list"
-            className="[ grid md:grid-cols-1 3 gap-y-8 md:gap-16 mt-2 ][ bg-white p-4 rounded-md shadow-sm border border-gray-200 ]"
-          >
-            {openSandwiches.map((openSandwich) => (
-              <MenuItem key={openSandwich.id} item={openSandwich} />
             ))}
           </ul>
         </div>

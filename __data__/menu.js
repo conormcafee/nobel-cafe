@@ -170,9 +170,8 @@ export const data = {
     {
       id: "recuhPid9lxShKYs0",
       fields: {
-        name: "Melt",
-        description:
-          "Sliced ham, cheddar cheese, mustard mayo & tobacco onions\n",
+        name: "Tasty Tuna",
+        description: "Flaked tuna, red onion, sweetcorn & mayonaise\n",
         category: "sandwiches",
         price: 6.95,
         additional_price: 8.45,
@@ -195,14 +194,14 @@ export const data = {
       createdTime: "2021-11-16T17:45:11.000Z",
     },
     {
-      id: "recV6DAseHMDq564546",
+      id: "recV6DAseHMDqsghjdw3",
       fields: {
-        name: "Open Sandwich",
-        description:
-          "Roast chicken, sliced egg, salad and coronation mayo, serverd on wheaten bread\n",
+        name: "Smokey Joe",
+        description: "South fried chicken, bacon, cheese melt & BBQ sauce\n",
         category: "sandwiches",
-        price: 8.95,
-        price_text: "",
+        price: 6.95,
+        additional_price: 8.45,
+        price_text: "W/ Chips & Dip",
         additional_price_text: "W/ Soup",
       },
       createdTime: "2021-11-16T17:45:11.000Z",
@@ -235,6 +234,48 @@ export const data = {
       createdTime: "2021-11-16T17:45:10.000Z",
     },
     {
+      id: "recV6DAseHfgfgfMDqsghjdw3",
+      fields: {
+        name: "The Melt",
+        description:
+          "Toasted sourdough topped with pulled sugar pit ham & three cheese melt\n",
+        category: "wrap",
+        price: 7.95,
+        additional_price: 9.45,
+        price_text: "W/ Chips & Dip",
+        additional_price_text: "W/ Soup",
+      },
+      createdTime: "2021-11-16T17:45:11.000Z",
+    },
+    {
+      id: "dfdfdf331202545",
+      fields: {
+        name: "The Mexican Quesadilla",
+        description:
+          "Spiced pulled beef brisket, red peppers, onions & metled monterey jack cheese in a folded tortilla wrap with taco mayo\n",
+        category: "wrap",
+        price: 7.95,
+        additional_price: 9.45,
+        price_text: "W/ Chips & Dip",
+        additional_price_text: "W/ Soup",
+      },
+      createdTime: "2021-11-16T17:45:11.000Z",
+    },
+    {
+      id: "dfbmmju02545",
+      fields: {
+        name: "Italian Chicken",
+        description:
+          "Sliced chicken breast, beef and tomato, salad leaves & basil mayo on toasted chiabatta\n",
+        category: "wrap",
+        price: 7.95,
+        additional_price: 9.45,
+        price_text: "W/ Chips & Dip",
+        additional_price_text: "W/ Soup",
+      },
+      createdTime: "2021-11-16T17:45:11.000Z",
+    },
+    {
       id: "reckVOx5rVZ9qko565",
       fields: {
         name: "Brunch",
@@ -250,11 +291,11 @@ export const data = {
     {
       id: "recZpb7ux3RGJ2PhE",
       fields: {
-        name: "Prawns",
+        name: "Goujon Wrap",
         description:
-          "Prawns, salad, Marie Rose sauce & lemon served on wheaten\n",
-        category: "openSandwiches",
-        price: 8.95,
+          "Crumbled chicken tenders, salt & chilli seasoning, shredded lettuce, tomato, red onion & chilli mayo wrapped in a warm tortilla.  Served with a choice of side\n",
+        category: "wrap",
+        price: 9.45,
       },
       createdTime: "2021-11-16T17:45:04.000Z",
     },
@@ -373,37 +414,14 @@ export const data = {
       createdTime: "2021-11-16T17:50:55.000Z",
     },
     {
-      id: "recJpYrNRwul75x6569586",
-      fields: {
-        name: "Fish",
-        description:
-          "Battered cod fillet, tartare sauce, mushy peas, lemon wedge & choice of side\n",
-        category: "lunch",
-        price: 11.95,
-        type: "Fish",
-      },
-      createdTime: "2021-11-16T17:50:55.000Z",
-    },
-    {
-      id: "recJpYrNRwul75x6569554168",
-      fields: {
-        name: "Curry Bowl",
-        description: "Thai chicken coconut curry with steamed jasmine rice\n",
-        category: "lunch",
-        price: 10.45,
-        type: "Chicken",
-      },
-      createdTime: "2021-11-16T17:50:55.000Z",
-    },
-    {
       id: "recJpYrNRwul75x65693yhd",
       fields: {
-        name: "BBQ Pork",
+        name: "Chicken Burger",
         description:
-          "Pulled pork, toasted brioche bun, bbq sauce, coleslaw & choice of side\n",
+          "Southern fried chicken fillet, maple bacon rashers, cheddar cheese, lettuce, tomato, onion & mayo on a toasted brioche bun\n",
         category: "lunch",
-        price: 10.45,
-        type: "Pork",
+        price: 10.95,
+        type: "Burgers",
       },
       createdTime: "2021-11-16T17:50:55.000Z",
     },
