@@ -508,15 +508,5 @@ export const data = {
       },
       createdTime: "2021-11-16T17:59:30.000Z",
     },
-    {
-      id: "30-mijfdgiu84r3",
-      fields: {
-        name: "Fish & Chips",
-        description: "Battered Fish & Chips\n",
-        category: "kids",
-        price: 6,
-      },
-      createdTime: "2021-11-16T17:59:30.000Z",
-    },
   ],
 };
