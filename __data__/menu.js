@@ -280,7 +280,7 @@ export const data = {
       fields: {
         name: "Goujon Wrap",
         description:
-          "Crumbled chicken tenders, salt & chilli seasoning, shredded lettuce, tomato, red onion & chilli mayo wrapped in a warm tortilla.\n",
+          "Crumbled chicken tenders, salt & chilli seasoning, shredded lettuce & chilli mayo wrapped in a warm tortilla.\n",
         category: "goujonWraps",
         price: 9.45,
       },
@@ -502,7 +502,7 @@ export const data = {
       id: "recQdPy1asjcSqQq5",
       fields: {
         name: "Soup",
-        description: "Kids Potato & Leak Soup with Soft Roll or Mash\n",
+        description: "Kids Potato & Leek Soup with Soft Roll or Mash\n",
         category: "kids",
         price: 4,
       },
