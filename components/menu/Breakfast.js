@@ -78,7 +78,7 @@ export const Breakfast = ({ records = [] }) => {
       <aside>
         <TitleAndIntro
           title="Breakfast"
-          intro={["8am - 11:30am: 70p per item"]}
+          intro={["8am - 11:30am: 75p per item"]}
         />
 
         <BreakfastItems data={breakfast} />

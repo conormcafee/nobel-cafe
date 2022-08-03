@@ -121,7 +121,7 @@ export const data = {
         description:
           "Topped with seasonal berries, greek yogurt & lemon syrup\n",
         category: "breakfast-additional",
-        price: 5.95,
+        price: 6.45,
       },
       createdTime: "2021-11-16T17:09:36.000Z",
     },
@@ -131,7 +131,7 @@ export const data = {
         name: "Toasted Sourdough",
         description: "Topped with avocado, lean bacon & poached egg\n",
         category: "breakfast-additional",
-        price: 6.25,
+        price: 6.45,
       },
       createdTime: "2021-11-16T17:09:36.000Z",
     },
@@ -141,7 +141,7 @@ export const data = {
         name: "Nobel Bap",
         description: "Sausage, bacon & egg\n",
         category: "breakfast-additional",
-        price: 4.25,
+        price: 4.45,
       },
       createdTime: "2021-11-16T17:12:19.000Z",
     },
@@ -152,7 +152,7 @@ export const data = {
         description:
           "Choose toppings from fresh fruit, honey, maple syrup, cinnamon, nuts & seeds\n",
         category: "breakfast-additional",
-        price: 4.25,
+        price: 4.45,
       },
       createdTime: "2021-11-16T17:12:44.000Z",
     },
@@ -163,7 +163,7 @@ export const data = {
         description:
           "Choose toppings from fresh fruit, honey, maple syrup, cinnamon, nuts & seeds\n",
         category: "breakfast-additional",
-        price: 2.95,
+        price: 3.15,
       },
       createdTime: "2021-11-16T17:13:19.000Z",
     },
@@ -337,7 +337,7 @@ export const data = {
         description:
           "Serverd with tobacco onions, seasonal vegetables and a choice of side & sauce.\n",
         category: "lunch",
-        price: 10.95,
+        price: 11.25,
         type: "Chicken",
       },
       createdTime: "2021-11-16T17:48:55.000Z",
@@ -349,7 +349,7 @@ export const data = {
         description:
           "Fresh chicken fillet tenders, coated in a crisp gluten free crumb served with a choice of dipping sauce & side\n",
         category: "lunch",
-        price: 10.95,
+        price: 11.25,
         type: "Chicken",
       },
       createdTime: "2021-11-16T17:48:55.000Z",
@@ -361,7 +361,7 @@ export const data = {
         description:
           "Crispy fried chicken strips tossed in a sticky sweet chilli sauce topped with toasted sesame & spring onion served with a garlic mayo dip & choice of side\n",
         category: "lunch",
-        price: 10.95,
+        price: 11.25,
         type: "Chicken",
       },
       createdTime: "2021-11-16T17:50:04.000Z",
@@ -373,23 +373,23 @@ export const data = {
         description:
           "Grilled chicken fillet or crispy chicken goujons served on crisp cos lettuce, caesar dressing, bacon, parmesan & herb croutons",
         category: "lunch",
-        price: 9.95,
+        price: 10.25,
         type: "Chicken",
       },
       createdTime: "2021-11-16T17:50:19.000Z",
     },
-    {
-      id: "recJBFW5yZeJnHtTH",
-      fields: {
-        name: "Chilli Steak Pasta",
-        description:
-          "Chilli steak strips, pepper cream, penne pasta served with garlic ciabatta slice\n",
-        category: "lunch",
-        price: 10.95,
-        type: "Pasta",
-      },
-      createdTime: "2021-11-16T17:50:30.000Z",
-    },
+    // {
+    //   id: "recJBFW5yZeJnHtTH",
+    //   fields: {
+    //     name: "Chilli Steak Pasta",
+    //     description:
+    //       "Chilli steak strips, pepper cream, penne pasta served with garlic ciabatta slice\n",
+    //     category: "lunch",
+    //     price: 10.95,
+    //     type: "Pasta",
+    //   },
+    //   createdTime: "2021-11-16T17:50:30.000Z",
+    // },
     {
       id: "recvzxfzfQxi1wnY6",
       fields: {
@@ -397,7 +397,7 @@ export const data = {
         description:
           "Creamy carbonara penne pasta topped with parmesan, served with garlic ciabatta slice\n",
         category: "lunch",
-        price: 10.95,
+        price: 11.25,
         type: "Pasta",
       },
       createdTime: "2021-11-16T17:50:42.000Z",
@@ -409,23 +409,23 @@ export const data = {
         description:
           "6oz steak burger, maple bacon rashers, cheddar cheese, lettuce, tomato, onion & mayo on toasted brioche bun, includes a side.\n",
         category: "lunch",
-        price: 10.95,
+        price: 11.25,
         type: "Burgers",
       },
       createdTime: "2021-11-16T17:50:55.000Z",
     },
-    {
-      id: "recJpYrNRwul75x65693yhd",
-      fields: {
-        name: "Chicken Burger",
-        description:
-          "Southern fried chicken fillet, maple bacon rashers, cheddar cheese, lettuce, tomato, onion & mayo on a toasted brioche bun\n",
-        category: "lunch",
-        price: 10.95,
-        type: "Burgers",
-      },
-      createdTime: "2021-11-16T17:50:55.000Z",
-    },
+    // {
+    //   id: "recJpYrNRwul75x65693yhd",
+    //   fields: {
+    //     name: "Chicken Burger",
+    //     description:
+    //       "Southern fried chicken fillet, maple bacon rashers, cheddar cheese, lettuce, tomato, onion & mayo on a toasted brioche bun\n",
+    //     category: "lunch",
+    //     price: 10.95,
+    //     type: "Burgers",
+    //   },
+    //   createdTime: "2021-11-16T17:50:55.000Z",
+    // },
     {
       id: "recJICVXsjJn8T2CK",
       fields: {
