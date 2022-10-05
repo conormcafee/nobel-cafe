@@ -9,12 +9,12 @@ export const Sandwiches = ({ records = [] }) => {
   );
   const gourmetSandwiches = getMenuDataByCategory(
     records,
-    MENU_API_CATEGORIES.wrap
+    MENU_API_CATEGORIES.gourmetSandwiches
   );
 
-  const goujonWraps = getMenuDataByCategory(
+  const wraps = getMenuDataByCategory(
     records,
-    MENU_API_CATEGORIES.goujonWraps
+    MENU_API_CATEGORIES.wraps
   );
 
   return (
@@ -63,7 +63,7 @@ export const Sandwiches = ({ records = [] }) => {
             role="list"
             className="[ grid md:grid-cols-1 gap-y-8 md:gap-16 mt-2 ][ bg-white p-4 rounded-md shadow-sm border border-gray-200 ]"
           >
-            {goujonWraps.map((wrap) => (
+            {wraps.map((wrap) => (
               <MenuItem key={wrap.id} item={wrap} />
             ))}
           </ul>
