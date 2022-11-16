@@ -17,8 +17,8 @@ const ChristmasHeroInlineButton = ({ href, label }) => {
 };
 
 const prices = [
-  { id: 0, label: "Sit in", price: 12.95 },
-  { id: 1, label: "Takeaway*", price: 11.95 },
+  { id: 0, label: "Sit in", price: 14.95 },
+  { id: 1, label: "Takeaway*", price: 12.95 },
 ];
 
 export const ChristmasHero = () => {
@@ -33,6 +33,8 @@ export const ChristmasHero = () => {
                 <i> Nobel Cafe</i>
               </span>
             </h1>
+
+            <span className="inline-flex px-2 py-1 rounded-full font-bold tracking-wide uppercase bg-red-200 text-red-700 text-sm">Starting 21st November</span>
 
             <p className="max-w-2xl text-lg">
               We can accommodate large parties for sit in or takeaway! Perfect
@@ -112,6 +114,14 @@ export const ChristmasHero = () => {
             />
             .
           </p>
+
+          <div className="text-center space-y-4 border-2 border-red-400 bg-white px-8 py-6 rounded-lg shadow-xl">
+            <h2 className="text-xl md:text-2xl max-w-4xl font-bold leading-snug md:leading-snug text-red-600">
+              Nobel vouchers
+            </h2>
+
+            <p className='text-gray-700'>The perfect gift for Christmas! Monetary vouchers can be purchased at Nobel Cafe!</p>
+          </div>
 
           <FacebookVideo
             video={{
