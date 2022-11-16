@@ -134,10 +134,10 @@ export const ChristmasHero = () => {
         <aside className="transform -rotate-2 ">
           <Image
             className="shadow-lg rounded-lg"
-            src="/assets/images/christmas/christmas-at-nobel.jpeg"
-            alt="Member of staff standing beside Christmas Tree in the Cafe"
-            width="828"
-            height="1472"
+            src="/assets/images/christmas/nobel-christmas.jpeg"
+            alt="Christmas Tree in the cafe"
+            width="700"
+            height="1051"
           />
         </aside>
       </div>
