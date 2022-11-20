@@ -100,9 +100,7 @@ export const ChristmasHero = () => {
           </div>
 
           <p className="max-w-2xl text-lg">
-            Nobel Christmas Dinner consists of Roast turkey, ham, herb stuffing,
-            seasonal vegetables, mash, roast potatoes, chipolatas served with
-            gravy & cranberry.
+            Nobel Christmas Dinner consists of roast turkey, ham and herb stuffing, creamed potatos, roasties, sprouts, carrots, chipolatas, gravy and cranberry sauce.
             <ChristmasHeroInlineButton
               href="mailto:info@nobelcafe.co.uk"
               label="info@nobelcafe.co.uk"
@@ -131,7 +129,7 @@ export const ChristmasHero = () => {
           />
         </section>
 
-        <aside className="transform -rotate-2 ">
+        <aside>
           <Image
             className="shadow-lg rounded-lg"
             src="/assets/images/christmas/nobel-christmas.jpeg"
