@@ -44,8 +44,8 @@ const Speak = ({ hasSnowFall }) => {
   const details = [
     { label: "(028) 256 54302", href: "tel:+442825654302" },
     {
-      label: "info@nobelcafe.co.uk",
-      href: "mailto:info@nobelcafe.co.uk",
+      label: "nobelcafeballymena@outlook.com",
+      href: "mailto:nobelcafeballymena@outlook.com",
     },
   ];
 
