@@ -100,17 +100,7 @@ export const ChristmasHero = () => {
           </div>
 
           <p className="max-w-2xl text-lg">
-            Nobel Christmas Dinner consists of roast turkey, ham and herb stuffing, creamed potatos, roasties, sprouts, carrots, chipolatas, gravy and cranberry sauce.
-            <ChristmasHeroInlineButton
-              href="mailto:info@nobelcafe.co.uk"
-              label="info@nobelcafe.co.uk"
-            />{" "}
-            or telephone{" "}
-            <ChristmasHeroInlineButton
-              href="tel:+442825654302"
-              label="028 2565 4302"
-            />
-            .
+            Nobel Christmas Dinner consists of roast turkey, ham and herb stuffing, creamed potatos, roasties, sprouts, carrots, chipolatas, gravy.
           </p>
 
           <div className="text-center space-y-4 border-2 border-red-400 bg-white px-8 py-6 rounded-lg shadow-xl">
