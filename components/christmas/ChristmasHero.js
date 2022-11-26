@@ -41,8 +41,8 @@ export const ChristmasHero = () => {
               for a family get together or work Christmas lunch! If you would
               like to arrange a takeaway order - either email{" "}
               <ChristmasHeroInlineButton
-                href="mailto:info@nobelcafe.co.uk"
-                label="info@nobelcafe.co.uk"
+                href="mailto:nobelcafeballymena@outlook.com"
+                label="nobelcafeballymena@outlook.com"
               />{" "}
               or telephone{" "}
               <ChristmasHeroInlineButton
