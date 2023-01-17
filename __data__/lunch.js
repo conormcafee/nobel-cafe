@@ -1,17 +1,5 @@
 export const lunch = [
   {
-    id: "recvF8n64HO9898/5+9",
-    fields: {
-      name: "Christmas Dinner",
-      description:
-        "Roast turkey, ham and herb stuffing, creamed potatos, roasties, sprouts, carrots, chipolatas, gravy, cranberry sauce\n",
-      category: "lunch",
-      price: 14.95,
-      type: "Chicken",
-    },
-    createdTime: "2021-11-16T17:48:55.000Z",
-  },
-  {
     id: "recvF8n64HO9QpLSDKF",
     fields: {
       name: "Panfried Chicken",
@@ -58,6 +46,18 @@ export const lunch = [
       type: "Chicken",
     },
     createdTime: "2021-11-16T17:50:19.000Z",
+  },
+  {
+    id: "recvF8n64HO9898/5+9",
+    fields: {
+      name: "Chilli Steak Strips",
+      description:
+        "Chilli steak strips, pepper cream, penne pasta, served with garlic ciabatta slice.\n",
+      category: "lunch",
+      price: 11.45,
+      type: "Pasta",
+    },
+    createdTime: "2021-11-16T17:48:55.000Z",
   },
   {
     id: "recvzxfzfQxi1wnY6",

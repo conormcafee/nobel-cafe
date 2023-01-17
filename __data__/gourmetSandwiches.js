@@ -16,9 +16,9 @@ export const gourmet = [
   {
     id: "dfdfdf331202545",
     fields: {
-      name: "The Mexican Quesadilla",
+      name: "Beef Wrap",
       description:
-        "Spiced pulled beef brisket, red peppers, onions & metled monterey jack cheese in a folded tortilla wrap with taco mayo\n",
+        "Braised beef brisket, cheddar, shredded lettuce, tomato, pickled red onion & taco mayo\n",
       category: "gourmetSandwiches",
       price: 7.95,
       additional_price: 9.45,
