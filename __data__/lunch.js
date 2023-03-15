@@ -42,7 +42,7 @@ export const lunch = [
       description:
         "Grilled chicken fillet or crispy chicken goujons served on crisp cos lettuce, caesar dressing, bacon, parmesan & herb croutons",
       category: "lunch",
-      price: 10.45,
+      price: 10.95,
       type: "Chicken",
     },
     createdTime: "2021-11-16T17:50:19.000Z",
