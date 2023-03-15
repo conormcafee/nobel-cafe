@@ -107,4 +107,52 @@ export const lunch = [
     },
     createdTime: "2021-11-16T17:50:55.000Z",
   },
+  {
+    id: "89489256671a",
+    fields: {
+      name: "Bombay Benny",
+      description:
+        "Toasted muffins, creamed spinach, smoked salmon, poached eggs & curried hollandaise",
+      category: "lunch",
+      price: 9.25,
+      type: "Chicken",
+    },
+    createdTime: "2021-11-16T17:50:55.000Z",
+  },
+  {
+    id: "89489256671b",
+    fields: {
+      name: "Bananahama",
+      description:
+        "French toast, banana fritter, sugar pit bacon & maple syrup",
+      category: "lunch",
+      price: 9.25,
+      type: "Chicken",
+    },
+    createdTime: "2021-11-16T17:50:55.000Z",
+  },
+  {
+    id: "89489256671c",
+    fields: {
+      name: "Lean on Green",
+      description:
+        "Toasted sourdough, avocado, lean back bacon & poached eggs ",
+      category: "lunch",
+      price: 9.25,
+      type: "Chicken",
+    },
+    createdTime: "2021-11-16T17:50:55.000Z",
+  },
+  {
+    id: "89489256671d",
+    fields: {
+      name: "Spanish Eggs",
+      description:
+        "Toasted sourdough, avocado, fried eggs & chorizo and red pepper",
+      category: "lunch",
+      price: 9.25,
+      type: "Chicken",
+    },
+    createdTime: "2021-11-16T17:50:55.000Z",
+  },
 ]
