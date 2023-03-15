@@ -1,5 +1,5 @@
-const price = 6.95
-const additionalPrice = 8.45
+const price = 7.25
+const additionalPrice = 8.75
 
 export const sandwiches = [
   {
