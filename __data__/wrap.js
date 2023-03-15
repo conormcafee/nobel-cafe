@@ -4,9 +4,9 @@ export const wrap = [
     fields: {
       name: "Goujon Wrap",
       description:
-        "Crumbled chicken tenders, salt & chilli seasoning, shredded lettuce & chilli mayo wrapped in a warm tortilla.\n",
+        "Change the words salt and chilli to spicy and chilli mayo to kebab sauce",
       category: "wraps",
-      price: 9.45,
+      price: 9.75,
     },
     createdTime: "2021-11-16T17:45:04.000Z",
   },
