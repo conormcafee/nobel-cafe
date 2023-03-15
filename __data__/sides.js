@@ -6,7 +6,7 @@ export const sides = [
       description:
         "- Chips\n- Garlic Fries\n- Skin on Fries\n- Mash\n- Champ\n- Salt & Chill Fries\n- Kebab Fries\n- Tobacco Onions\n- Baby Caesar\n- Seasonal Veg\n",
       category: "sides",
-      price: 3.25,
+      price: 3.5,
     },
     createdTime: "2021-11-16T17:53:57.000Z",
   },
@@ -27,7 +27,7 @@ export const sides = [
       description:
         "- Mayo\n- Garlic Mayo\n- Curry Mayo\n- Kebab\n- BBQ Sauce\n- Sweet Chilli\n",
       category: "sides",
-      price: 1,
+      price: 1.5,
     },
     createdTime: "2021-11-16T17:57:12.000Z",
   },
