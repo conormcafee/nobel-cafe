@@ -16,13 +16,13 @@ export const gourmet = [
   {
     id: "dfdfdf331202545",
     fields: {
-      name: "Roast on toast",
+      name: "Goujon Wrap",
       description:
-        "Toasted sourdough topped with 24hr braised beef brisket, root veg butter, cauli cheese purée served with a gravy dip",
+        "Crumbed chicken tenders, salt & chilli seasoning, shredded lettuce & chilli mayo, wrapped in a warm tortilla",
       category: "gourmetSandwiches",
-      price: 1.95,
-      additional_price: 10.45,
-      price_text: "W/ Chips & Dip",
+      price: 9.95,
+      // additional_price: 10.45,
+      price_text: "W/ Choice of Side",
       additional_price_text: "W/ Soup",
     },
     createdTime: "2021-11-16T17:45:11.000Z",
@@ -30,13 +30,13 @@ export const gourmet = [
   {
     id: "dfbmmju02545",
     fields: {
-      name: "Tuscana",
+      name: "Tandori Chicken Wrap",
       description:
-        "Pesto chicken, sundried tomato, Italian salami & mozzarella served on toasted focaccia",
+        "Tandoori spiced chicke, peppers, onions, basmati rice, mango chutney, & tikka mayo",
       category: "gourmetSandwiches",
-      price: 8.95,
-      additional_price: 10.45,
-      price_text: "W/ Chips & Dip",
+      price: 9.95,
+      // additional_price: 10.45,
+      // price_text: "W/ Chips & Dip",
       additional_price_text: "W/ Soup",
     },
     createdTime: "2021-11-16T17:45:11.000Z",
@@ -44,15 +44,15 @@ export const gourmet = [
   {
     id: "dfbmmju02545a",
     fields: {
-      name: "Cubano",
+      name: "New York Deli Sandwich",
       description:
-        "BBQ roast pork, honey roast ham, American mustard, cheese & pickle on baked ciabatta",
+        "Roast turkey, ham, pastrami, bacon, cheese, chorizo, lettuce, tomato & mustard mayo",
       category: "gourmetSandwiches",
-      price: 8.95,
-      additional_price: 10.45,
-      price_text: "W/ Chips & Dip",
+      price: 9.95,
+      // additional_price: 10.45,
+      price_text: "W/ Chips",
       additional_price_text: "W/ Soup",
     },
     createdTime: "2021-11-16T17:45:11.000Z",
-  }
-]
+  },
+];

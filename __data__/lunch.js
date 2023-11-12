@@ -1,16 +1,16 @@
 export const lunch = [
-  {
-    id: "recvF8n64HO9QpLSDKF",
-    fields: {
-      name: "Panfried Chicken",
-      description:
-        "Serverd with tobacco onions, seasonal vegetables and a choice of side & sauce.\n",
-      category: "lunch",
-      price: 11.95,
-      type: "Chicken",
-    },
-    createdTime: "2021-11-16T17:48:55.000Z",
-  },
+  // {
+  //   id: "recvF8n64HO9QpLSDKF",
+  //   fields: {
+  //     name: "Panfried Chicken",
+  //     description:
+  //       "Serverd with tobacco onions, seasonal vegetables and a choice of side & sauce.\n",
+  //     category: "lunch",
+  //     price: 11.95,
+  //     type: "Chicken",
+  //   },
+  //   createdTime: "2021-11-16T17:48:55.000Z",
+  // },
   {
     id: "recvF8n64HO9QpU8P",
     fields: {
@@ -18,7 +18,7 @@ export const lunch = [
       description:
         "Fresh chicken fillet tenders, coated in a crisp gluten free crumb served with a choice of dipping sauce & side\n",
       category: "lunch",
-      price: 11.95,
+      price: 12.45,
       type: "Chicken",
     },
     createdTime: "2021-11-16T17:48:55.000Z",
@@ -30,7 +30,7 @@ export const lunch = [
       description:
         "Crispy fried chicken strips tossed in a sticky sweet chilli sauce topped with toasted sesame & spring onion served with a garlic mayo dip & choice of side\n",
       category: "lunch",
-      price: 11.95,
+      price: 12.45,
       type: "Chicken",
     },
     createdTime: "2021-11-16T17:50:04.000Z",
@@ -54,7 +54,7 @@ export const lunch = [
       description:
         "Chilli steak strips, pepper cream, penne pasta, served with garlic ciabatta slice.\n",
       category: "lunch",
-      price: 11.95,
+      price: 12.45,
       type: "Pasta",
     },
     createdTime: "2021-11-16T17:48:55.000Z",
@@ -90,23 +90,23 @@ export const lunch = [
       description:
         "Topped with southern fried chicken, creamy peppercorn sauce & tobacco onions\n",
       category: "lunch",
-      price: 11.95,
+      price: 12.95,
       type: "Chicken",
     },
     createdTime: "2021-11-16T17:50:55.000Z",
   },
-//   {
-//     id: "89489256671",
-//     fields: {
-//       name: "Sticky Chilli Chicken",
-//       description:
-//         "Topped with toasted sesame & spring onion, served with a garlic mayo dip & choice of side\n",
-//       category: "lunch",
-//       price: 11.45,
-//       type: "Chicken",
-//     },
-//     createdTime: "2021-11-16T17:50:55.000Z",
-//   },
+  //   {
+  //     id: "89489256671",
+  //     fields: {
+  //       name: "Sticky Chilli Chicken",
+  //       description:
+  //         "Topped with toasted sesame & spring onion, served with a garlic mayo dip & choice of side\n",
+  //       category: "lunch",
+  //       price: 11.45,
+  //       type: "Chicken",
+  //     },
+  //     createdTime: "2021-11-16T17:50:55.000Z",
+  //   },
   {
     id: "89489256671a",
     fields: {
@@ -155,4 +155,4 @@ export const lunch = [
     },
     createdTime: "2021-11-16T17:50:55.000Z",
   },
-]
+];

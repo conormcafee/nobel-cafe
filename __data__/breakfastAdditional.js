@@ -38,18 +38,7 @@ export const breakfastAdditional = [
       description:
         "Toasted sourdough, avocado, fried eggs & chorizo and red pepper",
       category: "breakfast-additional",
-      price: 7.75,
-    },
-    createdTime: "2021-11-16T17:13:19.000Z",
-  },
-  {
-    id: "recJKwIL2XAmEVafRb",
-    fields: {
-      name: "Bombay Benny",
-      description:
-        "Toasted muffins, creamed spinach, smoked salmon, poached eggs & curried hollandaise",
-      category: "breakfast-additional",
-      price: 7.75,
+      price: 7.95,
     },
     createdTime: "2021-11-16T17:13:19.000Z",
   },
@@ -60,7 +49,7 @@ export const breakfastAdditional = [
       description:
         "French toast, banana fritter, sugar pit bacon & maple syrup",
       category: "breakfast-additional",
-      price: 7.75,
+      price: 7.95,
     },
     createdTime: "2021-11-16T17:13:19.000Z",
   },
@@ -71,8 +60,8 @@ export const breakfastAdditional = [
       description:
         "Toasted sourdough, avocado, lean back bacon & poached eggs ",
       category: "breakfast-additional",
-      price: 7.75,
+      price: 7.95,
     },
     createdTime: "2021-11-16T17:13:19.000Z",
   },
-]
+];
