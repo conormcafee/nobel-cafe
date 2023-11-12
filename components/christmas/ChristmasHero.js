@@ -1,5 +1,5 @@
-import { Fragment } from "react";
 import Image from "next/image";
+import { Fragment } from "react";
 
 import { FacebookVideo } from "@components/misc";
 
@@ -17,8 +17,8 @@ const ChristmasHeroInlineButton = ({ href, label }) => {
 };
 
 const prices = [
-  { id: 0, label: "Sit in", price: 14.95 },
-  { id: 1, label: "Takeaway*", price: 12.95 },
+  { id: 0, label: "Sit in", price: 15.95 },
+  { id: 1, label: "Takeaway*", price: 13.95 },
 ];
 
 export const ChristmasHero = () => {
@@ -34,7 +34,9 @@ export const ChristmasHero = () => {
               </span>
             </h1>
 
-            <span className="inline-flex px-2 py-1 rounded-full font-bold tracking-wide uppercase bg-red-200 text-red-700 text-sm">Starting 21st November</span>
+            <span className="inline-flex px-2 py-1 rounded-full font-bold tracking-wide uppercase bg-red-200 text-red-700 text-sm">
+              Starting 21st November
+            </span>
 
             <p className="max-w-2xl text-lg">
               We can accommodate large parties for sit in or takeaway! Perfect
@@ -100,7 +102,9 @@ export const ChristmasHero = () => {
           </div>
 
           <p className="max-w-2xl text-lg">
-            Nobel Christmas Dinner consists of roast turkey, ham and herb stuffing, creamed potatos, roasties, sprouts, carrots, chipolatas, gravy.
+            Nobel Christmas Dinner consists of roast turkey, ham and herb
+            stuffing, creamed potatos, roasties, sprouts, carrots, chipolatas,
+            gravy.
           </p>
 
           <div className="text-center space-y-4 border-2 border-red-400 bg-white px-8 py-6 rounded-lg shadow-xl">
@@ -108,7 +112,10 @@ export const ChristmasHero = () => {
               Nobel vouchers
             </h2>
 
-            <p className='text-gray-700'>The perfect gift for Christmas! Monetary vouchers can be purchased at Nobel Cafe!</p>
+            <p className="text-gray-700">
+              The perfect gift for Christmas! Monetary vouchers can be purchased
+              at Nobel Cafe!
+            </p>
           </div>
 
           <FacebookVideo

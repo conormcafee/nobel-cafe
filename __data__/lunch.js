@@ -1,16 +1,16 @@
 export const lunch = [
-  // {
-  //   id: "recvF8n64HO9QpLSDKF",
-  //   fields: {
-  //     name: "Panfried Chicken",
-  //     description:
-  //       "Serverd with tobacco onions, seasonal vegetables and a choice of side & sauce.\n",
-  //     category: "lunch",
-  //     price: 11.95,
-  //     type: "Chicken",
-  //   },
-  //   createdTime: "2021-11-16T17:48:55.000Z",
-  // },
+  {
+    id: "recvF8n64HO9QpLSDKF",
+    fields: {
+      name: "Seasonal Turkey Dinner",
+      description:
+        "Roast turkey, ham, herb stuffing, seasonal vegetables, mash, roasties, chipolatas served with gravy & cranberry sauce",
+      category: "lunch",
+      price: 15.95,
+      type: "Chicken",
+    },
+    createdTime: "2021-11-16T17:48:55.000Z",
+  },
   {
     id: "recvF8n64HO9QpU8P",
     fields: {

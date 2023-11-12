@@ -1,5 +1,5 @@
-import { Layout } from "@components/layout";
 import { About, Hero } from "@components/home";
+import { Layout } from "@components/layout";
 
 const meta = {
   title: "Home",
