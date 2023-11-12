@@ -35,7 +35,7 @@ export const ChristmasHero = () => {
             </h1>
 
             <span className="inline-flex px-2 py-1 rounded-full font-bold tracking-wide uppercase bg-red-200 text-red-700 text-sm">
-              Starting 21st November
+              Starting 6th November
             </span>
 
             <p className="max-w-2xl text-lg">
