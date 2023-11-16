@@ -42,7 +42,7 @@ export const lunch = [
       description:
         "Grilled chicken fillet or crispy chicken goujons served on crisp cos lettuce, caesar dressing, bacon, parmesan & herb croutons",
       category: "lunch",
-      price: 10.95,
+      price: 11.45,
       type: "Chicken",
     },
     createdTime: "2021-11-16T17:50:19.000Z",
@@ -54,7 +54,7 @@ export const lunch = [
       description:
         "Chilli steak strips, pepper cream, penne pasta, served with garlic ciabatta slice.\n",
       category: "lunch",
-      price: 12.45,
+      price: 11.95,
       type: "Pasta",
     },
     createdTime: "2021-11-16T17:48:55.000Z",
@@ -66,7 +66,7 @@ export const lunch = [
       description:
         "Creamy carbonara penne pasta topped with parmesan, served with garlic ciabatta slice\n",
       category: "lunch",
-      price: 11.45,
+      price: 11.95,
       type: "Pasta",
     },
     createdTime: "2021-11-16T17:50:42.000Z",
@@ -78,7 +78,7 @@ export const lunch = [
       description:
         "6oz steak burger, maple bacon rashers, cheddar cheese, lettuce, tomato, onion & mayo on toasted brioche bun, includes a side.\n",
       category: "lunch",
-      price: 11.95,
+      price: 12.45,
       type: "Burgers",
     },
     createdTime: "2021-11-16T17:50:55.000Z",
@@ -90,7 +90,7 @@ export const lunch = [
       description:
         "Topped with southern fried chicken, creamy peppercorn sauce & tobacco onions\n",
       category: "lunch",
-      price: 12.95,
+      price: 12.45,
       type: "Chicken",
     },
     createdTime: "2021-11-16T17:50:55.000Z",
@@ -126,7 +126,7 @@ export const lunch = [
       description:
         "French toast, banana fritter, sugar pit bacon & maple syrup",
       category: "lunch",
-      price: 9.25,
+      price: 9.75,
       type: "Chicken",
     },
     createdTime: "2021-11-16T17:50:55.000Z",
@@ -138,7 +138,7 @@ export const lunch = [
       description:
         "Toasted sourdough, avocado, lean back bacon & poached eggs ",
       category: "lunch",
-      price: 9.25,
+      price: 9.75,
       type: "Chicken",
     },
     createdTime: "2021-11-16T17:50:55.000Z",
@@ -150,7 +150,7 @@ export const lunch = [
       description:
         "Toasted sourdough, avocado, fried eggs & chorizo and red pepper",
       category: "lunch",
-      price: 9.25,
+      price: 9.75,
       type: "Chicken",
     },
     createdTime: "2021-11-16T17:50:55.000Z",
