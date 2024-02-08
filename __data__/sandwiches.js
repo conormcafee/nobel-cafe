@@ -57,9 +57,8 @@ export const sandwiches = [
   {
     id: "recV6DAseHM898sd9s",
     fields: {
-      name: "Nobel Noel",
-      description:
-        "Sliced turkey and ham, with herb stuffing & cranberry sauce",
+      name: "Classic Club",
+      description: "Sliced roast chicken, bacon, lettuce, tomato & mayo\n",
       category: "sandwiches",
       price: price,
       additional_price: additionalPrice,
