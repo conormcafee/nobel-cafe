@@ -27,32 +27,33 @@ export const gourmet = [
     },
     createdTime: "2021-11-16T17:45:11.000Z",
   },
-  {
-    id: "dfbmmju02545",
-    fields: {
-      name: "Tandori Chicken Wrap",
-      description:
-        "Tandoori spiced chicke, peppers, onions, basmati rice, mango chutney, & tikka mayo",
-      category: "gourmetSandwiches",
-      price: 9.95,
-      // additional_price: 10.45,
-      // price_text: "W/ Chips & Dip",
-      additional_price_text: "W/ Soup",
-    },
-    createdTime: "2021-11-16T17:45:11.000Z",
-  },
-  {
-    id: "dfbmmju02545a",
-    fields: {
-      name: "New York Deli Sandwich",
-      description:
-        "Roast turkey, ham, pastrami, bacon, cheese, chorizo, lettuce, tomato & mustard mayo",
-      category: "gourmetSandwiches",
-      price: 9.95,
-      // additional_price: 10.45,
-      price_text: "W/ Chips",
-      additional_price_text: "W/ Soup",
-    },
-    createdTime: "2021-11-16T17:45:11.000Z",
-  },
+  // {
+  //   id: "dfbmmju02545",
+  //   fields: {
+  //     name: "Tandori Chicken Wrap",
+  //     description:
+  //       "Tandoori spiced chicke, peppers, onions, basmati rice, mango chutney, & tikka mayo",
+  //     category: "gourmetSandwiches",
+  //     price: 9.95,
+  //     // additional_price: 10.45,
+  //     // price_text: "W/ Chips & Dip",
+  //     additional_price_text: "W/ Soup",
+  //   },
+  //   createdTime: "2021-11-16T17:45:11.000Z",
+  // },
+  // {
+  //   id: "dfbmmju02545a",
+  //   fields: {
+  //     name: "New York Deli Sandwich",
+  //     description:
+  //       "Roast turkey, ham, pastrami, bacon, cheese, chorizo, lettuce, tomato & mustard mayo",
+  //     category: "gourmetSandwiches",
+  //     price: 9.95,
+  //     // additional_price: 10.45,
+  //     price_text: "W/ Chips",
+  //     additional_price_text: "W/ Soup",
+  //   },
+  //   createdTime: "2021-11-16T17:45:11.000Z",
+  // },
+  
 ];

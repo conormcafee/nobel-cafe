@@ -1,5 +1,5 @@
-const price = 7.95;
-const additionalPrice = 9.25;
+const price = 8.95;
+const additionalPrice = 9.95;
 
 export const sandwiches = [
   // {
@@ -41,19 +41,19 @@ export const sandwiches = [
     },
     createdTime: "2021-11-16T17:45:11.000Z",
   },
-  // {
-  //   id: "recV6DAseHMDqsva9",
-  //   fields: {
-  //     name: "Italian Ciabatta",
-  //     description: "Sliced chicken, salami, sundried tomato, mozzeralla, rocket",
-  //     category: "sandwiches",
-  //     price: price,
-  //     additional_price: additionalPrice,
-  //     price_text: "W/ Chips & Dip",
-  //     additional_price_text: "W/ Soup",
-  //   },
-  //   createdTime: "2021-11-16T17:45:11.000Z",
-  // },
+  {
+    id: "recV6DAseHMDqsva9",
+    fields: {
+      name: "Coronation Chicken",
+      description: "Creamy curried chicken, boiled egg, mango and salad.",
+      category: "sandwiches",
+      price: price,
+      additional_price: additionalPrice,
+      price_text: "W/ Chips & Dip",
+      additional_price_text: "W/ Soup",
+    },
+    createdTime: "2021-11-16T17:45:11.000Z",
+  },
   {
     id: "recV6DAseHM898sd9s",
     fields: {

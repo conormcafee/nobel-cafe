@@ -78,7 +78,7 @@ export const Breakfast = ({ records = [] }) => {
       <aside>
         <TitleAndIntro
           title="Breakfast"
-          intro={["8am - 11:30am: 90p per item"]}
+          intro={["8am - 11:30am: £1 per item"]}
         />
 
         <BreakfastItems data={breakfast} />
@@ -87,7 +87,7 @@ export const Breakfast = ({ records = [] }) => {
           <span className="block">After 11:30am</span>
           <ol className="flex gap-2 text-right">
             <li className="block text-base bg-green-500 rounded-lg text-white px-2 py-1">
-              5 items <span className="font-bold">£6.45</span>
+              5 items <span className="font-bold">£7.45</span>
             </li>
             <li className="block text-base bg-green-500 rounded-lg text-white px-2 py-1">
               10 items <span className="font-bold">£11.45</span>
