@@ -2,7 +2,7 @@ import { Logo } from "@components/misc";
 import Link from "next/link";
 
 const menu = [
-  // { label: "Christmas 2023", href: "/christmas-at-nobel" },
+  { label: "Christmas 2024", href: "/christmas-at-nobel" },
   { label: "Breakfast & Lunch Menu", href: "/menu" },
   { label: "Videos", href: "/videos" },
 ];

@@ -27,7 +27,7 @@ export const breakfastAdditional = [
       description:
         "Choose toppings from fresh fruit, honey, maple syrup, cinnamon, nuts & seeds\n",
       category: "breakfast-additional",
-      price: 3.75,
+      price: 3.95,
     },
     createdTime: "2021-11-16T17:13:19.000Z",
   },
@@ -38,18 +38,29 @@ export const breakfastAdditional = [
       description:
         "Toasted sourdough, avocado, fried eggs & chorizo and red pepper",
       category: "breakfast-additional",
-      price: 7.95,
+      price: 8.25,
     },
     createdTime: "2021-11-16T17:13:19.000Z",
   },
   {
     id: "recJKwIL2XAmEVafRc",
     fields: {
-      name: "Bananahama",
+      name: "French Toast",
       description:
-        "French toast, banana fritter, sugar pit bacon & maple syrup",
+        "choose from banana fritters or fried egg, topped with sugar spit bacon and maple syrup.",
       category: "breakfast-additional",
-      price: 7.95,
+      price: 8.25,
+    },
+    createdTime: "2021-11-16T17:13:19.000Z",
+  },
+  {
+    id: "recJKwIL2XAmEVafRa",
+    fields: {
+      name: "Buttermilk Pancakes",
+      description:
+        "topped with fresh berries, lemon syrup and white chocolate",
+      category: "breakfast-additional",
+      price: 8.25,
     },
     createdTime: "2021-11-16T17:13:19.000Z",
   },
@@ -60,7 +71,7 @@ export const breakfastAdditional = [
       description:
         "Toasted sourdough, avocado, lean back bacon & poached eggs ",
       category: "breakfast-additional",
-      price: 7.95,
+      price: 8.25,
     },
     createdTime: "2021-11-16T17:13:19.000Z",
   },
