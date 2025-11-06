@@ -17,8 +17,8 @@ const ChristmasHeroInlineButton = ({ href, label }) => {
 };
 
 const prices = [
-  { id: 0, label: "Sit in", price: 15.95 },
-  { id: 1, label: "Takeaway*", price: 13.95 },
+  { id: 0, label: "Sit in", price: `17.50` },
+  { id: 1, label: "Takeaway*", price: 14.95 },
 ];
 
 export const ChristmasHero = () => {
