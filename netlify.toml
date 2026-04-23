@@ -6,3 +6,6 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+[build.environment]
+  PYTHON_VERSION = "3.11"
