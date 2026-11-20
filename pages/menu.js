@@ -8,19 +8,19 @@ const meta = {
 
 const images = [
   {
-    src: "/images/menu/march-2026/nobel-breakfast-menu-front-march-26.jpg",
+    src: "/images/menu/november-2026/xmas-breakfast-menu-2026-front.jpg",
     alt: "Breakfast Menu (Front)",
   },
   {
-    src: "/images/menu/march-2026/nobel-breakfast-menu-back-march-26.jpg",
+    src: "/images/menu/november-2026/xmas-breakfast-menu-2026-back.jpg",
     alt: "Breakfast Menu (Back)",
   },
   {
-    src: "/images/menu/march-2026/nobel-lunch-menu-front-march-26.jpg",
+    src: "/images/menu/november-2026/xmas-lunch-menu-2026-front.jpg",
     alt: "Lunch Menu (Front)",
   },
   {
-    src: "/images/menu/march-2026/nobel-lunch-menu-back-march-26.jpg",
+    src: "/images/menu/november-2026/xmas-lunch-menu-2026-back.jpg",
     alt: "Lunch Menu (Back)",
   },
 ]
